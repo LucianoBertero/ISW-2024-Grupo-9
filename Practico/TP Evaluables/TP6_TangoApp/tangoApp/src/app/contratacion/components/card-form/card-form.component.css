@@ -1,0 +1,51 @@
+.card {
+  height: 300px;
+  width: 90%;
+  margin: 0 auto;
+  border-radius: 30px;
+  background-color: #e9d2a7;
+  border: none;
+}
+
+input {
+  width: 77%;
+  height: 27px;
+  margin-left: 3px;
+  background-color: #ebbc8a;
+  border: none;
+}
+
+input:hover {
+  background-color: rgba(235, 188, 138, 0.37);
+  border: 1px solid rgb(235, 188, 138);
+}
+.form-group {
+  margin-top: 9px;
+  margin-left: 7px;
+  font-size: 18px;
+}
+
+h1 {
+  text-align: center;
+  margin-top: 10px;
+}
+
+.date {
+  width: 150px;
+}
+
+.date:hover {
+  background-color: #ebbc8a;
+}
+
+select {
+  width: 40%;
+  height: 30px;
+  margin-left: 3px;
+  background-color: #ebbc8a;
+  border: none;
+}
+
+select:hover {
+  background-color: #ebbc8a;
+}

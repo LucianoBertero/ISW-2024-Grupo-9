@@ -1,0 +1,48 @@
+h1 {
+  font-size: 2=0px;
+  margin-left: 20px;
+  margin-bottom: 19px;
+}
+
+.card {
+  height: 460px;
+  width: 87%;
+  background-color: #e9d2a781;
+  border: none;
+  margin: 0 auto;
+  border-radius: 30px;
+}
+
+span {
+  font-weight: 600;
+  font-size: 17px;
+  margin-left: 3px;
+}
+
+p {
+  font-size: 15px;
+}
+
+.card-intern {
+  margin-left: 10px;
+}
+
+.chofer {
+  margin-left: -10px;
+}
+
+.pago {
+  margin-left: 20px;
+}
+
+.pago-detalle {
+  margin-left: 7px;
+}
+
+.bold {
+  font-weight: 600;
+}
+
+h6 {
+  font-weight: 350;
+}

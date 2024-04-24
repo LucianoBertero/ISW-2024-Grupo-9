@@ -1,0 +1,46 @@
+<div class="d-flex justify-content-center align-items-start">
+  <div class="card" style="width: 295px; height: 153px">
+    <div
+      class="d-flex flex-column justify-content-evenly px-4"
+      style="width: 295px; height: 153px"
+    >
+      <div class="col-12">
+        <div class="form-check">
+          <input
+            class="form-check-input"
+            type="radio"
+            name="paymentOption"
+            id="debitCreditOption"
+            value="debitCredit"
+            (change)="onOptionSelected('debitCredit')"
+          />
+          <label class="form-check-label" for="debitCreditOption"
+            >Débito / Crédito</label
+          >
+          <img src="../../../../assets/Visa.png" alt="" />
+
+          <img src="../../../../assets/Vector.png" alt="" />
+        </div>
+      </div>
+
+      <div class="col-12 mb-10">
+        <div class="form-check">
+          <input
+            class="form-check-input"
+            type="radio"
+            name="paymentOption"
+            id="cashOption"
+            value="cash"
+            (change)="onOptionSelected('cash')"
+          />
+          <label class="form-check-label" for="cashOption">Efectivo</label>
+          <img
+            src="../../../../assets/Efectivo (1).png"
+            alt=""
+            class="efectivo"
+          />
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

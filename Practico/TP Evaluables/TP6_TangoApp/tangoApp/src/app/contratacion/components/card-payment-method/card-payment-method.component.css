@@ -1,0 +1,24 @@
+.form-check {
+}
+
+.card {
+  border-radius: 30px;
+  background-color: #e9d2a7;
+  border: none;
+}
+
+label {
+  font-size: 16px;
+}
+
+input {
+  margin-top: 10px;
+}
+
+form {
+  margin: 0 auto;
+}
+
+.efectivo {
+  margin-left: 63px;
+}

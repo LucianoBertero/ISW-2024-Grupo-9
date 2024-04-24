@@ -1,0 +1,12 @@
+app-card {
+  margin-top: 40px;
+}
+button {
+  margin-top: 20px;
+  height: 56px;
+  width: 174px;
+  border-radius: 30px;
+  background-color: #20388f;
+  color: white;
+  font-size: 27px;
+}

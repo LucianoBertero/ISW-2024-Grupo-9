@@ -1,0 +1,39 @@
+.card {
+  height: 420px;
+  width: 295px;
+  background-color: #e9d2a7;
+  border-radius: 40px;
+}
+
+.card > img {
+  width: 234px;
+  height: 138px;
+  margin: 0 auto;
+  padding-top: 20px;
+}
+
+.valoration {
+  padding-left: 10px;
+  margin-top: -10px;
+}
+
+button {
+  margin-top: 20px;
+  height: 56px;
+  width: 174px;
+  border-radius: 30px;
+  background-color: #20388f;
+  color: white;
+  font-size: 27px;
+}
+
+.img-pago-tarjeta {
+  margin-left: 10px;
+  height: 30px;
+  width: 30px;
+}
+.img-pago-efectivo {
+  margin-top: -5px;
+  height: 43px;
+  width: 30px;
+}

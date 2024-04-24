@@ -1,0 +1,66 @@
+<div *ngIf="spinner">
+  <div class="card">
+    <div class="header">
+      <div class="image">
+        <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+          <g
+            id="SVGRepo_tracerCarrier"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          ></g>
+          <g id="SVGRepo_iconCarrier">
+            <path
+              d="M20 7L9.00004 18L3.99994 13"
+              stroke="#000000"
+              stroke-width="1.5"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            ></path>
+          </g>
+        </svg>
+      </div>
+      <div class="content">
+        <span class="title">CONFIRMADO</span>
+        <p class="message">
+          Ubicación entrega: calle falsa 123, CP:5000, Córdoba, Argentina
+        </p>
+        <p class="message">Entrega: 30/04/2024- 15.30hs.</p>
+        <p class="message">Chofer: JUAN PEREZ.</p>
+        <p class="message">Total: $504.50</p>
+      </div>
+      <div class="actions">
+        <button class="history" routerLink="/quote" type="button">
+          Volver Inicio
+        </button>
+        <button class="track" (click)="descargarPDF()" type="button">
+          Descargar Comprobante
+        </button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div
+  *ngIf="!spinner"
+  aria-label="Orange and tan hamster running in a metal wheel"
+  role="img"
+  class="wheel-and-hamster card-role"
+>
+  <div class="wheel"></div>
+  <div class="hamster">
+    <div class="hamster__body">
+      <div class="hamster__head">
+        <div class="hamster__ear"></div>
+        <div class="hamster__eye"></div>
+        <div class="hamster__nose"></div>
+      </div>
+      <div class="hamster__limb hamster__limb--fr"></div>
+      <div class="hamster__limb hamster__limb--fl"></div>
+      <div class="hamster__limb hamster__limb--br"></div>
+      <div class="hamster__limb hamster__limb--bl"></div>
+      <div class="hamster__tail"></div>
+    </div>
+  </div>
+  <div class="spoke"></div>
+</div>

@@ -1,0 +1,24 @@
+nav {
+  background-color: #e9d2a7;
+  height: 75px;
+}
+.img {
+  width: 50px;
+  height: 50px;
+  padding-bottom: 10px;
+}
+
+.container {
+  padding-bottom: 100px;
+}
+
+.navbar-brand-center {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+h4 {
+  font-weight: 100;
+  font-size: 20px;
+}
