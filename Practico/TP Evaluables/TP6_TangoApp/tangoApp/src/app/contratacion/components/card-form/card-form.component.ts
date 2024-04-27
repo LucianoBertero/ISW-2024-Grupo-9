@@ -12,15 +12,12 @@ export class CardFormComponent {
   //verificar los campos, que tengan todo bien
 
   public myForm: FormGroup = this.fb.group({
-    titular: ['dasdasdasdas', [Validators.required, Validators.minLength(4)]],
-    tipoDoc: ['dni', [Validators.required]],
-    nroTarjeta: [
-      '12312312312',
-      [Validators.required, Validators.minLength(12)],
-    ],
-    pin: ['123123123', [Validators.required, Validators.minLength(2)]],
+    titular: ['', [Validators.required, Validators.minLength(4)]],
+    tipoDoc: ['', [Validators.required]],
+    nroTarjeta: ['', [Validators.required, Validators.minLength(12)]],
+    pin: ['', [Validators.required, Validators.minLength(2)]],
     fechaExp: ['', [Validators.required]],
-    nroDoc: ['12312312', [Validators.required, Validators.minLength(8)]],
+    nroDoc: ['', [Validators.required, Validators.minLength(8)]],
   });
 
   constructor(private fb: FormBuilder) {

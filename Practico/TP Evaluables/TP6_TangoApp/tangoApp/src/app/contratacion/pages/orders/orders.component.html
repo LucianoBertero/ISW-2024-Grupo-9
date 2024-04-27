@@ -1,0 +1,60 @@
+<h1>MIS PEDIDOS</h1>
+
+<div class="container d-flex justify-content-center align-items-center h-100">
+  <div class="d-flex flex-column">
+    <div class="card" (click)="redireccionar()">
+      <div class="contenido">
+        <h2>Pedido #11923</h2>
+        <h3>Tipo Carga:</h3>
+        <h3>Fecha de Retiro:</h3>
+        <div class="estado-container">
+          <h3>Estado:</h3>
+          <button
+            class="estado-button"
+            [ngClass]="
+              infoCard?.estado === 'confirmado' ? 'finalizado' : 'pendiente'
+            "
+          >
+            {{ infoCard?.estado === "confirmado" ? "Finalizado" : "Pendiente" }}
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="contenido">
+        <h2>Pedido #11923</h2>
+        <h3>Tipo Carga:</h3>
+        <h3>Fecha de Retiro:</h3>
+        <div class="estado-container">
+          <h3>Estado:</h3>
+          <button class="estado-button finalizado">Finalizado</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="contenido">
+        <h2>Pedido #11923</h2>
+        <h3>Tipo Carga:</h3>
+        <h3>Fecha de Retiro:</h3>
+        <div class="estado-container">
+          <h3>Estado:</h3>
+          <button class="estado-button finalizado">Finalizado</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="contenido">
+        <h2>Pedido #11923</h2>
+        <h3>Tipo Carga:</h3>
+        <h3>Fecha de Retiro:</h3>
+        <div class="estado-container">
+          <h3>Estado:</h3>
+          <button class="estado-button finalizado">Finalizado</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

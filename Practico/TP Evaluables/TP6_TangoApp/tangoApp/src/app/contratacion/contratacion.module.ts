@@ -13,6 +13,7 @@ import { ReactiveFormsModule } from '@angular/forms';
 import { DetailPageComponent } from './pages/detail-page/detail-page.component';
 import { CardDetailComponent } from './components/card-detail/card-detail.component';
 import { ConfirmedPageComponent } from './pages/confirmed-page/confirmed-page.component';
+import { OrdersComponent } from './pages/orders/orders.component';
 
 @NgModule({
   declarations: [
@@ -26,6 +27,7 @@ import { ConfirmedPageComponent } from './pages/confirmed-page/confirmed-page.co
     DetailPageComponent,
     CardDetailComponent,
     ConfirmedPageComponent,
+    OrdersComponent,
   ],
   imports: [CommonModule, ContratacionRoutingModule, ReactiveFormsModule],
   exports: [],

@@ -5,6 +5,7 @@ import { QuotePageComponent } from './pages/quote-page/quote-page.component';
 import { PaymentMethodsPageComponent } from './pages/payment-methods-page/payment-methods-page.component';
 import { DetailPageComponent } from './pages/detail-page/detail-page.component';
 import { ConfirmedPageComponent } from './pages/confirmed-page/confirmed-page.component';
+import { OrdersComponent } from './pages/orders/orders.component';
 
 const routes: Routes = [
   {
@@ -28,8 +29,13 @@ const routes: Routes = [
         component: ConfirmedPageComponent,
       },
       {
+        path: 'orders',
+
+        component: OrdersComponent,
+      },
+      {
         path: '',
-        redirectTo: 'quote',
+        redirectTo: 'orders',
         pathMatch: 'full',
       },
     ],

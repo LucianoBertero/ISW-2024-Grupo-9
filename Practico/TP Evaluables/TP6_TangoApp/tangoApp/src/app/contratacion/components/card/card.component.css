@@ -1,5 +1,5 @@
 .card {
-  height: 420px;
+  height: 435px;
   width: 295px;
   background-color: white;
   border-radius: 40px;
@@ -22,21 +22,30 @@
 
 button {
   margin-top: 20px;
-  height: 56px;
-  width: 174px;
+  height: 35px;
+  width: 100px;
   border-radius: 30px;
   background-color: #20388f;
   color: white;
-  font-size: 27px;
+  font-size: 20px;
 }
 
 .img-pago-tarjeta {
   margin-left: 10px;
   height: 30px;
   width: 30px;
+  margin-top: 20px;
 }
 .img-pago-efectivo {
   margin-top: -5px;
   height: 43px;
   width: 30px;
+  margin-top: 18px;
+  margin-left: 10px;
+}
+
+.contratar {
+  height: 45px;
+  width: 213px;
+  margin-bottom: 30px;
 }

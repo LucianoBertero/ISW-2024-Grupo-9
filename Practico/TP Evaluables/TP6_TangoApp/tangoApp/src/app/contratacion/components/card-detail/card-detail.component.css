@@ -47,3 +47,8 @@ p {
 h6 {
   font-weight: 350;
 }
+
+.img {
+  width: 30px;
+  height: 30px;
+}

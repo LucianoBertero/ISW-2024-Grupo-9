@@ -30,7 +30,7 @@
         <p class="message">Total: $504.50</p>
       </div>
       <div class="actions">
-        <button class="history" routerLink="/quote" type="button">
+        <button class="history" (click)="confirmar()" type="button">
           Volver Inicio
         </button>
         <button class="track" (click)="descargarPDF()" type="button">

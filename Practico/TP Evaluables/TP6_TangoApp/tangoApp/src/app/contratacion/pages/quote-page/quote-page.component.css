@@ -1,5 +1,5 @@
 app-card {
-  margin-top: 40px;
+  margin-top: 30px;
 }
 button {
   margin-top: 20px;
@@ -9,4 +9,12 @@ button {
   background-color: #20388f;
   color: white;
   font-size: 27px;
+}
+
+body {
+  height: 100vh;
+}
+
+h1 {
+  margin-left: 15px;
 }

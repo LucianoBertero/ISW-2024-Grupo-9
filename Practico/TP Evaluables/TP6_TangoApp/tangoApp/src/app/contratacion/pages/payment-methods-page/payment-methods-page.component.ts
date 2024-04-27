@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
 import { Router } from '@angular/router';
 
 @Component({
@@ -11,6 +11,8 @@ export class PaymentMethodsPageComponent {
   isOption: string = '';
   formValid: boolean = false;
   constructor(private route: Router) {}
+
+  infocard: any;
 
   goBack(): void {
     this.route.navigate(['/quote']);
@@ -33,10 +35,26 @@ export class PaymentMethodsPageComponent {
     }
 
     if (this.isOption === 'cash') {
+      console.log('entro por aca');
+      const infoCardString = localStorage.getItem('infoCard');
+      if (infoCardString) {
+        const infoCard = JSON.parse(infoCardString);
+
+        infoCard.formaPago = 'efectivo';
+        localStorage.setItem('infoCard', JSON.stringify(infoCard));
+      }
       this.route.navigate(['/contacting/detail']);
     }
     if (this.isOption === 'debitCredit' && this.formValid === true) {
       console.log('entro por aca');
+      const infoCardString = localStorage.getItem('infoCard');
+      if (infoCardString) {
+        const infoCard = JSON.parse(infoCardString);
+
+        infoCard.formaPago = 'targeta';
+        localStorage.setItem('infoCard', JSON.stringify(infoCard));
+      }
+
       this.route.navigate(['/contacting/detail']);
     }
 

@@ -1,9 +1,39 @@
-<div class="container d-flex justify-content-center align-items-start">
-  <app-card class=""></app-card>
+<h1>Cotizaciones Disponibles:</h1>
+
+<div class="container d-flex justify-content-center align-items-center h-100">
+  <div class="d-flex flex-column">
+    <app-card
+      [infoCard]="{
+        nombre: 'Luciano Bertero',
+        precio: 200,
+        formaPago: 'ambas',
+        estado: 'pendiente'
+      }"
+      class=""
+    ></app-card>
+    <app-card
+      [infoCard]="{
+        nombre: 'Juan Carlos',
+        precio: 500,
+        formaPago: 'ambas',
+        estado: 'pendiente'
+      }"
+      class=""
+    ></app-card>
+    <app-card
+      [infoCard]="{
+        nombre: 'Martin Perez',
+        precio: 700,
+        formaPago: 'efectivo',
+        estado: 'pendiente'
+      }"
+      class=""
+    ></app-card>
+  </div>
 </div>
 
-<div class="d-flex justify-content-center mt-10">
+<!-- <div class="d-flex justify-content-center mt-10">
   <button routerLink="../payment-methods" class="btn btn-primary">
     Siguiente
   </button>
-</div>
+</div> -->
