@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
+import { OrderService } from '../../../services/order.service';
 interface InfoCard {
   nombre: string;
   precio: number;
@@ -14,13 +15,14 @@ interface InfoCard {
 })
 export class OrdersComponent implements OnInit {
   infoCard: InfoCard | null = null;
-  constructor(private router: Router) {}
+  constructor(private router: Router, private orderService: OrderService) {}
   ngOnInit(): void {
-    const infoCardString = localStorage.getItem('infoCard');
-    if (infoCardString) {
-      this.infoCard = JSON.parse(infoCardString);
-    }
+    // const infoCardString = localStorage.getItem('infoCard');
+    // if (infoCardString) {
+    //   this.infoCard = JSON.parse(infoCardString);
+    // }
 
+    this.infoCard = this.orderService?.getOrden();
     console.log(this.infoCard);
   }
 

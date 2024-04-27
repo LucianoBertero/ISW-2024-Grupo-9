@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { OrderService } from '../../../services/order.service';
 
 @Component({
   selector: 'app-card-detail',
@@ -7,14 +8,10 @@ import { Component, OnInit } from '@angular/core';
 })
 export class CardDetailComponent implements OnInit {
   infoCard: any;
+  constructor(private orderService: OrderService) {}
 
   ngOnInit(): void {
-    const tarjetaGuardada = localStorage.getItem('infoCard');
-    if (tarjetaGuardada) {
-      this.infoCard = JSON.parse(tarjetaGuardada);
-    } else {
-    }
-
+    this.infoCard = this.orderService?.getOrden();
     console.log(this.infoCard);
   }
 }

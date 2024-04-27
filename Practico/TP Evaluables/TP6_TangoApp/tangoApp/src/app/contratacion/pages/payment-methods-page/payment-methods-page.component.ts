@@ -1,5 +1,6 @@
 import { Component, Input } from '@angular/core';
 import { Router } from '@angular/router';
+import { OrderService } from '../../../services/order.service';
 
 @Component({
   selector: 'app-payment-methods-page',
@@ -10,7 +11,7 @@ export class PaymentMethodsPageComponent {
   isOptionSelected: boolean = false;
   isOption: string = '';
   formValid: boolean = false;
-  constructor(private route: Router) {}
+  constructor(private route: Router, private orderService: OrderService) {}
 
   infocard: any;
 
@@ -36,25 +37,27 @@ export class PaymentMethodsPageComponent {
 
     if (this.isOption === 'cash') {
       console.log('entro por aca');
-      const infoCardString = localStorage.getItem('infoCard');
-      if (infoCardString) {
-        const infoCard = JSON.parse(infoCardString);
+      // const infoCardString = localStorage.getItem('infoCard');
+      // if (infoCardString) {
+      //   const infoCard = JSON.parse(infoCardString);
 
-        infoCard.formaPago = 'efectivo';
-        localStorage.setItem('infoCard', JSON.stringify(infoCard));
-      }
+      //   infoCard.formaPago = 'efectivo';
+      //   localStorage.setItem('infoCard', JSON.stringify(infoCard));
+      // }
+      this.orderService.setFormaPago('efectivo');
       this.route.navigate(['/contacting/detail']);
     }
     if (this.isOption === 'debitCredit' && this.formValid === true) {
       console.log('entro por aca');
-      const infoCardString = localStorage.getItem('infoCard');
-      if (infoCardString) {
-        const infoCard = JSON.parse(infoCardString);
+      // const infoCardString = localStorage.getItem('infoCard');
+      // if (infoCardString) {
+      //   const infoCard = JSON.parse(infoCardString);
 
-        infoCard.formaPago = 'targeta';
-        localStorage.setItem('infoCard', JSON.stringify(infoCard));
-      }
+      //   infoCard.formaPago = 'targeta';
+      //   localStorage.setItem('infoCard', JSON.stringify(infoCard));
+      // }
 
+      this.orderService.setFormaPago('tarjeta');
       this.route.navigate(['/contacting/detail']);
     }
 

@@ -1,5 +1,7 @@
+import { OrdersComponent } from './../../pages/orders/orders.component';
 import { Component, Input, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
+import { OrderService } from '../../../services/order.service';
 
 interface infoCard {
   nombre: string;
@@ -21,25 +23,27 @@ export class CardComponent implements OnInit {
     estado: 'pendiente',
   };
 
-  constructor(private route: Router) {}
+  constructor(private route: Router, private orderService: OrderService) {}
   ngOnInit(): void {
     localStorage.clear();
   }
 
   contratar() {
-    console.log('entro');
     console.log(this.infoCard);
 
-    localStorage.setItem('infoCard', JSON.stringify(this.infoCard));
+    this.orderService.setNombre(this.infoCard.nombre);
+    this.orderService.setPrecio(this.infoCard.precio);
+    this.orderService.setEstado('pendiente');
 
     if (this.infoCard.formaPago === 'efectivo') {
-      this.infoCard.formaPago = 'efectivo';
-      console.log(this.infoCard);
+      // this.infoCard.formaPago = 'efectivo';
 
-      localStorage.setItem('infoCard', JSON.stringify(this.infoCard));
+      this.orderService.setFormaPago('efectivo');
+      // console.log(this.infoCard);
+
+      // localStorage.setItem('infoCard', JSON.stringify(this.infoCard));
       this.route.navigateByUrl('/contacting/detail');
     } else {
-      localStorage.setItem('infoCard', JSON.stringify(this.infoCard));
       this.route.navigateByUrl('/contacting/payment-methods');
     }
   }

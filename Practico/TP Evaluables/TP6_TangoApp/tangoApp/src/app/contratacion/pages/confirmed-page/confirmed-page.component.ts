@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
+import { OrderService } from '../../../services/order.service';
 interface InfoCard {
   nombre: string;
   precio: number;
@@ -17,27 +18,34 @@ export class ConfirmedPageComponent implements OnInit {
 
   rutaPDF = '../../../../assets/Luciano_Bertero_CV.pdf';
 
-  constructor(private router: Router) {}
+  infoCard: InfoCard | null = null;
+
+  constructor(private router: Router, private orderService: OrderService) {}
   ngOnInit(): void {
     setTimeout(() => {
       this.spinner = true;
     }, 2500);
+
+    this.infoCard = this.orderService?.getOrden();
+    console.log(this.infoCard);
   }
 
   confirmar() {
-    const infoCardString = localStorage.getItem('infoCard');
+    // const infoCardString = localStorage.getItem('infoCard');
 
-    // Verificar si hay información en el localStorage
-    if (infoCardString) {
-      // Parsear la información a un objeto
-      const infoCard: InfoCard = JSON.parse(infoCardString);
+    // // Verificar si hay información en el localStorage
+    // if (infoCardString) {
+    //   // Parsear la información a un objeto
+    //   const infoCard: InfoCard = JSON.parse(infoCardString);
 
-      // Actualizar el estado a 'confirmado'
-      infoCard.estado = 'confirmado';
+    //   // Actualizar el estado a 'confirmado'
+    //   infoCard.estado = 'confirmado';
 
-      // Volver a guardar la información actualizada en el localStorage
-      localStorage.setItem('infoCard', JSON.stringify(infoCard));
-    }
+    //   // Volver a guardar la información actualizada en el localStorage
+    //   localStorage.setItem('infoCard', JSON.stringify(infoCard));
+    // }
+
+    this.orderService.setEstado('confirmado');
 
     this.router.navigateByUrl('/contacting/orders');
   }

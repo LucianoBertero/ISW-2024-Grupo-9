@@ -26,8 +26,8 @@
           Ubicación entrega: calle falsa 123, CP:5000, Córdoba, Argentina
         </p>
         <p class="message">Entrega: 30/04/2024- 15.30hs.</p>
-        <p class="message">Chofer: JUAN PEREZ.</p>
-        <p class="message">Total: $504.50</p>
+        <p class="message">Chofer: {{ infoCard?.nombre }}.</p>
+        <p class="message">Total: ${{ infoCard?.precio }}</p>
       </div>
       <div class="actions">
         <button class="history" (click)="confirmar()" type="button">
