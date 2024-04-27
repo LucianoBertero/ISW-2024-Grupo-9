@@ -1,3 +1,17 @@
 body {
-  background-color: #ffe5b1a8;
+  background: rgb(205, 205, 205);
+  background: linear-gradient(
+    90deg,
+    rgba(205, 205, 205, 1) 35%,
+    rgba(223, 248, 235, 1) 100%
+  );
+}
+
+:root {
+  --color-blue: #011638;
+  --color-gray: #ebebeb;
+}
+
+button:hover {
+  background-color: #ffffff;
 }

@@ -1,5 +1,5 @@
 <nav class="navbar">
-  <a class="navbar-brand" href="#">
+  <a class="navbar-brand" href="#" (click)="toggleMenu($event)">
     <img
       src="../../../../assets/Xbox Menu.png"
       alt="Logo Izquierda"
@@ -7,7 +7,7 @@
     />
   </a>
 
-  <a class="navbar-brand navbar-brand-center" href="#">
+  <a class="navbar-brand navbar-brand-center" href="#" onclick="return false;">
     <img
       src="../../../../assets/TANGO APP 1.png"
       alt="Logo Centro"
@@ -16,3 +16,42 @@
   </a>
 </nav>
 <br />
+
+<div class="menu" #menu [ngStyle]="menuStyles" *ngIf="mostrarMenu">
+  <ul>
+    <li>
+      <a href="#"
+        ><img src="../../../../assets/house.png" alt="Foto 1" />INICIO</a
+      >
+    </li>
+    <li>
+      <a href="#"
+        ><img
+          src="../../../../assets/bookmark-check-fill.png"
+          alt="Foto 2"
+        />PEDIDOS</a
+      >
+    </li>
+    <li>
+      <a href="#"
+        ><img src="../../../../assets/star.png" alt="Foto 3" />FAVORITOS</a
+      >
+    </li>
+    <li>
+      <a href="#"
+        ><img
+          src="../../../../assets/person-circle.png"
+          alt="Foto 3"
+        />PERFIL</a
+      >
+    </li>
+    <li>
+      <a href="#"
+        ><img
+          src="../../../../assets/box-arrow-right.png"
+          alt="Foto 3"
+        />SALIR</a
+      >
+    </li>
+  </ul>
+</div>

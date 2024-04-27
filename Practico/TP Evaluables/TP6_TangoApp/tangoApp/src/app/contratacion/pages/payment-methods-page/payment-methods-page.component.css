@@ -3,7 +3,7 @@
 }
 
 h1 {
-  margin-top: 5rem;
+  margin-top: 1rem;
   font-size: 40px;
 }
 
@@ -31,4 +31,16 @@ button {
 
 .card-form {
   margin-top: 10px;
+}
+
+.btn-cancel:hover {
+  background-color: #b9193e69;
+  color: #f1e9e1;
+  border: 1px solid #000;
+}
+
+.btn-next:hover {
+  background-color: #979aa68e;
+  color: black;
+  border: 1px solid #000;
 }

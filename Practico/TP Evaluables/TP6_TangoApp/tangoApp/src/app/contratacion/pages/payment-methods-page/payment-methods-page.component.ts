@@ -28,6 +28,7 @@ export class PaymentMethodsPageComponent {
 
   goNext(): void {
     if (!this.isOptionSelected) {
+      alert('Por favor selecciona una opción de pago');
       return;
     }
 

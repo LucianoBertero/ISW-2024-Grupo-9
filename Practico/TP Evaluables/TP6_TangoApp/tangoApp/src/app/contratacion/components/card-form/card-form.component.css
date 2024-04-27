@@ -3,21 +3,22 @@
   width: 90%;
   margin: 0 auto;
   border-radius: 30px;
-  background-color: #e9d2a7;
+  background-color: white;
   border: none;
+  box-shadow: 12px 10px 4px rgba(0, 0, 0, 0.25);
 }
 
 input {
   width: 77%;
   height: 27px;
   margin-left: 3px;
-  background-color: #ebbc8a;
+  background-color: var(--color-gray);
   border: none;
 }
 
 input:hover {
-  background-color: rgba(235, 188, 138, 0.37);
-  border: 1px solid rgb(235, 188, 138);
+  background-color: var(--color-gray);
+  border: 1px solid var(--color-gray);
 }
 .form-group {
   margin-top: 9px;
@@ -35,17 +36,17 @@ h1 {
 }
 
 .date:hover {
-  background-color: #ebbc8a;
+  background-color: var(--color-gray);
 }
 
 select {
   width: 40%;
   height: 30px;
   margin-left: 3px;
-  background-color: #ebbc8a;
+  background-color: var(--color-gray);
   border: none;
 }
 
 select:hover {
-  background-color: #ebbc8a;
+  background-color: var(--color-gray);
 }

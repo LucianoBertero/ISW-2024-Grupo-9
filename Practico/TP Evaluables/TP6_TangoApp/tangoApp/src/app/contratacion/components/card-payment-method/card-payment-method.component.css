@@ -3,8 +3,9 @@
 
 .card {
   border-radius: 30px;
-  background-color: #e9d2a7;
+  background-color: white;
   border: none;
+  box-shadow: 12px 10px 4px rgba(0, 0, 0, 0.25);
 }
 
 label {
@@ -12,7 +13,7 @@ label {
 }
 
 input {
-  margin-top: 10px;
+  margin-top: 16px;
 }
 
 form {

@@ -26,3 +26,15 @@ button {
   color: black;
   border: 1px solid #000;
 }
+
+.btn-cancel:hover {
+  background-color: #b9193e69;
+  color: #f1e9e1;
+  border: 1px solid #000;
+}
+
+.btn-next:hover {
+  background-color: #979aa68e;
+  color: black;
+  border: 1px solid #000;
+}

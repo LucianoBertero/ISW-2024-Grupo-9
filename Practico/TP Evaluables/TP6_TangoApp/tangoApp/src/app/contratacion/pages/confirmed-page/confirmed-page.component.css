@@ -487,3 +487,11 @@
   top: 20%;
   left: 17%;
 }
+
+.history {
+  background-color: var(--color-blue);
+}
+
+input:hover {
+  scale: 1.1;
+}

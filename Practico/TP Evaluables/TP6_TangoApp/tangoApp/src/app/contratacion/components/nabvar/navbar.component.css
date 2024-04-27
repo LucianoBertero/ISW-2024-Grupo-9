@@ -1,10 +1,11 @@
 nav {
-  background-color: #e9d2a7;
+  background-color: var(--color-blue);
   height: 75px;
 }
 .img {
   width: 50px;
   height: 50px;
+
   padding-bottom: 10px;
 }
 
@@ -15,10 +16,65 @@ nav {
 .navbar-brand-center {
   position: absolute;
   left: 50%;
+  top: -3px;
   transform: translateX(-50%);
 }
 
 h4 {
   font-weight: 100;
   font-size: 20px;
+}
+
+.icon-menu:hover {
+  cursor: pointer;
+}
+.logo-izquierda:hover {
+  cursor: pointer;
+}
+.menu {
+  position: fixed;
+  z-index: 9999;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 80%; /* Ajusta el porcentaje según tu preferencia */
+  background-color: red; /* Color de fondo azul */
+  border: 1px solid white; /* Borde blanco */
+  padding: 10px; /* Espacio alrededor del contenido */
+  border-top-right-radius: 30px;
+  border-top-left-radius: 30px;
+}
+
+.menu ul {
+  list-style: none; /* Elimina los puntos de la lista */
+  padding: 0;
+  margin: 0;
+}
+
+.menu ul li {
+  margin-bottom: 10px; /* Espacio entre elementos de la lista */
+}
+
+.menu ul li a {
+  color: white; /* Color del texto blanco */
+  text-decoration: none; /* Sin subrayado en los enlaces */
+  display: flex; /* Mostrar los elementos en línea */
+  align-items: center; /* Centrar verticalmente */
+}
+
+.menu ul li a img {
+  width: 30px; /* Ajusta el ancho de la imagen según sea necesario */
+  margin-right: 10px; /* Espacio a la derecha de la imagen */
+}
+
+.menu a {
+  padding: 5px;
+  border-bottom: 1px solid white;
+  margin-top: 10px;
+  border-radius: 25px;
+}
+
+.menu a:hover {
+  background-color: rgba(255, 255, 255, 0.233);
+  color: black;
 }

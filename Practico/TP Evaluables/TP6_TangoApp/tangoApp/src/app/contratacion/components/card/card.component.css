@@ -1,8 +1,11 @@
 .card {
   height: 420px;
   width: 295px;
-  background-color: #e9d2a7;
+  background-color: white;
   border-radius: 40px;
+  opacity: 0.9;
+
+  box-shadow: 12px 10px 4px rgba(0, 0, 0, 0.25);
 }
 
 .card > img {
