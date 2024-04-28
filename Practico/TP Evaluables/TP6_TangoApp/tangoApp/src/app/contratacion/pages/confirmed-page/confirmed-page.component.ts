@@ -55,10 +55,12 @@ export class ConfirmedPageComponent implements OnInit, OnDestroy {
     this.orderService.setEstado('confirmado');
     this.subs.add(this.resend.send()
       .subscribe({
-        next: p => console.log('envail enviado: ', p),
+        next: p => {
+          console.log('envail enviado: ', p);
+          this.router.navigateByUrl('/contacting/orders');
+        },
         error: p => console.log('error al enviar el mail: ', p)
       }));
-    this.router.navigateByUrl('/contacting/orders');
   }
 
   descargarPDF() {
