@@ -10,6 +10,6 @@ export class ResendService {
   constructor(private http: HttpClient) {}
 
   send() {
-    // return this.http.get(`http://localhost:3000`);
+    return this.http.get(`http://localhost:3001`);
   }
 }
