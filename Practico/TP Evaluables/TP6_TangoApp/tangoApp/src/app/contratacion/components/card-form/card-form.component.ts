@@ -1,5 +1,11 @@
 import { Component, EventEmitter, Input, Output } from '@angular/core';
-import { AbstractControl, FormBuilder, FormGroup, ValidatorFn, Validators } from '@angular/forms';
+import {
+  AbstractControl,
+  FormBuilder,
+  FormGroup,
+  ValidatorFn,
+  Validators,
+} from '@angular/forms';
 
 @Component({
   selector: 'app-card-form',
@@ -16,24 +22,27 @@ export class CardFormComponent {
 
   //verificar los campos, que tengan todo bien
 
-  public myForm: FormGroup = this.fb.group({
-    titular: [
-      '',
-      [Validators.required, Validators.minLength(2), Validators.maxLength(50)],
-    ],
-    tipoDoc: ['', [Validators.required]],
-    nroTarjeta: [
-      '',
-      [
-        Validators.required,
-        Validators.pattern(' /^[0-9]{15,16}|(([0-9]{4}s){3}[0-9]{3,4})$/'),
-        ,
+  public myForm: FormGroup = this.fb.group(
+    {
+      titular: [
+        '',
+        [
+          Validators.required,
+          Validators.minLength(2),
+          Validators.maxLength(50),
+        ],
       ],
-    ],
-    pin: ['', [Validators.required, Validators.pattern('^[0-9]{3}$')]],
-    fechaExp: ['', [Validators.required]],
-    nroDoc: ['', [Validators.required]],
-  }, { validator: this.crossFieldValidator('tipoDoc', 'nroDoc') });
+      tipoDoc: ['', [Validators.required]],
+      nroTarjeta: [
+        '',
+        [Validators.required, Validators.pattern('^[0-9]{15,16}$'), ,],
+      ],
+      pin: ['', [Validators.required, Validators.pattern('^[0-9]{3}$')]],
+      fechaExp: ['', [Validators.required]],
+      nroDoc: ['', [Validators.required]],
+    },
+    { validator: this.crossFieldValidator('tipoDoc', 'nroDoc') }
+  );
 
   // , Validators.pattern('^[0-9]{4,15}$')
 
@@ -63,14 +72,18 @@ export class CardFormComponent {
 
   isValidField(field: string): boolean | null {
     return (
-      (this.myForm.controls[field].invalid && this.myForm.controls[field].touched) || (field === 'nroDoc' && this.myForm.errors !== null)
+      (this.myForm.controls[field].invalid &&
+        this.myForm.controls[field].touched) ||
+      (field === 'nroDoc' && this.myForm.errors !== null)
     );
   }
 
   getFieldError(field: string): string | null {
     if (!this.myForm.controls[field]) return null;
     let errors = this.myForm.controls[field].errors || {};
-    if (field === 'nroDoc') errors = { ...this.myForm.controls[field].errors, ...this.myForm.errors} || { };
+    if (field === 'nroDoc')
+      errors =
+        { ...this.myForm.controls[field].errors, ...this.myForm.errors } || {};
     for (const key of Object.keys(errors)) {
       switch (key) {
         case 'required':
@@ -107,30 +120,30 @@ export class CardFormComponent {
   }
 
   crossFieldValidator(field1: string, field2: string): ValidatorFn {
-  return (control: AbstractControl): { [key: string]: any } | null => {
-    const tipoDocValue = control.get(field1)?.value;
-    const nroDocValue = control.get(field2)?.value;
+    return (control: AbstractControl): { [key: string]: any } | null => {
+      const tipoDocValue = control.get(field1)?.value;
+      const nroDocValue = control.get(field2)?.value;
 
-    switch (tipoDocValue) {
-      case 'dni':
-        if (!/^\d{8}$/.test(nroDocValue)) {
-          return { 'dniError': true };
-        }
-        break;
-      case 'pasaporte':
-        if (!/^[A-Z]{2}\d{7}$/.test(nroDocValue)) {
-          return { 'pasaporteError': true };
-        }
-        break;
-      case 'partNac':
-        if (!/^\d{4}-\d{4}-\d{6}$/.test(nroDocValue)) {
-          return { 'partidaError': true };
-        }
-        break;
-      default:
-        break;
-    }
-    return null;
-  };
-}
+      switch (tipoDocValue) {
+        case 'dni':
+          if (!/^\d{8}$/.test(nroDocValue)) {
+            return { dniError: true };
+          }
+          break;
+        case 'pasaporte':
+          if (!/^[A-Z]{2}\d{7}$/.test(nroDocValue)) {
+            return { pasaporteError: true };
+          }
+          break;
+        case 'partNac':
+          if (!/^\d{4}-\d{4}-\d{6}$/.test(nroDocValue)) {
+            return { partidaError: true };
+          }
+          break;
+        default:
+          break;
+      }
+      return null;
+    };
+  }
 }
