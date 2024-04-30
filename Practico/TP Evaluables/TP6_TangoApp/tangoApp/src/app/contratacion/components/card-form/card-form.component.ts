@@ -126,7 +126,7 @@ export class CardFormComponent {
 
       switch (tipoDocValue) {
         case 'dni':
-          if (!/^\d{8}$/.test(nroDocValue)) {
+          if (!/^\d{7,8}$/.test(nroDocValue)) {
             return { dniError: true };
           }
           break;
