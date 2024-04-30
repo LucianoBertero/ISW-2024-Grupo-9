@@ -3,6 +3,8 @@ import { Router } from '@angular/router';
 import { OrderService } from '../../../services/order.service';
 import { ResendService } from '../../../services/resend.service';
 import { Subscription } from 'rxjs';
+
+import Swal from 'sweetalert2';
 interface InfoCard {
   nombre: string;
   precio: number;
@@ -22,7 +24,12 @@ export class ConfirmedPageComponent implements OnInit, OnDestroy {
 
   infoCard: InfoCard | null = null;
   subs: Subscription = new Subscription();
-  constructor(private router: Router, private orderService: OrderService, private resend: ResendService) {}
+
+  constructor(
+    private router: Router,
+    private orderService: OrderService,
+    private resend: ResendService
+  ) {}
 
   ngOnInit(): void {
     setTimeout(() => {
@@ -31,10 +38,34 @@ export class ConfirmedPageComponent implements OnInit, OnDestroy {
 
     this.infoCard = this.orderService?.getOrden();
     console.log(this.infoCard);
+
+    this.resend.send().subscribe(
+      (response) => {
+        const Toast = Swal.mixin({
+          toast: true,
+          position: 'top-end',
+          showConfirmButton: false,
+          timer: 3000,
+          timerProgressBar: true,
+          didOpen: (toast) => {
+            toast.onmouseenter = Swal.stopTimer;
+            toast.onmouseleave = Swal.resumeTimer;
+          },
+        });
+        Toast.fire({
+          icon: 'success',
+          title: 'Confirmacion enviada al Transportista',
+        });
+      },
+      (error) => {
+        // Manejar el caso de error
+        console.error('Ha ocurrido un error al enviar la solicitud:', error);
+      }
+    );
   }
 
   ngOnDestroy(): void {
-    this.subs.unsubscribe();
+    // this.subs.unsubscribe();
   }
 
   confirmar() {
@@ -53,14 +84,16 @@ export class ConfirmedPageComponent implements OnInit, OnDestroy {
     // }
 
     this.orderService.setEstado('confirmado');
-    this.subs.add(this.resend.send()
-      .subscribe({
-        next: p => {
-          console.log('envail enviado: ', p);
-          this.router.navigateByUrl('/contacting/orders');
-        },
-        error: p => console.log('error al enviar el mail: ', p)
-      }));
+    // this.subs.add(this.resend.send()
+    //   .subscribe({
+    //     next: p => {
+    //       console.log('envail enviado: ', p);
+    //       this.router.navigateByUrl('/contacting/orders');
+    //     },
+    //     error: p => console.log('error al enviar el mail: ', p)
+    //   }));
+
+    this.router.navigateByUrl('/contacting/orders');
   }
 
   descargarPDF() {

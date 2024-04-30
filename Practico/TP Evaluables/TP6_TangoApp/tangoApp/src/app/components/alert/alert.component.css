@@ -1,0 +1,16 @@
+.custom-alert {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: #4caf50;
+  color: white;
+  text-align: center;
+  padding: 10px;
+  z-index: 1000;
+  transition: top 0.5s ease;
+}
+
+.custom-alert.hidden {
+  top: -50px; /* Ocultar la alerta moviéndola fuera de la pantalla */
+}
