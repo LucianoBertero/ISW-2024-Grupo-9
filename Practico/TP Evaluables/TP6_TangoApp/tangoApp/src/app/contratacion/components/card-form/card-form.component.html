@@ -1,5 +1,5 @@
 <div class="d-flex flex-column card">
-  <h1>Datos Personales</h1>
+  <h1>Datos Personales / {{ type }}</h1>
 
   <form action=" " [formGroup]="myForm">
     <div class="form-group d-flex align-items-center">
@@ -40,7 +40,7 @@
         formControlName="nroDoc"
         type="number"
         class="form-control"
-        id="nDoc"
+        id="nroDoc"
       />
       <span *ngIf="isValidField('nroDoc')" class="form-text text-danger errors">
         {{ getFieldError("nroDoc") }}
@@ -51,9 +51,9 @@
       <label for="nTarjeta" class="">N Tarjeta:</label>
       <input
         formControlName="nroTarjeta"
-        type="number"
         class="form-control"
-        id="nTarjeta"
+        type="number"
+        id="nroTarjeta"
       />
       <span
         *ngIf="isValidField('nroTarjeta')"
@@ -68,7 +68,7 @@
         <label for="pin" class="">PIN:</label>
         <input
           formControlName="pin"
-          type="number"
+          type="text"
           class="form-control"
           id="pin"
         />
@@ -87,7 +87,10 @@
         id="fechaExp"
         min="{{ obtenerFechaActual() | date : 'yyyy-MM' }}"
       />
-      <span *ngIf="isValidField('fechaExp')" class="form-text text-danger">
+      <span
+        *ngIf="isValidField('fechaExp')"
+        class="form-text text-danger errors"
+      >
         {{ getFieldError("fechaExp") }}
       </span>
     </div>

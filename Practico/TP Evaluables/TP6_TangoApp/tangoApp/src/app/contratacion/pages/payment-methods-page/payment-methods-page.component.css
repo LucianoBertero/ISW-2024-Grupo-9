@@ -44,3 +44,15 @@ button {
   color: black;
   border: 1px solid #000;
 }
+.disable {
+  opacity: 0.5; /* Reduce la opacidad del botón */
+  cursor: not-allowed; /* Cambia el cursor a 'no permitido' */
+  pointer-events: none; /* Deshabilita eventos de puntero */
+}
+.btn {
+  font-size: 300px;
+}
+.eneable {
+  background-color: var(--color-blue);
+  color: white;
+}

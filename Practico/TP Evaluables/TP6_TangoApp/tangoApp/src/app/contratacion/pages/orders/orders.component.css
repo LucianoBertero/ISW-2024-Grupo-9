@@ -1,10 +1,12 @@
 .estado-container {
   display: flex;
   align-items: center;
+  margin-left: 40px;
 }
 
 .estado-button {
-  margin-left: 10px; /* Espacio entre el texto y el botón */
+  margin-left: 10px;
+  /* Espacio entre el texto y el botón */
 }
 
 .card {
@@ -21,7 +23,7 @@
 }
 
 .contenido {
-  margin-left: 10px;
+  text-align: center;
 }
 
 h1 {
@@ -32,8 +34,8 @@ h1 {
   background-color: #214e34;
   color: white;
   padding: 3px;
-  height: 35px;
-  width: 127px;
+  height: 30px;
+  width: 100px;
   border-radius: 20px;
 }
 
@@ -41,8 +43,8 @@ h1 {
   background-color: #011638;
   color: white;
   padding: 3px;
-  height: 35px;
-  width: 127px;
+  height: 30px;
+  width: 100px;
   border-radius: 20px;
 }
 

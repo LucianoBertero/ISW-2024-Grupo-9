@@ -17,16 +17,15 @@ export class OrdersComponent implements OnInit {
   infoCard: InfoCard | null = null;
   constructor(private router: Router, private orderService: OrderService) {}
   ngOnInit(): void {
-    // const infoCardString = localStorage.getItem('infoCard');
-    // if (infoCardString) {
-    //   this.infoCard = JSON.parse(infoCardString);
-    // }
-
     this.infoCard = this.orderService?.getOrden();
     console.log(this.infoCard);
   }
 
   redireccionar(): void {
+    if (this.infoCard?.estado === 'confirmado') {
+      return;
+    }
+
     // Redirigir a la página deseada
     console.log('redireccionando');
     this.router.navigateByUrl('/contacting/quote'); // Cambia '/ruta-deseada' por la ruta a la que deseas redirigir

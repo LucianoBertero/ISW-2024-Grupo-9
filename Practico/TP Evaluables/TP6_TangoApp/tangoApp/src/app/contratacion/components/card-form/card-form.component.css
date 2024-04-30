@@ -1,6 +1,6 @@
 .card {
   min-height: 300px;
-  min-width: 90%;
+  max-width: 85%;
   margin: 0 auto;
   border-radius: 30px;
   background-color: white;
@@ -49,4 +49,8 @@ select {
 
 select:hover {
   background-color: var(--color-gray);
+}
+
+.errors {
+  font-size: 8px;
 }

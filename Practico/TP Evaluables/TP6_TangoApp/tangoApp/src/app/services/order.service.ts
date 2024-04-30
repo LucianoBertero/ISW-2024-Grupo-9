@@ -6,13 +6,13 @@ import { infoCard } from '../contratacion/interface/card';
 })
 export class OrderService {
   private orders: infoCard = {
-    nombre: '',
-    precio: 0,
+    nombre: 'Luciano Bertero',
+    precio: 200,
     formaPago: '',
     estado: 'pendiente',
     fechaEntrega: '10/05/2024',
     fechaRetiro: '30/05/2024',
-    codigo: '',
+    codigo: '#45455r',
   };
 
   constructor() {}

@@ -12,12 +12,31 @@
             name="paymentOption"
             id="debitCreditOption"
             value="debitCredit"
-            (change)="onOptionSelected('debitCredit')"
+            (change)="onOptionSelected('debit')"
           />
           <label class="form-check-label" for="debitCreditOption"
-            >Débito / Crédito</label
+            >Débito
+          </label>
+          <img class="tarjeta" src="../../../../assets/Visa.png" alt="" />
+
+          <img src="../../../../assets/Vector.png" alt="" />
+        </div>
+      </div>
+
+      <div class="col-12">
+        <div class="form-check">
+          <input
+            class="form-check-input"
+            type="radio"
+            name="paymentOption"
+            id="debitCreditOption"
+            value="debitCredit"
+            (change)="onOptionSelected('credit')"
+          />
+          <label class="form-check-label" for="debitCreditOption"
+            >Credito</label
           >
-          <img src="../../../../assets/Visa.png" alt="" />
+          <img class="tarjeta" src="../../../../assets/Visa.png" alt="" />
 
           <img src="../../../../assets/Vector.png" alt="" />
         </div>

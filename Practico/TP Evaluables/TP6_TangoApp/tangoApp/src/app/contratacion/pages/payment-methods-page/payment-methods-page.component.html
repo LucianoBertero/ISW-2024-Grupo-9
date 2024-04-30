@@ -13,11 +13,31 @@
   ></app-card-payment-method>
 </div>
 
-<div *ngIf="isOption === 'debitCredit'" class="card-form">
-  <app-card-form (formValid)="handleFormValid($event)"></app-card-form>
+<div *ngIf="isOption === 'debit'" class="card-form">
+  <app-card-form
+    [type]="'Debito'"
+    (formValid)="handleFormValid($event)"
+  ></app-card-form>
+</div>
+<div *ngIf="isOption === 'credit'" class="card-form">
+  <app-card-form
+    [type]="'Credito'"
+    (formValid)="handleFormValid($event)"
+  ></app-card-form>
 </div>
 
 <div class="d-flex flex-row justify-content-center buttons">
-  <button class="btn-next" (click)="goNext()">SIGUIENTE</button>
+  <button
+    [ngClass]="
+      isOption === 'cash' ||
+      (formValid && (isOption === 'debit' || isOption === 'credit'))
+        ? 'eneable'
+        : 'disable'
+    "
+    class="btn-next"
+    (click)="goNext()"
+  >
+    SIGUIENTE
+  </button>
   <button class="btn-cancel" (click)="goBack()">CANCELAR</button>
 </div>

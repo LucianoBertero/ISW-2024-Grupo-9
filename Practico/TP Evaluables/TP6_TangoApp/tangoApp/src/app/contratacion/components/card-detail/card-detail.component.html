@@ -16,38 +16,38 @@
         <img src="../../../../assets/clock-circle_outline.png" alt="" /><span
           >Retiro:</span
         >
-        30/04/2024 - 15.30hs.
+        {{ infoCard?.fechaRetiro }}- 15.30hs.
       </p>
       <p>
         <img src="../../../../assets/clock-circle_fill.png" alt="" /><span
           >Entrega:</span
         >
-        30/04/2024 - 15.30hs.
+        {{ infoCard?.fechaEntrega }} - 15.30hs.
       </p>
       <p>
         <img
           src="../../../../assets/chofer icono 2.png"
           alt=""
           class="chofer"
-        /><span>{{ infoCard.nombre }}</span>
+        /><span>{{ infoCard?.nombre }}</span>
       </p>
     </div>
 
     <!-- targeta -->
-    <div *ngIf="infoCard.formaPago != 'efectivo'" class="pago">
-      <h4>Detalle del pago #29377aBE</h4>
+    <div *ngIf="infoCard?.formaPago != 'efectivo'" class="pago">
+      <h4>Detalle del pago {{ infoCard?.codigo }}</h4>
       <div class="pago-detalle">
-        <h6><span class="bold">Total:</span> ${{ infoCard.precio }}</h6>
+        <h6><span class="bold">Total:</span> ${{ infoCard?.precio }}</h6>
         <img src="../../../../assets/Tarjeta.png" alt="" class="img" />
         <span>Targeta</span>
       </div>
     </div>
 
     <!-- efectivo -->
-    <div *ngIf="infoCard.formaPago === 'efectivo'" class="pago">
-      <h4>Detalle del pago</h4>
+    <div *ngIf="infoCard?.formaPago === 'efectivo'" class="pago">
+      <h4>Detalle del pago: {{ infoCard?.codigo }}</h4>
       <div class="pago-detalle">
-        <h6><span class="bold">Total:</span> ${{ infoCard.precio }}</h6>
+        <h6><span class="bold">Total:</span> ${{ infoCard?.precio }}</h6>
         <img src="../../../../assets/Efectivo (1).png" alt="" class="img" />
         <span>Efectivo</span>
       </div>

@@ -1,4 +1,4 @@
-import { Component, EventEmitter, Output } from '@angular/core';
+import { Component, EventEmitter, Input, Output } from '@angular/core';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 
 @Component({
@@ -7,32 +7,48 @@ import { FormBuilder, FormGroup, Validators } from '@angular/forms';
   styleUrl: './card-form.component.css',
 })
 export class CardFormComponent {
-  @Output() formValid: EventEmitter<boolean> = new EventEmitter<boolean>();
+  @Output() formValid: EventEmitter<{
+    validForm: boolean;
+    validTarjet: boolean;
+  }> = new EventEmitter<{ validForm: boolean; validTarjet: boolean }>();
+
+  @Input() type: string = 'credit';
 
   //verificar los campos, que tengan todo bien
 
   public myForm: FormGroup = this.fb.group({
     titular: [
-      '',
-      [Validators.required, Validators.minLength(4), Validators.maxLength(50)],
+      'asdasdas',
+      [Validators.required, Validators.minLength(2), Validators.maxLength(50)],
     ],
     tipoDoc: ['', [Validators.required]],
     nroTarjeta: [
-      '',
-      [Validators.required, Validators.minLength(14), Validators.maxLength(16)],
+      '111111111111111',
+      [Validators.required, Validators.pattern('^[0-9]{15}$'), ,],
     ],
-    pin: [
-      '',
-      [Validators.required, Validators.minLength(2), Validators.maxLength(4)],
-    ],
+    pin: ['123', [Validators.required, Validators.pattern('^[0-9]{3}$')]],
     fechaExp: ['', [Validators.required]],
-    nroDoc: ['', [Validators.required, Validators.minLength(8)]],
+    nroDoc: ['', [Validators.required, Validators.pattern('^[0-9]{4,15}$')]],
   });
 
   constructor(private fb: FormBuilder) {
     this.myForm.valueChanges.subscribe(() => {
-      // Emitir un evento cuando el formulario esté en un estado válido
-      this.formValid.emit(this.myForm.valid);
+      console.log(this.myForm.controls['nroTarjeta'].value);
+
+      if (
+        this.myForm.controls['nroTarjeta'].value === 111111111111111 &&
+        this.myForm.valid
+      ) {
+        this.formValid.emit({
+          validForm: this.myForm.valid,
+          validTarjet: true,
+        });
+      } else {
+        this.formValid.emit({
+          validForm: this.myForm.valid,
+          validTarjet: false,
+        });
+      }
     });
   }
 
@@ -42,7 +58,6 @@ export class CardFormComponent {
   }
 
   isValidField(field: string): boolean | null {
-    console.log('entro');
     return (
       this.myForm.controls[field].errors && this.myForm.controls[field].touched
     );
@@ -55,6 +70,7 @@ export class CardFormComponent {
     const errors = this.myForm.controls[field].errors || {};
 
     for (const key of Object.keys(errors)) {
+      console.log(key);
       switch (key) {
         case 'required':
           return 'Campo requerido';
@@ -63,7 +79,19 @@ export class CardFormComponent {
           return `Mínimo ${errors['minlength'].requiredLength} caracters.`;
 
         case 'maxlength':
+          console.log('entro a maxlenght');
           return `Maximo ${errors['maxlength'].requiredLength} caracters.`;
+
+        case 'min':
+          console.log('entro a maxlenght');
+          return `Minimo ${errors['min'].requiredLength} caracters.`;
+
+        case 'max':
+          console.log('entro a maxlenght');
+          return `Maximo ${errors['max'].requiredLength} caracters.`;
+        case 'pattern':
+          console.log('entro a maxlenght');
+          return `Formato incorrecto`;
       }
     }
 

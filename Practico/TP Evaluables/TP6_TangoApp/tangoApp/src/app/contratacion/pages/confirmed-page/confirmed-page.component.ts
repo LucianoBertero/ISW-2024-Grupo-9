@@ -28,7 +28,7 @@ export class ConfirmedPageComponent implements OnInit, OnDestroy {
   constructor(
     private router: Router,
     private orderService: OrderService,
-    private resend: ResendService
+    public resend: ResendService
   ) {}
 
   ngOnInit(): void {
@@ -39,29 +39,69 @@ export class ConfirmedPageComponent implements OnInit, OnDestroy {
     this.infoCard = this.orderService?.getOrden();
     console.log(this.infoCard);
 
-    this.resend.send().subscribe(
-      (response) => {
-        const Toast = Swal.mixin({
-          toast: true,
-          position: 'top-end',
-          showConfirmButton: false,
-          timer: 3000,
-          timerProgressBar: true,
-          didOpen: (toast) => {
-            toast.onmouseenter = Swal.stopTimer;
-            toast.onmouseleave = Swal.resumeTimer;
-          },
+    if (this.resend.errorTarget) {
+      const swalWithBootstrapButtons = Swal.mixin({
+        customClass: {
+          confirmButton: 'btn btn-success',
+          cancelButton: 'btn btn-danger',
+        },
+        buttonsStyling: false,
+      });
+
+      swalWithBootstrapButtons
+        .fire({
+          title: 'Error al procesar el pago',
+          text: 'Al parecer tu tarjeta ha sido rechazada, ¿deseas intentar con otra tarjeta?',
+          icon: 'warning',
+          showCancelButton: true,
+          confirmButtonText: 'Cancelar ',
+          cancelButtonText: 'Elegir otro medio de pago',
+          reverseButtons: true,
+        })
+        .then((result) => {
+          if (result.isConfirmed) {
+            this.resend.errorTarget = false;
+            this.router.navigateByUrl('/contacting/orders');
+            swalWithBootstrapButtons.fire({
+              title: 'Has cancelado',
+              text: '',
+              icon: 'success',
+            });
+          } else if (result.dismiss === Swal.DismissReason.cancel) {
+            this.resend.errorTarget = false;
+            this.router.navigateByUrl('/contacting/payment-methods');
+            swalWithBootstrapButtons.fire({
+              title: 'Elegir otro medio de pago',
+              text: 'Selecciona otro método de pago',
+              icon: 'info',
+            });
+          }
         });
-        Toast.fire({
-          icon: 'success',
-          title: 'Confirmacion enviada al Transportista',
-        });
-      },
-      (error) => {
-        // Manejar el caso de error
-        console.error('Ha ocurrido un error al enviar la solicitud:', error);
-      }
-    );
+    } else {
+      this.resend.send().subscribe(
+        (response) => {
+          const Toast = Swal.mixin({
+            toast: true,
+            position: 'top-end',
+            showConfirmButton: false,
+            timer: 3000,
+            timerProgressBar: true,
+            didOpen: (toast) => {
+              toast.onmouseenter = Swal.stopTimer;
+              toast.onmouseleave = Swal.resumeTimer;
+            },
+          });
+          Toast.fire({
+            icon: 'success',
+            title: 'Confirmacion enviada al Transportista',
+          });
+        },
+        (error) => {
+          // Manejar el caso de error
+          console.error('Ha ocurrido un error al enviar la solicitud:', error);
+        }
+      );
+    }
   }
 
   ngOnDestroy(): void {

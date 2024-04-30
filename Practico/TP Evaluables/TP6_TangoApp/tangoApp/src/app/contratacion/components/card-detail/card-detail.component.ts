@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { OrderService } from '../../../services/order.service';
+import { infoCard } from '../../interface/card';
 
 @Component({
   selector: 'app-card-detail',
@@ -7,7 +8,7 @@ import { OrderService } from '../../../services/order.service';
   styleUrl: './card-detail.component.css',
 })
 export class CardDetailComponent implements OnInit {
-  infoCard: any;
+  infoCard?: infoCard;
   constructor(private orderService: OrderService) {}
 
   ngOnInit(): void {
