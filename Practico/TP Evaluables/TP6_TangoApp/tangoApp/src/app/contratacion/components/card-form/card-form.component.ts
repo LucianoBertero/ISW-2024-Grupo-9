@@ -18,15 +18,19 @@ export class CardFormComponent {
 
   public myForm: FormGroup = this.fb.group({
     titular: [
-      'asdasdas',
+      '',
       [Validators.required, Validators.minLength(2), Validators.maxLength(50)],
     ],
     tipoDoc: ['', [Validators.required]],
     nroTarjeta: [
-      '111111111111111',
-      [Validators.required, Validators.pattern('^[0-9]{15}$'), ,],
+      '',
+      [
+        Validators.required,
+        Validators.pattern(' /^[0-9]{15,16}|(([0-9]{4}s){3}[0-9]{3,4})$/'),
+        ,
+      ],
     ],
-    pin: ['123', [Validators.required, Validators.pattern('^[0-9]{3}$')]],
+    pin: ['', [Validators.required, Validators.pattern('^[0-9]{3}$')]],
     fechaExp: ['', [Validators.required]],
     nroDoc: ['', [Validators.required]],
   });
@@ -138,7 +142,6 @@ export class CardFormComponent {
           return `Formato incorrecto`;
 
         case 'custom':
-          console.log('entro a custom');
           return `Error de Formato ${errors['custom']} .`;
       }
     }

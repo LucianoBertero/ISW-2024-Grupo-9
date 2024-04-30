@@ -56,4 +56,8 @@ export class OrderService {
   getCodigo() {
     return this.orders.codigo;
   }
+
+  getNombre() {
+    return this.orders.nombre;
+  }
 }

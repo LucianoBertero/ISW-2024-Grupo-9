@@ -1,5 +1,7 @@
 import { HttpClient, HttpHeaders } from '@angular/common/http';
 import { Injectable } from '@angular/core';
+import { OrderService } from './order.service';
+import { OrdersComponent } from '../contratacion/pages/orders/orders.component';
 
 @Injectable({
   providedIn: 'root',
@@ -7,9 +9,14 @@ import { Injectable } from '@angular/core';
 export class ResendService {
   errorTarget: boolean = false;
 
-  constructor(private http: HttpClient) {}
+  constructor(private http: HttpClient, private orderService: OrderService) {}
 
   send() {
-    return this.http.get(`http://localhost:3001`);
+    const nombrePersona = this.orderService.getNombre();
+    const nombrePaquete = this.orderService.getCodigo();
+    return this.http.post(`http://localhost:30001`, {
+      nombrePaquete,
+      nombrePersona,
+    });
   }
 }
