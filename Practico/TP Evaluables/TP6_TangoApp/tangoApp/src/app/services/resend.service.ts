@@ -14,9 +14,13 @@ export class ResendService {
   send() {
     const nombrePersona = this.orderService.getNombre();
     const nombrePaquete = this.orderService.getCodigo();
-    return this.http.post(`http://localhost:30001`, {
+    const formaPago = this.orderService.getFormaPago();
+    console.log(formaPago);
+
+    return this.http.post(`http://localhost:3000`, {
       nombrePaquete,
       nombrePersona,
+      formaPago,
     });
   }
 }

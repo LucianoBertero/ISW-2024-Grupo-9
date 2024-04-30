@@ -17,7 +17,11 @@ const resend = new Resend("re_XXyZfSEE_G3YAJrYDakaZXKMYBMQKe4LP");
 //rutas
 
 app.post("/", async (req, res) => {
-  const { nombrePaquete, nombrePersona } = req.body;
+  const { nombrePaquete, nombrePersona, formaPago } = req.body;
+
+  const formaPagoMayuscula =
+    formaPago.charAt(0).toUpperCase() + formaPago.slice(1);
+
   const { data, error } = await resend.emails.send({
     from: "TangoApp <onboarding@resend.dev>",
     to: ["luchobertero@gmail.com"],
@@ -40,7 +44,8 @@ app.post("/", async (req, res) => {
     <td style="padding: 20px; text-align: center;">
     <h2 style="color: #333333;">¡Confirmación de Tansporte!</h2>
     <p style="color: #666666; font-size: 16px;">Estimado Transportista ${nombrePersona},</p>
-    <p style="color: #666666; font-size: 16px;">Nos complace informarte que tu pedido de transporte <strong>${nombrePaquete}</strong> ha sido confirmado correctamente.</p>
+    <p style="color: #666666; font-size: 16px;">Nos complace informarle que su cotizacion numero <strong>${nombrePaquete}</strong> ha sido confirmado correctamente.</p>
+    <p style="color: #666666; font-size: 16px;">Con el medio de pago ${formaPagoMayuscula}</p>
     <p style="color: #666666; font-size: 16px;">Para ver más detalles sobre el , por favor haz clic en el botón de abajo.</p>
     </td>
     </tr>

@@ -28,13 +28,11 @@
         <p class="message">Entrega: 30/04/2024- 15.30hs.</p>
         <p class="message">Chofer: {{ infoCard?.nombre }}.</p>
         <p class="message">Total: ${{ infoCard?.precio }}</p>
+        <p class="message">Numero de comprobante de pago: #31241</p>
       </div>
       <div class="actions">
         <button class="history" (click)="confirmar()" type="button">
           Volver Inicio
-        </button>
-        <button class="track" (click)="descargarPDF()" type="button">
-          Descargar Comprobante
         </button>
       </div>
     </div>

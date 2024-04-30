@@ -60,4 +60,8 @@ export class OrderService {
   getNombre() {
     return this.orders.nombre;
   }
+
+  getFormaPago() {
+    return this.orders.formaPago;
+  }
 }
