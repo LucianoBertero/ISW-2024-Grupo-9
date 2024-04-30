@@ -1,5 +1,5 @@
 import { Component, EventEmitter, Input, Output } from '@angular/core';
-import { FormBuilder, FormGroup, Validators } from '@angular/forms';
+import { AbstractControl, FormBuilder, FormGroup, ValidatorFn, Validators } from '@angular/forms';
 
 @Component({
   selector: 'app-card-form',
@@ -33,7 +33,7 @@ export class CardFormComponent {
     pin: ['', [Validators.required, Validators.pattern('^[0-9]{3}$')]],
     fechaExp: ['', [Validators.required]],
     nroDoc: ['', [Validators.required]],
-  });
+  }, { validator: this.crossFieldValidator('tipoDoc', 'nroDoc') });
 
   // , Validators.pattern('^[0-9]{4,15}$')
 
@@ -61,64 +61,17 @@ export class CardFormComponent {
     return hoy.toISOString().split('T')[0]; // Formato: 'YYYY-MM-DD'
   }
 
-  isValidFieldNroDoc(field: string): boolean | null {
-    return (
-      this.myForm.controls[field].errors && this.myForm.controls[field].touched
-    );
-  }
-
   isValidField(field: string): boolean | null {
     return (
-      this.myForm.controls[field].errors && this.myForm.controls[field].touched
+      (this.myForm.controls[field].invalid && this.myForm.controls[field].touched) || (field === 'nroDoc' && this.myForm.errors !== null)
     );
   }
 
   getFieldError(field: string): string | null {
-    console.log('entro tambien');
     if (!this.myForm.controls[field]) return null;
-
-    const errors = this.myForm.controls[field].errors || {};
-
-    let customError: string | null = null; // Variable para almacenar el error personalizado
-    console.log(field);
-    if (field === 'nroDoc') {
-      console.log('entra');
-      const tipoDocValue = this.myForm.controls['tipoDoc'].value;
-      const nroDocValue = this.myForm.controls[field].value;
-
-      switch (tipoDocValue) {
-        case 'dni':
-          console.log('entro a DNI');
-          if (!/^\d{8}$/.test(nroDocValue)) {
-            customError = 'El DNI debe tener 8 dígitos.';
-          }
-          break;
-        case 'pasaporte':
-          if (!/^[A-Z]{2}\d{7}$/.test(nroDocValue)) {
-            customError =
-              'El pasaporte debe tener 2 letras seguidas de 7 dígitos.';
-          }
-          break;
-        case 'partNac':
-          if (!/^\d{4}-\d{4}-\d{6}$/.test(nroDocValue)) {
-            customError =
-              'El número de partida de nacimiento debe tener el formato YYYY-MM-DD-######.';
-          }
-          break;
-        case 'otro':
-          // Aquí puedes agregar la expresión regular y mensaje de error para otro tipo de documento
-          break;
-        default:
-          break;
-      }
-
-      if (customError) {
-        this.myForm.controls['nroDoc'].setErrors({ custom: customError });
-      }
-    }
-
+    let errors = this.myForm.controls[field].errors || {};
+    if (field === 'nroDoc') errors = { ...this.myForm.controls[field].errors, ...this.myForm.errors} || { };
     for (const key of Object.keys(errors)) {
-      console.log(key);
       switch (key) {
         case 'required':
           return 'Campo requerido';
@@ -127,19 +80,23 @@ export class CardFormComponent {
           return `Mínimo ${errors['minlength'].requiredLength} caracters.`;
 
         case 'maxlength':
-          console.log('entro a maxlenght');
           return `Maximo ${errors['maxlength'].requiredLength} caracters.`;
 
         case 'min':
-          console.log('entro a maxlenght');
           return `Minimo ${errors['min'].requiredLength} caracters.`;
 
         case 'max':
-          console.log('entro a maxlenght');
           return `Maximo ${errors['max'].requiredLength} caracters.`;
         case 'pattern':
-          console.log('entro a maxlenght');
           return `Formato incorrecto`;
+        case 'dniError':
+          return `El DNI debe tener 8 dígitos.`;
+
+        case 'pasaporteError':
+          return `El pasaporte debe tener 2 letras seguidas de 7 dígitos.`;
+
+        case 'partidaError':
+          return `El número de partida de nacimiento debe tener el formato YYYY-MM-DD-######.`;
 
         case 'custom':
           return `Error de Formato ${errors['custom']} .`;
@@ -148,4 +105,32 @@ export class CardFormComponent {
 
     return null;
   }
+
+  crossFieldValidator(field1: string, field2: string): ValidatorFn {
+  return (control: AbstractControl): { [key: string]: any } | null => {
+    const tipoDocValue = control.get(field1)?.value;
+    const nroDocValue = control.get(field2)?.value;
+
+    switch (tipoDocValue) {
+      case 'dni':
+        if (!/^\d{8}$/.test(nroDocValue)) {
+          return { 'dniError': true };
+        }
+        break;
+      case 'pasaporte':
+        if (!/^[A-Z]{2}\d{7}$/.test(nroDocValue)) {
+          return { 'pasaporteError': true };
+        }
+        break;
+      case 'partNac':
+        if (!/^\d{4}-\d{4}-\d{6}$/.test(nroDocValue)) {
+          return { 'partidaError': true };
+        }
+        break;
+      default:
+        break;
+    }
+    return null;
+  };
+}
 }
