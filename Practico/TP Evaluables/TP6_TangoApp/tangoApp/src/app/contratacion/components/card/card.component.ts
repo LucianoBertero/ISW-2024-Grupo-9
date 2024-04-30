@@ -2,13 +2,7 @@ import { OrdersComponent } from './../../pages/orders/orders.component';
 import { Component, Input, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
 import { OrderService } from '../../../services/order.service';
-
-interface infoCard {
-  nombre: string;
-  precio: number;
-  formaPago: string;
-  estado: string;
-}
+import { infoCard } from '../../interface/card';
 
 @Component({
   selector: 'app-card',
@@ -21,6 +15,9 @@ export class CardComponent implements OnInit {
     precio: 0,
     formaPago: '',
     estado: 'pendiente',
+    fechaEntrega: '10/05/2024',
+    fechaRetiro: '30/05/2024',
+    codigo: '',
   };
 
   constructor(private route: Router, private orderService: OrderService) {}
@@ -34,6 +31,10 @@ export class CardComponent implements OnInit {
     this.orderService.setNombre(this.infoCard.nombre);
     this.orderService.setPrecio(this.infoCard.precio);
     this.orderService.setEstado('pendiente');
+    this.orderService.setFechaEntrega(this.infoCard.fechaEntrega);
+    this.orderService.setFechaRetiro(this.infoCard.fechaRetiro);
+    this.orderService.setNombre(this.infoCard.nombre);
+    this.orderService.setCodigo(this.infoCard.codigo);
 
     if (this.infoCard.formaPago === 'efectivo') {
       // this.infoCard.formaPago = 'efectivo';

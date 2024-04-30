@@ -1,10 +1,5 @@
 import { Injectable } from '@angular/core';
-interface infoCard {
-  nombre: string;
-  precio: number;
-  formaPago: string;
-  estado: string;
-}
+import { infoCard } from '../contratacion/interface/card';
 
 @Injectable({
   providedIn: 'root',
@@ -15,6 +10,9 @@ export class OrderService {
     precio: 0,
     formaPago: '',
     estado: 'pendiente',
+    fechaEntrega: '10/05/2024',
+    fechaRetiro: '30/05/2024',
+    codigo: '',
   };
 
   constructor() {}
@@ -36,5 +34,26 @@ export class OrderService {
 
   getOrden() {
     return this.orders;
+  }
+
+  setFechaEntrega(fechaEntrega: string) {
+    this.orders.fechaEntrega = fechaEntrega;
+  }
+  setFechaRetiro(fechaRetiro: string) {
+    this.orders.fechaRetiro = fechaRetiro;
+  }
+
+  getFechaEntrega() {
+    return this.orders.fechaEntrega;
+  }
+  getFechaRetiro() {
+    return this.orders.fechaRetiro;
+  }
+
+  setCodigo(codigo: string) {
+    this.orders.codigo = codigo;
+  }
+  getCodigo() {
+    return this.orders.codigo;
   }
 }
