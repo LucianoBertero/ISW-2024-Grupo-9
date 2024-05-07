@@ -1,0 +1,45 @@
+FILTRAR GASTOS
+
+YO COMO ejecutor de gastos QUIERO filtrar gastos PARA tener informacion sobre determinados gastos realizados de acuerdo a varios criterios de busqueda
+
+Criterios de aceptacion
+
+- Debe mostrar todos los gastos del mes por defecto, ordenado desde el gasto mas actual
+
+- Puede mostrar los campos filtrando por periodo de gasto, tipo de gasto, responsable de gasto y por rango de montos
+
+- Puede modificar el criterio de ordenamiento(porque criterios se ordena??)
+
+- Debe mostrar el total de gastos segun el filtro aplicado
+
+
+Pruebas de aceptacion
+
+- Prueba mostrar los datos sin ningun filtro (PASA)
+
+- Prueba mostrar los gastos colocando el filtro de tipo de gasto (PASA)
+
+- Prueba filtrar por responsable de gasto y no muestra el total (FALLA)
+
+- Prueba mostrar los gastos del mes por defecto y los devuelve desordenados (FALLA)
+
+
+
+REGISTRAR RESPOSABLE DE GASTO
+
+YO COMO Ejecutor de gastos QUIERO registrar un responsable de gasto PARA identificar quien realizado el gasto
+
+CRITERIOS DE ACEPTACION
+
+Debe completar los campos nombre y apellido
+
+No debe permitir registrar si el responsable del gasto existe
+
+PRUEBAS DE ACEPTACION
+
+Prueba resgistrar responsable de gasto con nombre y apellido (PASA)
+
+Prueba registrar responsable de gasto solo con nombre (FALLA)
+
+Prueba registrar responsable de gasto ya existente (FALLA)
+
