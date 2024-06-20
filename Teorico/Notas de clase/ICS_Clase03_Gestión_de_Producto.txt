@@ -1,0 +1,134 @@
+Clase 19/04/2024: Gestión de Producto  de Software.
+¿Por qué creamos productos?
+Un producto de Software es un artefacto que se construye para satisfacer una necesidad específica en base a ciertos requerimientos.
+Cuando creamos un producto debemos enfocarnos en aquello que es de valor para el cliente, sabiendo que el 7% de las características del software son siempre usadas. Esto implica, que la mayor parte del valor agregado está
+concentrado en ese 7%. Alrededor del 80% de las características del software que se desarrolla no se utilizan. El desafío está en encontrar ese 7%.
+Las organizaciones que usan el software se enfocan en la parte superficial del software, aquello que consideran
+significativo y placentero. Usualmente no se fijan si el producto es funcional o confiable. Esa debe ser la base, pero el producto debe proveer una experiencia que cumpla con todas las expectativas del usuario.
+
+
+En resumen, nosotros creamos productos para:
+* Satisfacer a los clientes.
+* Tener muchos usuarios logueados. Una métrica que se utiliza para saber que tan aceptado es un producto, es por la cantidad de usuarios que lo instalan.
+* Para obtener mucho dinero.
+* Realizar una gran visión, cambiar el mundo.
+Evolución de los productos de software.
+  
+
+Cuando vamos a desarrollar un software la mayoría de las veces se empieza a construir un producto sobre la base de lo funcional, que haga lo que tiene que hacer (las tareas que debe realizar), luego si se quiere avanzar más, el software debe ser confiable donde los usuarios no corran peligro usando el producto y los resultados que este producto me da yo pueda depender de ellos sin ningún problema.
+Luego, la usabilidad tiene que ver con aspectos de la disciplina UX/UI, donde el usuario podrá lograr sus objetivos productivamente usando este producto, estando a gusto con su uso. Tiene que ser productivo, no es lo mismo que la utilidad.
+Por ejemplo, si tarda 12 horas en realizar una operación donde el anterior tarda 4 horas no es productivo para mí y no mejora la calidad de vida al usuario.
+Existe una línea en la pirámide que separa la usabilidad de la conveniencia. La mayoría de los productos no se ubican por encima de esta línea, debido a que resulta complejo que un software sea conveniente para el desempeño de tareas de ciertas personas (es decir, que el producto nos haga sentir que lo necesitamos porque nos produce un cambio, una facilidad para cumplir con un objetivo), y que estas no sean “esclavos” del software, limitándose a cumplir con las características de funcional, confiable y/o usable. Placentero y significativo para todo el mundo, algo que nos cambie la forma de usar algo o de vivir.
+Planificación del producto ágil.
+En las metodologías ágiles, se tiene una visión del producto materializado en el Product backlog, que contiene todas las características de la funcionalidad que requiere el producto que han sido identificadas hasta el momento. Esta visión se descompone en releases, las cuales son las entregas frecuentes que se hará al cliente. Cada release se construye a partir de sucesivas iteraciones.
+Valor vs desperdicio.
+La productividad de un Startup no puede medirse en términos de cuánto se construye cada día, por el contrario, se debe medir en términos de construir lo correcto cada día y lo correcto es aquello que agrega valor. Si no construimos valor, entonces estamos invirtiendo esfuerzo en desperdicio.
+Mínimo Producto Viable.
+Es un concepto de Lean Startup que enfatiza el impacto del aprendizaje en el desarrollo de nuevos productos. Se
+define como la versión de un nuevo producto que permite a un equipo recopilar la cantidad máxima de
+aprendizaje validado sobre los clientes con el menor esfuerzo.
+A este concepto le subyace la idea de que ver lo que la gente realmente hace con el producto es mucho más confiable que preguntarle a la gente qué harían.
+Una premisa clave detrás de la idea del MVP es que usted produce un producto real que puede ofrecer a los clientes y observar su comportamiento real con el producto o servicio.
+
+
+Entre sus características se destaca que:
+1. Tiene el valor suficiente para que las personas estén dispuestas a usarlo o comprarlo.
+2. Demuestra beneficios a futuro para retener a los usuarios.
+3. Proporciona un ciclo de retroalimentación para guiar el desarrollo a futuro.
+
+
+Los errores comunes son:
+1. Confundirlo con MMF o MMP. La MMF (Característica Comerciable Mínima) o el MMP (Producto Comerciable Mínimo) a diferencia del MVP se enfocan en ganar, en cambio un MVP se enfoca en el aprendizaje.
+2. Enfatizar la parte de mínima y dejar de lado la parte de viable. Si el producto no tiene la calidad suficiente, no será posible obtener la retroalimentación del cliente.
+3. Hacer del MVP un producto final, es decir, entregar lo que consideran un MVP, y luego no hacer más cambios a ese producto, independientemente de los comentarios que reciban al respecto.
+
+
+Un MVP permite validar diferentes hipótesis:
+1. Hipótesis del valor: prueba si el producto realmente está entregando valor a los clientes después de que comienzan a usarlo (ver si el producto es realmente el producto correcto). Una métrica de prueba: tasa de retención (más de la mitad de los usuarios volvieron a utilizar el sistema todos los días, solo un 25% dejó de usarlo).
+2. Hipótesis de crecimiento: prueba cómo nuevos clientes descubrirán el Producto (ver si más personas desean usar el producto). Una métrica de prueba: tasa de referencia o Net Promoter Score (NPS) (Se corrió la voz acerca de lo que era, no fue siquiera necesario el uso de políticas de marketing o publicidad).
+Preparar un MVP.
+  
+
+1. Encontrar un nicho de mercado.
+2. Roadmap: definición de muy alto nivel de qué características del producto se podrían tener a cierta altura del año. Esto sirve para los inversores.
+3. Investigar la competencia: ver hasta dónde llega, qué hace, qué fortalezas tiene.
+4. Pre-vender el MVP.
+5. Testear las distintas suposiciones.
+6. Asegurarse de que el MVP esté resolviendo el problema correcto.
+7. Enfocarse solo en las funcionalidades principales.
+Build - Experiment - Learn Feedback Loop.
+  
+
+La filosofía Lean UX es un proceso iterativo, basado en el Build-Measure-Learn, es decir: construir, medir, aprender.
+Se trata de sacar conclusiones basándonos en los usuarios reales que usan (o que van a usar) el producto/servicio. Si desde el primer momento el usuario no «aprueba» el producto, es más barato pivotar y volver a iniciar el proceso. Es decir, la metodología Lean UX nos permite «equivocarnos» en estadios muy precoces, cuando aún es muy barato reconducir la idea.
+* El éxito no es entregar un producto, el éxito se trata de entregar un producto (o característica de producto) que el cliente usará.
+* La forma de hacerlo es alinear los esfuerzos continuamente hacia las necesidades reales de los clientes.
+* The Build-Experiment-Learn feedback loop permite descubrir las necesidades del cliente y alinearlas metodológicamente.
+* La fase de construir MVP:
+* Ingresar lo más rápido posible un producto mínimo viable.
+* Un MVP varía en complejidad desde pruebas de humo extremadamente simples (no hay productos construidos aún) hasta prototipos tempranos (se ha construido un producto con características faltantes o problemas, vendrían a ser como las versiones beta de las aplicaciones).
+Explicación MVP, MVF, MMF con el dinosaurio Lean/Agile.
+1. Comprender que un producto nuevo tiene una hipótesis de valor único: el Producto será único (UVP).
+  
+
+2.  El siguiente paso es crear un producto mínimo viable (MVP) para probar su hipótesis. Esto se centra en su propuesta de valor única, pero normalmente también proporciona un poco de funciones de "Tablestakes" sólo para asegurarse de que sea "viable" como producto.
+  
+
+3. Tu MVP también es una hipótesis. Podría ser lo suficientemente bueno para encontrar un mercado o no. Se muestra el caso en el que cada cliente potencial con el que interactúas te dice "Esto es genial, pero para poder usarlo necesito X" y X es diferente para cada cliente / usuario. Esto muestra que aún no se encuentra un mercado para el producto.
+          
+4. Si por el contrario ves cada vez más respuestas apuntando al MISMO X entonces tiene sentido revisar la hipótesis de Cliente/Problema/Solución. Básicamente, estás ejecutando un pivot. Está construyendo MVP2 centrado en la nueva hipótesis basada en el aprendizaje reciente de Desarrollo de clientes generado por el anterior MVP.
+          
+5. Supongamos que MVP2 es exitoso y está viendo una atracción real de los primeros usuarios. Si desea aumentar el crecimiento y busca una penetración más profunda de sus primeros usuarios además de atraer nuevos clientes, algunos de ellos más allá de la multitud de usuarios pioneros. En función del feedback recopilado y la investigación de su gestión de productos, tiene un par de áreas que potencialmente pueden traer este crecimiento. Algunos de ellos por cierto amplían su propuesta de valor única y algunos hacen que su producto actual sea más robusto.
+          
+6. En el caso de áreas con una fuerte indicación de valor, puede directamente definir un MMF (Características mínimas comercializables). Para encontrar la pieza mínima que pueda empezar a traer crecimiento. El objetivo del MMF es aportar valor. Supone una alta certeza de que existe valor en esta área y que sabemos cuál debe ser el producto para proporcionar este valor. La razón para dividir una característica grande en MMF más pequeños es principalmente el tiempo de comercialización (Time to market) y la capacidad de aportar valor en muchas áreas. Una indicación de que está trabajando en MMF es que cuando al liberarse uno se siente cómodo trabajando en el próximo MMF en esa área.
+          
+7. Si se desea esperar para ver si el primer MMF apesta ... entonces está de vuelta en la tierra de la hipótesis. Ahora tu hipótesis se centra en una característica en lugar del producto. Tienes un área con alto potencial pero también alta incertidumbre.
+  
+
+8. La forma de afrontarlo es crear una función "pionera": MVF (Característica Mínima Viable). La característica mínima que aún puede ser viable para uso real y aprendizaje de los usuarios reales. Si el MVF resulta exitoso (hit gold), puede desarrollar más MMF en esa área para tomar ventaja (si eso tiene sentido). Si no es así, puede cambiar a otro enfoque hacia esa área de características, o en algún momento buscar una ruta de crecimiento alternativa. Esencialmente, el MVF es una versión mini del MVP.
+          
+9. El producto se cultiva en mercados inciertos al intentar varios MVP. Cuando se logra ajustar el producto en el mercado de productos se combinan MMF y MVF según el nivel de incertidumbre del negocio / requisitos en las áreas en las que se está enfocando. Si bien los MVP / MMF / MVF son atómicos desde una perspectiva empresarial (no puede implementar y aprender de algo más pequeño) pueden ser bastante grandes desde la perspectiva de la implementación. El dinosaurio carpaccio se obtiene cortando cada una de esas piezas en pequeñas porciones destinadas a reducir el riesgo de ejecución / tecnología (normalmente se denominan User Stories). Esas porciones más pequeñas pueden tener un valor comercial tangible o no. Para otros puede ser importante proporcionar una temprana retroalimentación de decisiones a lo largo del camino.
+  
+
+Productos mínimos para la gestión de productos.
+1. Producto Mínimo Viable (MVP). Tanto esta como el MVF responden a hipótesis.
+2. Característica Mínima Viable (MVF), es una versión mini del MVP.
+3. Característica Mínimas del Release (MRF). Son las características mínimas debe tener un producto para salir al mercado. Es una versión del producto que se publica y que el cliente puede usar.
+4. Característica Mínima Comerciable (MMF).
+  
+
+Relación entre MVP, MMF, MMP, MMR.
+1. MVP
+1. Versión de un nuevo producto creado con el menor esfuerzo posible.
+2. Dirigido a un subconjunto de clientes potenciales.
+3. Utilizado para obtener aprendizaje validado.
+4. Más cercano a los prototipos que a una versión real funcionando de un producto.
+5. Es un concepto de Lean Startup que enfatiza el impacto del aprendizaje en el desarrollo de nuevos productos.
+6. Una premisa clave detrás de la idea de MVP es que usted produce un producto real que puede ofrecer a los clientes y observar su comportamiento real con el producto o servicio.
+7. Eric Ries: “versión de un nuevo producto que permite a un equipo recopilar la cantidad máxima de aprendizaje validado sobre clientes con el menor esfuerzo”. Este aprendizaje validado viene en forma de si sus clientes realmente comprarán su producto.
+8. Ver lo que la gente realmente hace con respecto a un producto es mucho más confiable que preguntarle a la gente qué harían.
+
+
+2. MMF
+1. Es la pieza más pequeña de funcionalidad que puede ser liberada (es una versión mini del MVP).
+2. Tiene valor tanto para la organización como para los usuarios.
+3. Característica a pequeña escala que se puede construir e implementar rápidamente, utilizando recursos mínimos, para una población objetivo para probar la utilidad y adopción de la característica.
+4. Es parte de un MMR o MMP.
+
+
+3. MMP
+1. Primer release de un MMR dirigido a primeros usuarios (early adopters).
+2. Focalizado en características clave que satisfarán a este grupo clave.
+
+
+4. MMR
+1. Release de un producto que tiene el conjunto de características más pequeño posible.
+2. El incremento más pequeño ofrece un valor nuevo a los usuarios y satisface sus necesidades actuales.
+3. MMP = MMR1.
+MVF (Minimal Viable Feature).
+* Es una versión mini del MVP.
+* Característica a pequeña escala que se puede construir e implementar rápidamente, utilizando recursos mínimos, para una población objetivo para probar la utilidad y adopción de la característica.
+* Un MVF debe proporcionar un valor claro a los usuarios y ser fácil de usar.
+* MVF requiere recursos mínimos, los estándares de calidad de la industria y la producción deben guiar el diseño y la confiabilidad.
+* El grupo de usuarios para un MVF, son los primeros en adoptar, los clientes leales que han compartido conocimientos anteriormente o los miembros de una junta asesora de clientes. Usuarios flexibles y tolerantes.
+* Los resultados le ayudarán a tomar decisiones estratégicas sobre productos.

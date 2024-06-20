@@ -1,0 +1,199 @@
+Clase 12/04/2024: Estimaciones de Sw.
+Estimar es el proceso de obtener una aproximación sobre una medida con el objetivo de predecir la completitud y
+gestionar los riesgos en el contexto de un proyecto. Se relaciona con los objetivos del negocio, compromisos y control.
+Según McConell una estimación en el contexto del software es una predicción de cuánto tiempo durará o costará un
+proyecto. Es considerada una de las actividades más complejas en el desarrollo de software.
+Las estimaciones no son planes ni compromisos, sino que sirven de base para planificar, pero el plan final no tiene por qué coincidir con lo estimado.
+A mayor diferencia entre lo estimado y lo planeado hay mayor riesgo.
+¿Por qué estimamos?
+  
+
+Existen dos razones principales por las cuales se llevan adelante las estimaciones:
+* Para predecir completitud.
+* Para administrar riesgos.
+Antes de que el proyecto comience, el líder del proyecto y el equipo de software deben estimar el trabajo que habrá
+de realizarse, los recursos que se requerirán y el tiempo que transcurrirá desde el principio hasta el final. Las
+estimaciones requieren:
+* Experiencia.
+* Acceso a buena información histórica (métricas).
+* El valor para comprometerse con predicciones cuantitativas cuando la información cualitativa es todo lo que existe.
+Siempre se desea saber muy al inicio del proyecto cuál será el costo, el tiempo que llevará, entre otros aspectos y como aún no se conoce con precisión cuál será el alcance del producto resulta complejo predecir con exactitud estos aspectos, es por ello que a medida que avanza el proyecto, las estimaciones son más certeras, dado que se cuenta con mayor información sobre la cual realizar las estimaciones. (Es por ello que se suele decir que típicamente la primera estimación difiere hasta un 400%).
+
+
+Al inicio del desarrollo hay una estimación errónea de 2 a 4 veces más, esto se debe a dos aspectos:
+1. Al inicio del proyecto tenemos poca información y demasiada incertidumbre, lo que aumenta el riesgo de generar estimaciones erróneas.
+2. Las estimaciones son de naturaleza optimista, por eso las estimaciones deben ser recalculadas conforme se avanza con el proyecto.
+3. Se suele decir: “el que no sabe estimar, estima muchas veces, y el que no sabe planificar, planifica muchas veces”.
+Errores en las estimaciones.
+1. Información imprecisa acerca del software a estimar o acerca de la capacidad para realizar el proyecto.
+2. Demasiado caos en el proyecto (mal definido el proyecto).
+3. Imprecisión generada por el proceso de estimación.
+4. Una de las fuentes más común es omitir actividades necesarias para la estimación del proyecto tales como, requerimientos faltantes, licencias, reuniones, revisiones, etc.
+5. Se olvidan del detalle que planear no es estimar y estimar no es planear, sino que las estimaciones son la base de los planes, pero los planes no tienen que ser lo mismo que lo estimado.
+6. A mayor diferencia entre lo planeado y lo estimado, mayor el riesgo.
+7. Las estimaciones no son compromisos.
+Métodos utilizados para estimar.
+Se recomienda utilizar diferentes métodos de estimación y luego contrastar (comparar). Todos tienen un “Factor de
+Ajuste” que permite que el método cierre (calibraciones).
+1. Basados en la experiencia
+1. Datos históricos: consiste en recolectar datos básicos de otros proyectos para ir generando una base de conocimientos que sean de utilidad para futuras estimaciones, con esto se busca una alternativa en la cual el conocimiento de cada individuo se transfiere a la organización y no estamos atados a una única persona. Se deben utilizar para no tener problemas entre desarrolladores y clientes. Esto no va acorde a la gestión ágil, que dice que la experiencia no se puede extrapolar a otros equipos.
+   1. Industry Data: datos de otras organizaciones que aportan al mercado y desarrollan productos con algún grado de semejanza y que permite una comparación básica.
+   2. Historical Data: datos de la organización de proyectos que se desarrollaron y ya se cerraron.
+   3. Project Data: datos del proyecto, pero de etapas anteriores a la que se está estimando.
+2.  Juicio experto: es uno de los más utilizados, el problema se presenta cuando se utiliza como única técnica de estimación el juicio experto puro. Existen dos técnicas para aplicarlo:
+   1. Juicio experto puro: un experto estudia las especificaciones y realiza una estimación. Esta estimación se basa fundamentalmente en la experiencia del experto. (el problema es que, si el experto se va de la organización, esta pierde su capacidad de estimación). Se puede utilizar el “método de optimista, pesimista, habitual”, en el que se le pregunta al experto sobre 3 valores distintos y se aplica una fórmula para calcular la estimación.
+   2. Juicio Wideband Delphi: es similar al anterior pero grupal, un grupo de personas se reúne con el objetivo de converger a una estimación común, tanto en esfuerzo como en duración. Hay un coordinador que va a reunir las estimaciones individuales de cada uno de los expertos cuando les dieron las especificaciones, se opina sobre las estimaciones ajenas de manera anónima, se vuelve a discutir, revisan, las vuelven a enviar al coordinador y se repite hasta que todos estén de acuerdo de forma razonable. Este método es tomado como base para el Poker Planning.
+2.  Analogía 
+Se comparan los factores a estimar de forma relativa con respecto a las estimaciones de otros proyectos similares. Es un método que tiene mucho error dado que el conocimiento en un proyecto no es extrapolable a otro. Es decir, consiste en tomar a un proyecto e ir comparando factores, por ejemplo:
+* Tamaño: es menor o mayor al proyecto anterior.
+* Complejidad: más complejo de lo usual.
+* Usuarios: si hay más usuarios habrá más complicaciones, como la concurrencia o los datos a almacenar.
+3. Otros
+1. Basados exclusivamente en los recursos: consiste en analizar el personal que se tiene y de cuánto tiempo se dispone del mismo, haciendo las estimaciones exclusivamente en función de este factor. En la realización: “El trabajo se expande hasta consumir todos los recursos disponibles, independientemente si se alcanzan o no los objetivos.”
+2. Basados en la capacidad del cliente o exclusivamente en el mercado: ponen el foco en el cliente y realizan las estimaciones en función de su capacidad de pago. En este método no se evalúa al producto que se está intentando vender, sino a quien se lo vende. A veces se cobra menos para que nos elijan antes que a la competencia.
+3. Basados en los componentes del producto o en el proceso de desarrollo: se pueden aplicar 2 enfoques:
+   1. Bottom-up: se descompone el producto en unidades lo más pequeñas posible. Se estima cada unidad y luego se hace la estimación total.
+   2. Top-down: se descompone el producto en grandes bloques y luego se estima cada uno de los componentes.
+4. Métodos algorítmicos: se ejecutan algoritmos que tienen como parámetros de entrada medidas cuantitativas de tamaño, complejidad y conocimiento de dominio. Cada variable tendrá asociada un factor multiplicativo y en función de esto se obtiene como resultado un valor de esfuerzo. Es importante destacar que, a pesar de ser un cálculo matemático, puede no ser certero igual.
+Problemas de estimaciones tradicionales.
+* Estimar demasiado pronto.
+* Resistencia a las reestimaciones.
+* Estimaciones que buscan precisión.
+* Estimaciones hechas por gente distinta a la que hace el trabajo.
+* Estimaciones que pretenden ser absolutas (inflexibles).
+Actividades omitidas.
+  
+
+Estimaciones en ambientes ágiles.
+Son presunciones numéricas asociadas a una probabilidad de que cierto evento ocurra. La filosofía ágil plantea que
+quien estima, es quien debe hacer el trabajo, con lo cual es el equipo de desarrollo quien realiza las estimaciones, de forma colectiva (menos el Product Owner, no participa en estimaciones). Al ser de esta manera, la estimación se ajusta mejor, debido a que se generan debates entre los miembros del equipo, lo cual puede abrir puntos de vista no detectados por otros, haciendo que ese proceso de estimar se vuelva lo más preciso posible (a diferencia de las
+metodologías tradicionales, donde se estima individualmente y se depende sólo de ese miembro).
+Para estimar de esta forma, es fundamental que los miembros del equipo tengan una actitud en escucha, donde todos puedan opinar libremente y no haya influencias que “tapen” la opinión de otros.
+Frente a la posibilidad de estimar mal y generar enojo por parte del cliente, tenemos dos reacciones posibles:
+Como la estimación es un trabajo a riesgo, se subestima, o sea, simplificando sin considerar todo el trabajo que hay
+que hacer, por miedo a que si el valor es más alto el cliente lo rechace.
+Sobreestimar, cuando me preguntan por ejemplo cuantas horas me va a llevar un trabajo, y, sabiendo que me va a llevar 2 horas, digo 4 por las dudas pase algo en el medio, inflando muchísimo la complejidad del producto.
+
+
+Las estimaciones se tienden a confundir con compromisos o planificación. Uno planifica basándose en la estimación, pero no son lo mismo.
+No es una instancia única, ya que a medida que se avance el proyecto, más información vamos a tener y más eficiente van a ser nuestras estimaciones.
+Teniendo en cuenta esto, hay que aceptar que la estimación no es fácil, de hecho, es lo más difícil luego de la elicitación.
+El gran beneficio del proceso de estimación es justamente “hacerlas”. Al estimar, se enriquece el trabajo del equipo,
+lo cual mejorará futuros procesos de estimaciones. Además, este proceso ayuda a determinar la factibilidad del trabajo planificado en etapas tempranas.
+En el enfoque ágil, el esfuerzo destinado para estimar es bajo, pero amparándose en el concepto de que, al
+destinar poco esfuerzo en la estimación, se logra acercarse bastante a la realidad, la cual no sigue una
+relación lineal: si destinamos demasiado esfuerzo a este proceso, no obtendremos una precisión casi perfecta. Es
+por esto, que, en este enfoque, el tiempo de estimación se define y asigna con anterioridad para no utilizar más
+esfuerzo del necesario.
+Hay que recordar que el remedio, debe ser más barato que la enfermedad: el objetivo es estar en alguna parte
+de la izquierda del gráfico, donde con poco esfuerzo, se alcanzan grandes valores de certeza en la estimación. “La precisión es cara”.
+  
+
+Existe una serie de consideraciones importantes:
+* Son medidas relativas no absolutas.
+* No es una medida basada en el tiempo.
+* Las personas no saben estimar en términos absolutos, somos buenos comparando.
+* Comparar es generalmente más rápido.
+* Se obtiene una mejor dinámica grupal y pensamiento de equipo más que individual.
+* Se emplea mejor el tiempo de análisis de las Stories.
+Hay una fuerte propuesta de que estime la misma persona que va a realizar el trabajo. Se debe tener la mente abierta para escuchar lo que el resto del grupo tiene para decir y no cerrarse a nada. Las estimaciones son un proceso y uno tiene que hacer foco en este proceso.
+Lo ideal es comenzar con una estimación que se pueda revisar todas las veces que sea necesario. Recordando el
+principio de que “la mejor métrica de progreso es el software funcionando”, debemos entender que todo lo definido
+en cuanto a las estimaciones tiene que ver con el producto.
+No se puede comparar una User Story con otra porque hay distintas dimensiones y ahí es donde entra el Sory Point, que hace de unidad homogeneizadora que permite comparar.
+
+
+Para las estimaciones se deben tener en cuenta tres elementos a la hora de estimar: complejidad, esfuerzo e
+incertidumbre.
+Estas tres variables son las que conforman al Story Point y de esta manera podemos comparar las US.
+¿Qué se estima?
+Lo que se estima en ambientes ágiles, es solo el tamaño de las US (o Features) usando como unidad de medida los Story Points, y teniendo en cuenta 3 aspectos de estas: incertidumbre, complejidad y esfuerzo. Como la complejidad de las US tiende a incrementarse exponencialmente, se utilizan comúnmente series numéricas de esta índole, siendo una de las más comunes, la serie de Fibonacci.
+Al ser estimaciones de tamaños relativos, (es decir, se estima realizando comparaciones de los tamaños de las US) lo importante en este proceso no es el valor que se asigna a cada US en particular, sino más bien que las estimaciones sean consistentes en el conjunto. Es decir, para un equipo, una US de 8 puntos puede no significar lo mismo que para otro equipo, pero lo que importa es que en un mismo equipo, una US de 5 puntos, siempre sea más chica que una de 8.
+Es importante tener en claro que no se estima tiempo, ya que la duración de los Sprints es fija (concepto de Timebox).
+Por esto, es que no se recomienda estimar el tamaño de las US en horas, para no confundir con el esfuerzo.
+Tamaño vs. Esfuerzo.
+Como el esfuerzo (horas de trabajo) es el factor más significativo del costo de un proyecto, tenemos una gran tendencia a confundir tamaño con esfuerzo y esfuerzo con calendario. La complejidad es independiente de quien haga el proyecto, y el esfuerzo depende específicamente de la persona que lo va a llevar a cabo, de su capacitación, conlleva horas lineales (horas únicamente de trabajo, sin tener en cuenta almuerzo, baño, leer emails, etc. Para una jornada de trabajo de 8 horas, usualmente solo 5.5 o 6 son lineales). Por otro lado, no se debe confundir esfuerzo con calendario, ya que yo puedo decir que puedo tener un trabajo para el viernes, pero en el medio pueden suceder millones de cosas que evitan que cumpla mi objetivo. Un trabajo puede requerir un esfuerzo de x horas, pero no se puede asegurar que para tal día va a estar terminado.
+Velocidad
+Es una métrica del progreso de trabajo de un equipo. Se calcula (no se estima) sumando el número de Story Points asignados al estimar una US, que el equipo completa durante cada iteración, lo cual implica que la US se ha desarrollado y testeado por completo (DoD), y además el Product Owner la ha aceptado.
+
+
+Si la US se completó parcialmente, no se cuentan sus Story Points en esa iteración (no existe el concepto de casi- completo, es una gestión binaria, es decir, se completó o no se completó la US). Esto genera que la velocidad del equipo baje en esa iteración, pero en la siguiente, aumentará, debido a que en unos pocos días probablemente se
+complete la US pendiente, y se pueda continuar con otras US planificadas en la iteración.
+Esto implica que el equipo no se enfoque en la velocidad de cada iteración, sino más bien, en el promedio de
+velocidades a lo largo de sucesivas iteraciones. Esto brindará una mayor certeza acerca de la medida de progreso de trabajo del equipo.
+Esta métrica permite retroalimentar el proceso de estimación, ya que un equipo maduro y con mucho trayecto, puede permitirse estimar cuántos puntos de historia puede desarrollar en la siguiente iteración a través del cálculo de velocidad.
+Reestimación.
+Estimar nuevamente una US es aconsejable sólo cuando la opinión acerca del tamaño relativo de una US ha cambiado, debido a que en el proceso de estimación se han detectado otras U.S. con tamaños más grandes o pequeños. (esto tiene que ver con mantener la consistencia de tamaños a la hora de estimar).
+No se debería reestimar porque no se detecta un progreso como el esperado (velocidad del equipo), sino que se debe dejar que la velocidad a lo largo de sucesivas iteraciones equilibre esas inexactitudes.
+Planificación.
+En ambientes ágiles, es necesario que quien planifica el proyecto de desarrollo de software, sea capaz de analizar el contexto del proyecto cada cierto período y hacer aquellos ajustes que sean necesarios, para encauzar los esfuerzos de manera correcta, y poder lograr los objetivos planteados.
+“Planning is everything. Plans are nothing” → esto apunta a que lo importante de planificar, es el proceso en sí. No el hecho de realizar una documentación exhaustiva que respete determinados templates. Sí debe quedar registrado de alguna manera, idealmente bajo templates, pero sólo para servir de ayuda de memoria. Lo importante es el proceso.
+  
+
+Los equipos ágiles afrontan esta situación, planificando al menos en 3 niveles:
+Planificación de Release.
+Este proceso se da al inicio del proyecto, donde se analiza y determina qué US, épicas o Temas serán desarrollados en una nueva entrega (Release) del producto. Este plan se va actualizando mientras el proyecto transcurre (usualmente al comienzo de cada iteración), de manera que siempre refleja las expectativas actuales sobre qué se incluye en la entrega.
+Una vez que se priorizan las US a implementar, se estima su tamaño con Story points, y teniendo en cuenta la velocidad de trabajo del equipo, se deriva la duración de la Release o del proyecto (la cantidad de sprints necesarios para obtener el release).
+  
+
+Planificación de Iteración
+Este proceso se da al comienzo de cada iteración, donde el PO identifica aquellas US de mayor prioridad que deberán ser implementadas en la iteración, basándose en la iteración anterior ya finalizada. Esto se hace teniendo en cuenta el tiempo (que es una variable constante por ser metodología ágil) y la velocidad de trabajo del equipo (el cual se mantiene constante también).
+Durante esta planificación, se discute sobre las tareas que serán necesarias para transformar una US en código funcional y testeado.
+Planificación del día.
+Este proceso permite coordinar y sincronizar el trabajo del equipo, normalmente en reuniones diarias. Allí sólo se discuten las tareas a realizar durante el día, haciendo foco en las actividades que deberán ser desarrolladas para lograr cumplir con una tarea específica.
+Tamaño.
+Dado que el tamaño es lo que se compara, lo definimos como la medida de cuán compleja y grande es una US, además de cuánto trabajo es requerido para hacer o completar una Feature/US. También el tamaño es función de la incertidumbre de dicha US, definida la incertidumbre como la falta de información.
+El tamaño no es lo mismo que el esfuerzo (el “quien” define esta diferencia), ya que este último indica las horas
+humano lineal requeridas para el desarrollo de la US. Por lo tanto, una US de mismo tamaño puede implicar esfuerzos diferentes en función de la persona que se esté evaluando, debido a que el esfuerzo varía dependiendo de las habilidades, conocimientos, experiencia, familiaridad con el dominio, etc.
+Formas de estimar el tamaño.
+Existen diferentes escalas para estimar el tamaño y siempre son por comparación, entre ellas:
+1. Número del 1 al 10.
+2. Talles de remeras: S, M, L: suele ser utilizado como escala de estimación para los ítems del Product Backlog.
+3. Serie exponencial de base 2: 2, 4, 8, 16, 32, 64, etc.
+4. Serie de Fibonacci: 0, 1, 1, 2, 3, 5, 8, 13, 21, 34, 55, 89, etc.
+Una vez definida la escala, no se cambia. En caso de cambiarla, también se debe cambiar el patrón de medición.
+Story Point.
+Es una unidad de estimación que especifica la complejidad, incertidumbre y esfuerzo propio del equipo respecto a una US en términos relativos respecto a otra US. Es lo que le da la idea del “peso” de cada US, decide cuán grande/compleja es. Por lo general esa complejidad tiende a incrementarse exponencialmente.
+* Complejidad: que tan compleja es implementar esa US. Relacionada a la cantidad de partes y relaciones entre las mismas posee la US.
+* Esfuerzo: es importante que estime la persona que va a hacer el trabajo, ya que el esfuerzo es distinto entre dos personas. Son las horas persona lineales que se requieren para terminar la US.
+* Incertidumbre: es cuánta información falta para ser más adecuados en la estimación. Existe una incertidumbre técnica que es más sobre si se sabe cómo llevar a cabo lo explicitado con respecto a la tecnología a implementar y ese tipo de cosas. Y tenemos incertidumbre del negocio, si entendemos que es lo que el cliente pide y cómo llevarlo a cabo.
+¿Para qué se estima?
+1. En un primer momento para determinar cuántas Users se puede comprometer el equipo de trabajo a terminar en una iteración.
+2. Al finalizar la iteración, contamos los puntos de historia correspondiente a las Users aceptadas por el Product Owner y obtenemos la velocidad del sprint, la cual es una de las métricas fundamentales en ambientes ágiles.
+Sin embargo, es necesario aclarar que la velocidad no es una estimación sino una medición propiamente
+dicha. Si un equipo alcanza una velocidad sostenible en el tiempo, es decir que mantiene la velocidad en las
+diferentes iteraciones, permite que el equipo obtenga previsibilidad, la cual ayuda a estimar en las siguientes
+iteraciones.
+¿Cómo se estima la duración del proyecto?
+Si la estimación se realiza utilizando Story Points para medir la complejidad relativa de las User Stories, para determinar la duración de un proyecto se realiza la derivación tomando el número total de story points de sus US y dividiéndolas por la velocidad del equipo.
+Poker Planning o Poker Estimation.
+Es una técnica de estimación en ambientes ágiles publicada por Mike Cohn. Resulta de la conjunción de diferentes
+métodos como el de juicio experto, analogía y desagregación, basado en que 4 ojos ven más que 2. En contraposición al método de juicio experto tradicional, asume que las personas que desarrollan el producto deben ser aquellas que estimen. En otras palabras, el equipo estima su propio trabajo y los miembros opinan sobre lo mismo, donde se mezcla la experiencia y el conocimiento de cada uno con la posibilidad de compartir con el resto del grupo. Un detalle es que el Product Owner participa en la planificación, pero no realiza estimaciones, suele ser el moderador, pero no es necesario que sea así siempre.
+Escala.
+Dado que la complejidad en el software incrementa de forma exponencial, se decide adoptar la serie de Fibonacci
+como escala para la determinación de los puntos de historia.
+1. Valor 1 o 1/2: son los valores más bajos y se aplican a una funcionalidad pequeña.
+2. Valor 2- 3: funcionalidad pequeña a mediana.
+3. Valor 5: funcionalidad media.
+4. Valor 8: funcionalidad grande, donde nos preguntamos si es posible dividir.
+5. Valor 13 o más: necesariamente hay que dividir ya que no ingresa en el sprint.
+  
+
+  
+
+Procedimiento.
+1. Se define una lista de actividades, módulos, casos de uso, Users stories, etc.
+2. Se acuerda cuál de las anteriores es la que tiene menor grado de incertidumbre y se la define como canónica asignándole 1 o 2 story point (es la más simple). Esta User es utilizada como referencia para comparar. Los equipos avanzados podrían elegir canónicas de 3 SP, con el objetivo de tener un margen para hacia arriba y hacia abajo. Por esta razón, también él 1⁄2 se incluye en la serie.
+3. Cada miembro elige una carta con el valor de la estimación del tamaño de la U.S. (comparado con la U.S. canónica y teniendo en cuenta los 3 aspectos nombrados) y se espera a que todos decidan.
+4. Utilizando juicio experto, cada integrante del equipo de desarrollo expone su valor de estimación de forma simultánea, por medio de las cartas, dándolas vuelta a las que estaban boca abajo. En caso de que la estimación difiere, el mayor y el menor estimador justifican sus estimaciones para conocer sus opiniones. Luego el resto del medio aportan sus opiniones. Siempre la escucha es activa, para poder aprender.
+5. En caso de que la primera vuelta existiese diferencias considerables, se realiza nuevamente la ejecución del paso 4.
+6. Si las estimaciones no convergen, entonces se llega a una estimación intermedia o promedio.
+Consideraciones.
+1. Para realizar una estimación se debe tener en cuenta el criterio de Done y no solo la tarea de programación, es decir todo lo que hay que hacer para terminar una US y poder lidiar con el problema de las actividades omitidas.
+2. El tiempo para realizar las estimaciones, como cualquier otra actividad en los ambientes ágiles, es time boxing.
+3. Las US por estimar son las menos posibles, en orden con el principio de diferir compromisos.
+Ventajas.
+* Permite opiniones multidisciplinarias de todo el equipo, lo cual enriquece la estimación.
+* Al generar debates y discusiones, permite lograr una mejor comprensión del dominio en los miembros del equipo.
+* Estudios demuestran que reunir estimaciones individuales conducen a mejores resultados, que estimar de forma grupal.
+* Es una actividad que resulta divertida para el equipo.

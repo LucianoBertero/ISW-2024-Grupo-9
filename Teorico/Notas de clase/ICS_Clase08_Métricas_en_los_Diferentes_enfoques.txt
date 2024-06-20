@@ -1,0 +1,157 @@
+Clase 07/06/2024: Métricas en los Diferentes Enfoques.
+  
+
+  
+
+¿Qué es una métrica?
+Una métrica es un número que representa el grado o presencia de un determinado conjunto de atributos respecto de lo que se quiere medir (proceso, producto o proyecto), expresadas de tal forma que permitan una medición objetiva de la realidad. Por ejemplo, la escala: NS, S, B, MB, E no sirve. Lo que sí sirve es cuántos E hay, cuántos S hay, etc. Debe ser posible medir en términos de la definición de esta y del esfuerzo que se debe aplicar para medirla. Es decir que la métrica no es la escala sino la cantidad de cierta escala.
+
+
+Todas las métricas poseen un costo asociado, debido a que se deben destinar recursos para su planificación, ejecución y análisis, y no siempre es factible disponer de esos recursos en un proyecto. Esto implica un análisis de costo-beneficio para evitar definir métricas que no aporten un valor a la organización/equipo/proyecto/etc. En ese análisis costo-beneficio, también influye la relación precisión-medición, ya que muchas veces no es necesaria tanta precisión. Esto  también quiere decir que las métricas no sólo hay que calcularlas y dejarlas, hay que utilizarlas para que justifiquen ese costo. (El paso de “no medir” a “comenzar a medir” no tiene que ser excesivo, porque ese es otro de los factores que termina generando resistencia, por costo excesivo, ser una pérdida de tiempo en algo que después no se mira, etc.)
+
+
+Las métricas no son para evaluar a la gente. No deben ser utilizadas para castigar o beneficiar a la gente, ya que es posible que las personas comiencen a fingir en el valor de las métricas para lograr objetivos finales, lo cual resulta perjudicial para el análisis del fenómeno que se desea medir. 
+
+
+En el software es complicado tener métricas de algunas características del producto, como por ejemplo la usabilidad del producto, por lo que no se mide directamente al producto, sino que se utilizan conceptos asociados (epifenómenos) a la característica que se desea medir. Por ejemplo, si se quiere medir el uso de una funcionalidad, se puede medir a través de la cantidad de clicks en el botón que permite ejecutar esa funcionalidad.
+
+
+Por ejemplo, una métrica que dice cantidad de requerimientos tomado en función de la cantidad de requerimientos
+que deberíamos tomar, no es una métrica válida.
+¿Para qué medir?
+• Para señalar, controlar y supervisar el desarrollo del proyecto.
+• Para predecir al estimar proyectos de software.
+• Para evaluar, es decir, para tener una noción de los costos, por ejemplo.
+• Para mejorar el proceso, el proyecto o el producto.
+
+
+Dominio de métricas.
+Las métricas se dividen en tres dominios, el cual, cada uno posee un foco distinto de medición:
+         * Métricas de proceso: son métricas estratégicas a nivel organizacional, orientadas a mejorar el proceso y tienen como objetivo generar indicadores que permitan mejorar los procesos de software a largo plazo. Son públicas y se despersonifican las mediciones de personas, áreas o proyectos particulares, para obtener un número aislado y tener una métrica sobre el proceso de la organización en general, como un todo.
+Son responsabilidad del Ingeniero de Procesos, quien realiza las mediciones y luego publica los datos para que todos los empleados de la organización puedan acceder a ellos.
+Por ejemplo, se toman métricas de cantidad de defectos en todos los productos que se realizaron, se despersonalizan, se promedian a cada una de ellas y se publican a toda la organización sin hablar particularmente de un proyecto o producto, sino en forma general al proceso de la organización.
+En este enfoque, se tiene en cuenta que la experiencia de cada proyecto es extrapolable, por eso hacen uso de esta forma de tomar las métricas, desvinculandose de un producto o proyecto particular para hablar del comportamiento de la organización.
+Los indicadores de proceso permiten tener una visión profunda de la eficacia de un proceso, determinando
+qué funciona de acuerdo a lo esperado y qué no.
+Proporcionan beneficios significativos a medida que la organización trabaja para mejorar su nivel global de madurez del proceso.
+Ejemplos:
+         * Desviación organizacional de estimaciones.
+         * Defectos por severidad en productos de la organización.
+         * Errores previos a releases por proyecto.
+         * Defectos detectados por usuarios.
+         * Esfuerzo realizado.
+         * Tiempos de planificación promedio por proyectos.
+         * Propagación de errores de fase a fase.
+
+
+         * Métricas de proyecto: están enfocadas a los recursos que se dedican al proyecto, como costos, esfuerzos, estimaciones y tiempo. Son responsabilidad del Líder de Proyecto y permiten al equipo adaptar el desarrollo de los proyectos y de las actividades técnicas. Estas métricas son privadas de ese proyecto y solo son visibles para los involucrados en el mismo.
+Se utilizan para mejorar la planificación del desarrollo, generando ajustes que eviten retrasos, reduzcan riesgos potenciales y por lo tanto, problemas.
+Además, se utilizan para evaluar la calidad de los productos en todo momento y en caso de ser necesario, modificar el enfoque para mejorar la calidad, minimizando defectos, retrabajo y por ende el costo total del proyecto.
+Las métricas de proyecto se consolidan con el fin de crear métricas de procesos que sean públicas para la organización de software como un todo.
+Ejemplos:
+         * Eficiencia de estimación del proyecto.
+         * Costos estimados versus costos reales.
+         * Esfuerzo/Tiempo por tarea del Ingeniero de Software.
+         * Errores no cubiertos por hora de revisión.
+         * Fechas de entregas reales versus programadas.
+         * Cantidad de cambios y sus características.
+
+
+         * Métricas de Producto: están enfocadas en lo que se construye, son responsabilidad del equipo de desarrollo y de Testing y son particulares de ese producto.
+Se utilizan con propósitos técnicos y tienen como objetivo generar indicadores en tiempo real de la eficacia del análisis, el diseño, la estructura del código, la efectividad de los casos de prueba y calidad del software a construir.
+Se deben controlar los artefactos resultantes del proceso de desarrollo (componentes y modelos) para garantizar:
+         * Que cumplan con los requerimientos del cliente;
+         * Que cumplan con los requerimientos de calidad;
+         * Que estén libre de errores;
+         * Que se realizaron bajo los procedimientos de calidad.
+Ejemplos:
+         * Cantidad de líneas de código del producto;
+         * Defectos por severidad de un producto;
+         * Promedio de métodos por clase;
+         * Cantidad de métodos de cada clase;
+         * Cantidad de casos de uso por complejidad.
+Métricas en el enfoque tradicional.
+En el enfoque tradicional se hace énfasis en los 3 dominios arriba mencionados.
+
+
+Están basadas en la gestión de proyectos definidos, poseen un abanico de métricas mayor a los demás enfoques.
+
+
+Son una disciplina transversal. Cuando se planifican los proyectos, allí se definen qué métricas se utilizarán, quiénes serán responsables de estas, cómo se calcularán, etc.
+
+
+No todas las métricas le interesan a todo el mundo, dependiendo del momento y rol es lo que interesa medir. Los perfiles más técnicos por ejemplo apuntan a cuestiones relacionadas con el producto y esfuerzo (porque son ahí donde los desarrolladores asumen compromiso) y en ámbitos organizacionales interesa plata (costo) y tiempo. Por ejemplo:
+         * Testers: les interesa el esfuerzo y cantidad de defectos encontrados principalmente, porque es lo que más afecta a este rol.
+         * Líder de proyecto: El enfoque de las métricas estará más relacionado al calendario, los costos, plazos de tiempo a cumplir, etc. por el contrato que se tiene con el cliente, y la relación entre el esfuerzo y el tiempo.
+Métricas básicas para un proyecto de software.
+son las mínimas e imprescindibles que uno tiene que utilizar si tiene la intención de desarrollar una cultura de
+medición:
+         * Tamaño del producto: asociada a métrica de producto.
+         * Esfuerzo: asociada a métrica de proyecto.
+         * Calendario: asociada a métrica de proyecto.
+         * Defectos: asociada a métrica de producto.
+Estas métricas están relacionadas con la triple restricción en un proyecto (esfuerzo, alcance y tiempo).
+  
+
+  
+
+  
+
+Métricas en ambientes ágiles.
+  
+
+  
+
+Las métricas sirven para un equipo y no son extrapolables por lo que dice el agilismo a otros proyectos o equipos. En ágil hay un principio que habla específicamente de métricas (la mejor métrica de progreso es el software funcionando).
+Este principio apunta a que vamos a medir producto (no proceso ni proyecto). Esto es una reacción a proyectos tradicionales que tenían todas las métricas posibles cubriendo los tres enfoques, pero no teniendo avances sobre el producto (se perdía mucho tiempo y no se progresaba). Solo se debe medir lo que sea necesario y nada más, es decir, lo que agregue valor para el cliente.
+Métrica de velocidad.
+Es la métrica más importante del enfoque (métrica de producto), y mide la cantidad de puntos de historia que se realizaron en un Sprint y fueron aceptados por el Product Owner. Hay que recordar que no se cuentan las historias parcialmente terminadas, sólo las que están completadas y aceptadas por el PO.
+Esta métrica se calcula (no se estima) luego de que el PO. acepte la implementación de una US.
+Esta métrica suele representarse con un gráfico de barras para medir la estabilidad del equipo. Estos gráficos son permanentes durante todo el proyecto y son visibles para todo el mundo.
+Esta métrica, y sus valores a lo largo de un proyecto ágil, permiten analizar si el equipo posee una estabilidad a lo largo del mismo, lo cual también se relaciona con un principio del manifiesto ágil (desarrollo sostenible).
+  
+
+Métrica de capacidad.
+Es una métrica de proyecto que mide el compromiso de un equipo para un determinado sprint, en horas de trabajo ideales. Es por esto que, se utiliza para planificar, ya que permite definir cuántas historias de usuario se van a tomar del Product Backlog para implementar en el próximo sprint.
+Se estima al principio de un sprint, por lo que también se la llama velocidad estimada. Se puede estimar en horas ideales o en Story Points.
+  
+
+Running Tested Features (RTF).
+Mide la cantidad de features testeadas que están funcionando, es decir, cuantas piezas de producto (historias de usuarios, casos de usos, requerimientos) se terminaron y están en ejecución.
+El problema de esta métrica es que no tiene en cuenta la complejidad de las piezas de producto que se implementan.
+Por ejemplo, si se toma como piezas de producto a historias de usuario, se mide cuántas historias de usuarios están funcionando, pero no se sabe de cuantos puntos de historias tiene cada una de ellas. Es una medición absoluta.
+  
+
+Si la curva es constante (llana) o tiene pendiente negativa, entonces indica la existencia de un problema, ya que las características no incrementan o disminuyen en el tiempo. Esta última situación se presenta cuando una funcionalidad del sistema deja de ser válida.
+Las métricas de defectos también son necesarias en todos los ambientes.
+Métricas de software en Lean (KANBAN).
+El foco de medición de Kanban es el proceso, ya que el sistema de trabajo de Kanban es introducir mejoras en un flujo de trabajo continuo, es decir, no existe un proyecto con principio y fin. Es decir, se mide el comportamiento del proceso en función al tiempo que se demoran las características.
+  
+
+Lead Time o Elapsed Time.  
+Métrica de vista o perspectiva del cliente. Es la más importante para el cliente. Mide desde el momento en que el cliente me pide algo (entra al Backlog) hasta que yo se lo entregó.
+Cycle Time.
+  
+
+Mide el tiempo desde que el equipo comenzó a trabajar sobre una funcionalidad pedida, hasta que se lo entrega, eliminando el tiempo de espera en el Backlog. Por esto se la considera como una vista interna, que sirve al equipo de trabajo y no es tan relevante para el cliente. Es igual al Lead Time menos el tiempo que estuvo en el Backlog.
+Touch Time.
+  
+
+Mide los tiempos en los cuales las personas están efectivamente trabajando sobre una unidad de trabajo (columnas de producción), sin tener en cuenta aquellos tiempos de espera (columnas de acumulación).
+En cada columna, por ejemplo, en la columna Test de la imagen, se tiene una columna de trabajo y otra de acumulación para poder realizar el concepto de sistema “pull” o de arrastre.
+  
+
+Eficiencia del ciclo de proceso.
+Esta métrica mide la eficiencia del tiempo para entregar un trabajo, respecto al tiempo destinado a su ejecución. Se calcula como Touch time / Lead time.
+Mientras más cercano a 1 sea su valor, más eficiente es el proceso, ya que todo el tiempo se estuvo trabajando sobre alguna funcionalidad, y no hubo muchos momentos de espera en columnas de acumulación.
+  Resumiendo…
+  
+
+Métricas de Producto de Software.
+  
+
+Hoy en día no es recomendable medir en líneas de código.
+Defectos
+         * Cobertura: tratar de que sea la mayor posible para cubrir el 100% del análisis de los defectos del producto.
+         * Defectos por severidad: cantidad de defectos por escala de severidad de cada defecto. 5 defectos graves.
+         * Densidad de defectos: cuantos defectos se encuentran por historia de usuario.

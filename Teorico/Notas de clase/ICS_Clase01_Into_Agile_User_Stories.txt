@@ -1,0 +1,383 @@
+Clase 05/04/2024: Intro Agile - User Stories.
+Desarrollo ágil de Software (Agile).
+Un compromiso útil entre nada de proceso y demasiado proceso.
+Procesos Empíricos.
+  
+
+Son procesos basados en la experiencia.
+Los procesos empíricos se conforman en base a la experiencia interna y externa de las personas que intervienen en un contexto particular. No es considerado determinista ya que no se asume que ante la aplicación del mismo proceso se obtendrán los mismos resultados. Dado que el factor diferencial es la experiencia sensible, en estos procesos se pueden obtener diferentes resultados dependiendo del contexto en el cual se apliquen.
+1.  Se basan en ciclos cortos de inspección y adaptación (retroalimentación), porque ante un análisis, se ajustan de mejor forma en aquellos dominios complejos donde prima la creatividad y/o complejidad.
+2.  La administración y el control es por medio de inspecciones frecuentes y adaptaciones para lograr buenas prácticas.
+3.  No se pueden combinar con cualquiera de los tipos de ciclos de vida vistos, se suele recomendar que sea el modelo iterativo-incremental, y el que se suele prohibir es el modelo secuencial debido a que no es viable después de 2 años (lo dice una teoría).
+La experiencia es propia de cada equipo.
+Procesos Empíricos != Procesos Definidos.
+Los procesos definidos son considerados deterministas: ante la misma entrada se pretende que se obtendrá la misma salida. Asumen que, si se aplican una y otra vez, se obtendrán siempre los mismos resultados, a pesar de cambiar de equipo. Ej PUD.
+Manifiesto ágil
+Es un documento redactado en 2001 por expertos de la Ingeniería en Software, que promueve la filosofía del desarrollo ágil del software.
+Valores ágiles
+El Manifiesto Ágil, expresa los siguientes valores, los cuales priorizan ciertos aspectos por sobre otros, pero sin restar importancia a ninguno de ellos. Esto es:
+  
+
+1. Individuos en interacciones, por sobre procesos y herramientas: es preferible un equipo de personas motivadas con un buen funcionamiento y conocimiento, donde la comunicación sea fluida, pero con herramientas pobres para su trabajo, que tener un equipo de individuos desmotivados o poco funcional con las mejores herramientas y procesos. Así lo expresa el manifiesto, debido a que el desarrollo de software es una actividad humano-intensiva, y los procesos ágiles intentan capitalizar las fortalezas de cada individuo (como así también paliar las debilidades individuales), en lugar de intentar homogeneizar un equipo, para así lograr una armonía que permita fortalecer la unión y motivación dentro del equipo. Los procesos y herramientas deben ser un complemento para mejorar la eficiencia y éstos se deben adaptar al equipo y no al revés.
+2. Software funcionando por sobre documentación extensiva: priorizar el software asegura que se tengan versiones estables, incrementales y mejoradas del software al finalizar cada iteración. Esto permite que a medida que el software crezca en cuanto a funcionalidades, tras cada iteración puede ir mostrándose a los usuarios finales y obtener una retroalimentación de ellos, para que el equipo de desarrollo se asegure de estar trabajando siempre en aquellas funcionalidades de mayor valor para el cliente y aquellas que satisfagan sus expectativas.
+Solo se documenta aquello que agregue valor al producto y esté centrado en el cliente (valor agregado). Existe la necesidad de mantener información sobre el producto de software y sobre el proyecto que se realiza para obtener un producto y el enfoque ágil lo que plantea es que se debe generar la documentación cuándo sea necesario. No plantea “no generar documentación”. Los documentos no pueden sustituir, ni pueden ofrecer la riqueza y generación de valor que se logra con la comunicación directa entre las personas y a través de la interacción con el software.
+3. Colaboración con el cliente por sobre negociación contractual: esto permitirá no sólo tener una mejor noción de aquellos requerimientos de negocio que necesita el cliente, sino también que el equipo ágil se integre a todas las partes interesadas en el software, para que en conjunto puedan trabajar y lograr los mismos objetivos. Esto también reduce la dependencia de documentación extensiva ya que cada miembro del equipo participa en la toma de decisiones que solían requerir comunicación escrita. Implica comprometer al cliente como parte importante del producto que se está construyendo. No se trata de tener a un cliente lejano que no sabe lo que sucede durante el desarrollo, si no tener a uno que esté comprometido con cada entrega, sobre todo al momento de probarlo y dar el feedback. A veces las negociaciones contractuales imponen ciertas restricciones que impactan de manera negativa en las partes, lo cual se traduce en un mayor distanciamiento en la relación equipo de desarrollo-cliente. A pesar de que los contratos sean necesarios, sus términos y condiciones, con frecuencia dificultan el ida y vuelta planteado en el principio anterior, por lo que se intenta priorizar que el cliente colabore con el equipo de desarrollo, para así trabajar en conjunto tras un mismo objetivo que sea común a ambas partes. El problema de las negociaciones contractuales en muchos casos en las empresas empiezan cuando el cliente tiene ya una especie de acuerdo formal (contrato firmado) con el equipo por un monto y un plazo y una cantidad de características del producto de software que hay que entregar y el cliente viene y dice “me olvidé de esto” o “necesito esto” y ahí es donde empiezan los puntos de fricción por qué es donde comienzan las discusiones porque ya existe un contrato firmado donde se establecieron todas las pautas.
+4. Responder a cambios por sobre seguir un plan: esto se plantea debido a que es imposible que los usuarios sepan con detalle y certeza todas las funcionalidades que necesitan, y a su vez, con el paso del tiempo surgirán nuevas necesidades, las cuales en un primer momento no se habían detectado. Esto está ligado al entorno cambiante en el que se desempeñan los clientes que demandan un software, por lo que un equipo ágil está abierto a los cambios, para poder responder ante ellos de una manera rápida y eficiente entregando el mayor valor posible para el cliente y los usuarios, en lugar de apegarse y seguir un plan definido confeccionado en etapas tempranas de requerimientos. Los principales valores de la gestión ágil son la inspección y la adaptación, diferentes a los de la gestión de proyectos tradicional: planificación y control que evite desviaciones del plan. (Los cambios son vistos de buena forma). Analizando en concreto el proceso de desarrollo de un equipo ágil, al finalizar cada iteración, la experiencia de desarrollar el incremento genera cierto conocimiento en el equipo, que afecta a la planificación en los distintos niveles. De forma similar, mostrar o desplegar esos incrementos a los usuarios finales, también generará nuevo conocimiento para esos procesos de planificación. Cualquiera sea el motivo, este nuevo conocimiento puede inducir a cambios, los cuales el equipo ágil deberá incluir en su planificación, de forma que siempre se apunte a entregar un producto con el mayor valor posible.
+Los 12 principios del Manifiesto Ágil.
+  
+
+1. Nuestra mayor prioridad es satisfacer al cliente: esto está ligado al valor 3 y 4, debido a que un equipo ágil desarrolla y entrega funcionalidades en el orden especificado por el Product Owner. Es ese rol quien determina la prioridad e importancia de cada funcionalidad o Feature, de manera que en cada incremento o Release del producto, se esté retornando al cliente el mayor valor posible.
+Esto está soportado por el hecho de trabajar con User Stories, las cuales plantean necesidades que tienen un valor significativo para los usuarios del software. De esta forma, el equipo de desarrollo se asegura de estar respondiendo a esas necesidades, al implementar User Stories, y no trabajar con tareas aisladas que no aportan valor para el cliente y/o los usuarios.
+2. Aceptar que los requisitos cambien, incluso en etapas tardías de desarrollo: ligado a los valores 3 y 4, donde se plantea que el equipo ágil está abierto al cambio, al no seguir un plan estructurado que se confecciona en etapas tempranas, como plantea la metodología tradicional. Esto permite que el equipo sea flexible, y responda siempre ante las necesidades cambiantes de los clientes y/o usuarios.
+3. Entregar software funcional frecuentemente: esto se relaciona al valor 2, donde es imprescindible que un equipo ágil al finalizar cada iteración (las cuales duran períodos cortos de entre 1 a 4 semanas), haya sido capaz de transformar uno o más requerimientos en código desarrollado completamente, testeado y potencialmente desplegable. Es importante destacar que ese código pueda ser desplegado (que cumpla con la DoD), debido a que se debe asegurar que cumpla con lo que el usuario/cliente necesita, de forma que se le entregue el mayor valor posible tras cada iteración, y no entregar una funcionalidad desarrollada parcialmente.
+4. Técnicos y no técnicos trabajando juntos durante todo el proyecto (responsables de negocio, desarrolladores, diseñadores): valores 1 y 3, y lo que plantea es la gran importancia de la participación del rol conocido como “Product Owner”, en conjunto con el equipo de desarrollo de software. Este rol, que generalmente ocupado por una persona del “lado del cliente”, debe ser alguien capaz de tomar decisiones sobre el producto, y que además sea capaz de representar el interés y necesidades comunes de todos los usuarios a los que estará destinado el desarrollo del software. En un enfoque de proceso ágil, la participación del Product Owner es de suma importancia, ya que es quien guía y prioriza tras cada iteración, aquellos requerimientos que serán implementados. Además, generalmente es el encargado de escribir las User Stories, las cuales en cierta forma sirven de recordatorio y guía para el equipo de desarrollo, para conocer qué es lo que deben implementar. Comúnmente, el P.O. no posee esa disponibilidad que plantea el enfoque ágil, convirtiéndose en el talón de Aquiles en el proceso de desarrollo del software y siendo uno de los principales motivos por los que se fracasa en los enfoques ágiles.
+5. Desarrollamos proyectos en torno a individuos motivados: este principio está ligado al valor 1, donde la filosofía asume que aquellos individuos que participan en un proyecto de desarrollo del software deben estar lo suficiente motivados y comprometidos con los objetivos de este. Los participantes de un proyecto se deben ver entre sí como a un único equipo con objetivos comunes, donde las personas que asumen diferentes roles intentan colaborar entre sí para cumplir con esos objetivos, y no se limitan a cumplir con sus tareas y delegar los problemas en el otro.
+6. El método más eficiente de comunicar información es con conversaciones cara a cara: ligado con el valor 1, este principio tiene un sustento psicológico, el cual expresa que las palabras expresadas como sonido o texto, sólo representan un bajo porcentaje de la comunicación que se desea lograr hacia otra persona, siendo que la mayor parte está ligada a gestos, expresiones faciales, movimientos corporales, retroalimentación rápida, etc.
+7. La mejor métrica de progreso es el software funcionando: ligado con el valor 2, donde el manifiesto ágil plantea que la mejor forma de demostrar el avance en un proyecto de software es a través de la entrega de software funcional y de valor para el cliente. En las metodologías tradicionales existen muchas métricas y documentaciones sobre las cuales se basan para medir el avance de un proyecto, pero poco sentido tiene tener una excelente documentación del proyecto y producto, si el producto en sí no refleja el valor que se intenta entregar al cliente.
+8. Los procesos ágiles promueven el desarrollo sostenible: ligado con los valores 2 y 4, esto apunta a la estabilidad en equipos de trabajo a lo largo del tiempo, lo cual se traduce en una mejora continua de relaciones y formas de trabajo del equipo. Aunque en la realidad esto se ve afectado en gran forma por la gran migración de trabajadores entre diferentes empresas del mercado laboral informático, la filosofía ágil promueve que estos equipos se mantengan a lo largo del tiempo, para así mejorar su dinámica de trabajo. Además, mantener un equipo estable a lo largo del tiempo permite que el equipo alcance una madurez tal, en la cual es mucho más fácil realizar estimaciones sobre su participación en el proyecto. Por ejemplo, el tiempo en el que el equipo desarrolla una cantidad de US.
+9. La atención continua a la excelencia técnica y al buen diseño mejora la agilidad: esto se relaciona al valor 2, y manifiesta que la calidad del producto no es un aspecto negociable. Es de suma importancia que a medida que el software se desarrolla, se atiendan las necesidades primordiales del cliente y se responda a ellas, entregando al cliente código de calidad.
+10. La simplicidad es esencial: ligado a los valores 2 y 3, este principio apunta a que, como equipo de desarrollo, nos centremos en aquellas necesidades que realmente aporten un valor al cliente, y no perder el tiempo en detalles o aspectos que no se traducen en satisfacer requerimientos de los usuarios, ni hacer desarrollos de más que no estén especificados como necesidad del cliente. Es decir, no hacer cosas que el cliente no pidió.
+11. Las mejores arquitecturas, diseños y requerimientos surgen de equipos autoorganizados: ligado al valor 1, este principio expresa que los equipos de desarrollo ágiles a diferencia de organizaciones jerárquicas tradicionales, donde la dirección/gerencia o los jefes son quienes imparten órdenes, y todos deben acatarlas, bajo esta filosofía los integrantes del equipo deben ser proactivos, aportando soluciones, conceptos, herramientas, etc. que sean útiles al equipo. Este principio está sustentado por el empirismo, el cual establece que el conocimiento surge dentro del equipo de trabajo. El equipo toma las decisiones en el momento que ellos creen adecuados.
+12. A intervalos regulares, el equipo evalúa su desempeño y ajusta la manera de trabajar: ligado a los valores 1 y 4, este principio se basa en los dos pilares de los procesos empíricos (inspección y adaptación), los cuales permiten a los equipos que cada determinados períodos de tiempo evalúen distintos aspectos concernientes a su desempeño, tales como variaciones de personal en el equipo, tecnologías que no han funcionado como se esperaba, cambio de ideas de usuarios, competencia laboral, riesgos, nuevas tecnologías en uso y reflexionar sobre oportunidades de mejoras en general. Un equipo ágil debe inspeccionar su forma de desempeño, para adaptar aquellos aspectos que sean necesarios corregir, mejorar o incorporar al equipo, de manera que el comportamiento del equipo como un todo mejore, y de esa forma se pueda responder a las necesidades cambiantes de los clientes.
+¿Qué es Ágil?
+No es una metodología o proceso.
+Ágil es una ideología con un conjunto definido de principios que guían el desarrollo del producto.
+Valores de los equipos ágiles ...
+* Planificación continua, multi-nivel
+* Facultados, auto-organizados, equipos completos
+* Entregas frecuentes, iterativas y priorizadas
+* Prácticas de ingeniería disciplinadas
+* Integración continua
+* Testing Concurrente
+¿Pero qué significa Ágil?
+Balance entre ningún proceso y demasiado proceso. La diferencia inmediata es la exigencia de una menor cantidad de documentación, sin embargo no es eso lo más importante:
+* Los métodos ágiles son adaptables en lugar de predictivos.
+* Los métodos ágiles son orientados a la gente en lugar de orientados al proceso.
+Algunos frameworks ágiles.
+FDD, Crystal, ATDD, Scrum, XP.
+¿Por qué ir a Agile?
+* Acelera entregas de productos de valor para el cliente.
+* Permite adaptarse fácilmente a cambios de prioridades y requerimientos.
+* Permite alinear los objetivos organizacionales y de TI.
+* Reduce riesgos de proyecto.
+* Permite una mejor visibilidad del proyecto.
+* Mejora las relaciones en el equipo.
+* Reduce costos de proyecto.
+
+
+Técnicas efectivas.[d]
+Ser Ágil no es ser indisciplinado.
+  
+
+  
+
+Requerimientos Ágiles.
+Teniendo en cuenta el principio ágil que dice que se debe satisfacer a los clientes con software que les genere a ellos un valor, se refiere al software que el cliente necesita. Se debe usar el valor de negocio para construir el producto correcto.
+Entonces, la idea de trabajar con una técnica ágil como las User Stories, es para lograr una visión común y temprana de cuál es el producto que le va a generar valor al cliente.
+Armamos algo que nos permitirá comunicarnos con nuestro cliente, acordamos la visión del producto y empezamos rápido.
+  
+
+Luego se debe determinar que es sólo lo suficiente, es decir que no estarán todos los rq’s disponibles para empezar a trabajar, se debe comenzar con la cantidad mínima de rq’s identificados que nos permita entender la visión del producto para comenzar a trabajar y, posteriormente, poder realimentar.
+No estarán todos los rq’s al principio.
+El costo del tradicional BRUF.
+  
+
+Establece las características que realmente se usan de un producto de software.
+No se debe perder tiempo esperando el 100% del producto especificado para comenzar a trabajar.
+La imagen adjuntada expresa la frecuencia con la que los usuarios utilizan determinadas funcionalidades de un
+software. A lo que se apunta con este concepto de BRUF es a notar que, en una primera instancia de un proyecto de software, desarrollar sólo unas pocas funcionalidades de gran valor e importancia para el cliente, puede cubrir gran parte de sus necesidades, a medida que se desarrolla el resto de los requerimientos.
+Además, es prácticamente imposible conocer al 100% todas las necesidades de los usuarios, ya que ni ellos saben
+concretamente qué necesitan, ni cómo explicar de forma abarcadora y completa sus necesidades. Por otro lado, esas necesidades que tienen los usuarios al momento de ser relevadas, con el tiempo probablemente irán cambiando, con lo cual, la priorización es un factor fundamental en esa etapa, donde el equipo en conjunto con el Product Owner, deberán ser capaces de decidir cuáles son aquellos requerimientos indispensables para el negocio, de manera que, si se implementan esas necesidades, se puede entregar una nueva versión del producto que sea de valor para el cliente.
+
+
+Gestión Ágil de Requerimientos de Software: Priorización.
+La prioridad la define el cliente.
+El cliente pone los rq’s en una pila, lo que está más en la cima es lo más importante y de ahí para abajo en menor nivel de importancia.
+El Product Owner es un no técnico y se relaciona con uno de los valores del Manifiesto Ágil.
+  
+
+NO SE DEBE EMPEZAR A PROPONER SOLUCIONES A COSAS DONDE NO SE TIENE EN CLARO CUÁL ES EL PROBLEMA.
+La gestión ágil busca contrarrestar la situación planteada con anterioridad donde gran parte del software no se termina utilizando. El Product Backlog es una lista priorizada de características y requerimientos del software. Es el Product Owner quien se encarga de definir esta lista ya que es él quien tiene en claro cuáles son sus necesidades y requerimientos principales. El Product Owner se va a encargar de decidir qué requerimientos necesita primero según el valor que éstos tengan para el negocio.
+En contraposición con el enfoque tradicional, donde teníamos un cliente que no estaba dispuesto a comprometerse y dejaba la priorización de los requerimientos al equipo que hace el software, se terminaba construyendo un producto que no dejaba satisfecho al cliente. En ágil es el cliente el encargado de esta priorización, lo que lleva a que se construya el producto deseado.
+Con esta situación se permite la compensación de no tener documentos de requerimientos formales escritos, detallando todos los puntos. Ágil ofrece una compensación al afirmar que la mejor comunicación es el cara a cara y un cliente partícipe en el equipo.
+Just in time.
+Analice cuando lo necesite, no antes.
+Está asociado a la producción. La inventó la Teoría Lean de Producción.
+La idea de Just In Time, asociada a los requerimientos, tiene que ver con evitar invertir mucho tiempo en tener rq’s detallados y especificados de antemano y luego correr el riesgo de que esos rq’s cambien.
+Por ello, esta idea dice “Analice cuando lo necesite, no antes”, es decir, trabajar y enfocarse solo en los rq’s que se van a implementar en una determinada iteración y cuando venga la siguiente iteración, analizar los rq’s de esa iteración y así sucesivamente.
+Los rq’s llegan al equipo en el momento en el que los necesitamos, antes no, porque se corre el riesgo de que cambien.
+La mejor forma de comunicación es la comunicación cara a cara y si es mejor con un pizarrón en el mismo espacio físico (dice Meles xd).
+“Valor es la obtención de beneficio tangible o intangible”. El valor se construye entre 2, con el cliente presente.
+
+
+La gestión ágil de requerimientos sostiene los requerimientos justo a tiempo, asociados a los principios de eliminar el desperdicio y diferir compromisos, dentro de la filosofía Lean.
+Se empieza con una visión del producto y con algunos requerimientos identificados. A partir de esta base, se comienza a construir el producto y se incorpora al cliente para obtener retroalimentación. El Product Backlog nunca está al 100%
+
+
+  
+
+Los requerimientos ágiles, basados en el principio de que el mejor medio de comunicación es el cara a cara, promueven que los requerimientos del software se obtienen conversando cara a cara con el cliente.
+En los ambientes tradicionales, los requerimientos se encuentran especificados en un documento de
+especificación de requerimientos (ERS) y el cliente luego lo lee para validarlo (sería lo que en el gráfico
+dice “papel”).
+Los agilistas no escriben una ERS, pero lo compensan con la disponibilidad del cliente para resolver las dudas. Esto permite reducir la cantidad de documentación formal. La elicitación de requerimientos es un proceso que requiere de conversar de forma personal, analizando lo que los clientes dicen y los gestos que manifiestan.
+El desarrollo ágil no implica la no documentación o la no especificación de requerimientos, sino que prioriza documentar y especificar aquellos que sean de valor para el cliente, antes que hacer toda una ERS errónea.
+
+
+Tradicional vs Ágil.
+  
+
+Triángulo de hierro.
+En el enfoque ágil, se trata de aceptar la realidad en la cual el alcance (requerimientos) del producto puede cambiar a lo largo del desarrollo, y no es posible definirlos al comienzo de este. Entonces, el enfoque trata de dejar el tiempo y los recursos fijos, teniendo en cuenta “cuánto software” le puedo entregar en tanto tiempo y con tal equipo de
+desarrollo.
+
+
+  
+
+  
+
+Por otro lado, en el enfoque tradicional, el alcance se fija y en función de eso derivan los recursos (costo) y el tiempo.
+El cliente desea controlar el alcance, ya que este comprende lo que él realmente necesita. Luego el cliente pregunta por el tiempo y el costo, los cuales son derivados por el equipo. Por esta razón es tan costosa incorporar cambios de requerimientos, ya que se estaría modificando el alcance y como consecuencia los recursos y el tiempo.
+Tipos de Requerimientos.
+La parte baja de la pirámide, corresponde a los requerimientos del Dominio de la solución (esto no le interesa al cliente, es cómo el equipo transforma sus necesidades en código ejecutable). Lo que está por encima, es decir, Requerimientos de Usuario y Requerimientos de Negocio, corresponden al Dominio del Problema, y es lo que al cliente sí le interesa.
+  
+
+  
+
+A nivel de la gestión ágil de requerimientos se trabaja con:
+* Requerimiento de negocio
+* Requerimiento de usuario
+Las User Stories son requerimientos de usuario alineados a un requerimiento de negocio.
+Al usuario le interesa el requerimiento de negocio. El valor de negocio es el requerimiento de negocio, pero el requerimiento de usuario es el medio por el cual vamos a lograr ese valor de negocio.
+Las User Stories no sirven para especificar requerimientos de software, sirven para identificar requerimientos de usuario.
+El foco de la gestión ágil de requerimientos está puesto sobre el usuario y sobre sus necesidades y por eso en enfoques como scrum quién debe trabajar para identificar las User Stories es el Product Owner. Ya que es él quien se concentra en las necesidades de usuarios que van a satisfacer las necesidades de negocio.
+En resumen: ¿Cómo funcionan los requerimientos ágiles?.
+Primero se debe entender la necesidad del negocio, entonces todo el equipo de técnicos y no técnicos, trabajan juntos para descubrir una solución para esas necesidades del negocio.
+De esta forma se arma el Product Backlog que está priorizado por el Product Owner. Luego los técnicos y no técnicos, juntos, van desarrollando de forma iterativa el producto y trabajando con los rq’s Just in Time, demorando todo lo que más se pueda el detalle hasta lo que se necesita. Finalmente, se generan versiones frecuentes de software de valor para quienes lo necesitan.
+* Los cambios son la única constante. Todo el tiempo va a haber cambios en los requerimientos.
+* Stakeholders: no son todos los que están. Debemos saber quiénes son los involucrados y los involucrados son todos los que tiene algo que decir respecto del producto. El PO es el representante de todas estas personas y el que se comunica con todas ellas para luego ser él mismo el que se comunica con el equipo que hace el software.
+* Siempre se cumple eso de que: “El usuario dice lo que quiere cuando recibe lo que pidió”.
+* No hay técnicas ni herramientas que sirvan para todos los casos. Debemos detectar para cada situación cuál es la herramienta más adecuada.
+* Lo importante no es entregar una salida, un requerimiento, lo importante es entregar, un resultado, una solución de “valor”.
+Principios Ágiles relacionados a los Requerimientos Ágiles.
+  
+
+El 2 y el 6 son los más importantes que justifican por qué el enfoque de rq’s ágiles plantea lo que plantea.
+El último (11) apunta a contrarrestar el enfoque tradicional bastante frecuente de imponerle a un equipo de desarrollo los rq’s, la arquitectura, la forma de trabajar, etc y no dejar que sea el equipo el que va construyendo los puntos mencionados anteriormente.
+User Stories.
+La palabra historia es clave, ya que el cliente es quien tiene una historia que contar y muchas veces es difícil de contar esa historia.
+
+
+Son una técnica para trabajar requerimientos de usuario en ambientes ágiles. La US contiene una descripción corta de una funcionalidad que se espera del producto valuada por un usuario del sistema.
+Funciona como un recordatorio para el equipo de desarrollo y el Product Owner de que tienen que conversar acerca
+de la necesidad en términos de negocio para la construcción de una característica del producto que aporte valor. En otras palabras, es un mecanismo para diferir una conversación.
+Es un requerimiento a nivel de usuario, no al nivel de sistema, por lo que se encuentra a un nivel de abstracción más elevado. Es un ítem de planificación que no acompaña al producto durante todo el ciclo de vida. Para eso está el manual de usuario. Las US son escritas por el Product Owner.
+Internamente, las User Stories se consideran verticales dentro del producto, ya que pueden incluir aspectos desde
+diseños de interfaces hasta diseños de tablas en la base de datos.
+Se dice que son multipropósito, debido a que cumplen diferentes funciones en el desarrollo de un software:
+* Representan una necesidad de usuario, de forma no detallada.
+* Conforman una descripción del producto.
+* Son utilizadas como ítems de planificación.
+* Se utilizan como recordatorios de futuras conversaciones acerca del producto que se desea construir.
+* Junto con el código ejecutable, permiten documentar el producto.
+La problemática que motivó en la definición de esta técnica es la dificultad de comunicar lo que hará el sistema a todas las personas afectadas. Cada una tiene un interés respecto a esta información.
+La definición de los requerimientos es lo que más afecta la calidad del sistema final y es lo más complejo de definir con detalle debido a la incertidumbre y cambio constante que sufren, que se da por el problema de comunicación. La dificultad se basa en qué se escribe y cuándo.
+La elicitación tradicional no da buenos resultados, ya que todas las decisiones se toman al principio del proyecto
+cuando menos información se tiene. Por lo que se estableció que esta toma de decisiones se traslada a lo largo del
+proyecto, a medida que la incertidumbre baja y la información sube, buscando que se obtenga más a menor tiempo
+posible. Aquí surgen las User Stories.
+¿Cuáles son las partes de una User Story?
+  
+
+Está compuesta por tres partes:
+1. Tarjeta: es una descripción de la historia, utilizada para planificar y como recordatorio. Tiene una
+sintaxis particular que es la siguiente:
+<<Frase Verbal>>
+	Como <<nombre del rol>> yo puedo <<actividad>> de forma tal que <<valor de negocio>>
+	* Nombre del rol: representa quien está realizando la acción o quien recibe el valor de la actividad.
+* Actividad: representa la acción que realizará el sistema.
+* Valor de negocio: es la más importante y representa el por qué es necesaria la actividad. Esto justifica la razón de que el Product Owner escriba las US. Permite priorizar el desarrollo.
+* Frase verbal: no es obligatoria, es una forma corta de referenciar la US. Representa la funcionalidad que se expresa en la User Story.
+* Criterios de aceptación: son diferentes criterios sobre la actividad que se necesita implementar, que permiten definir los límites de la U.S. para que el equipo tenga una mejor visión de esta. Además, facilitan las tareas de desarrolladores y testers para probar la funcionalidad. Se deben redactar independientes a la implementación (alto nivel de abstracción).
+* Pruebas de aceptación: acompañan a la tarjeta en la parte trasera, y es donde se capturan todos los detalles (que se manifiestan en la conversación) de la User, permitiendo determinar cuándo una historia está completa. Esto servirá a los desarrolladores para probar si la implementación ha sido realizada de forma correcta y completa. Las pruebas pueden agregarse o quitarse en cualquier momento.
+2. Conversación: Es la parte más importante de la US, ya que explicita la comunicación entre el Product Owner y el Equipo de desarrollo que permite compensar la falta de especificación y detalle. El acuerdo por sobre la negociación del contrato y el principio de técnicos y no técnicos trabajando juntos durante todo el proyecto están asociadas a esta parte de la US. El Product Owner es parte del equipo, por lo cual se espera responsabilidad, compromiso y confianza de su parte para hacerse cargo y llegar a un acuerdo común con el equipo sobre lo definido acerca de la funcionalidad. También es posible dejar la conversación persistente en grabaciones, minutas o softwares de gestión que posibiliten la conversación. De todas maneras, la conversación se materializa de forma distribuida en la tarjeta y en las pruebas de aceptación. En simples palabras, son discusiones acerca de la historia que sirven para desarrollar los detalles de la historia.
+3. Confirmación: Definición de un acuerdo entre el Product Owner y el Equipo para demostrar que la característica del producto realmente se implementó. Conforma a la definición de las pruebas de aceptación. El PO decide si las pruebas de aceptación son válidas. Pruebas que se usan para determinar cuándo una US está completa.
+Sintaxis de las User Stories.
+Como <nombre del rol> yo puedo <actividad> de forma tal que <valor de negocio que recibo>.
+La parte más importante de la US es el valor de negocio, es decir cómo me ayuda a mi esta característica de software que expreso.
+  
+
+  
+
+Es el valor de negocio quien ayuda a priorizar las US.
+Las US son multipropósito.
+Las US son:
+* Una necesidad del usuario.
+* Una descripción del producto.
+* Un ítem de planificación.
+* Token para una conversación.
+* Mecanismo para diferir una conversación.
+Product Backlog y las User Stories.
+El PO prioriza las historias en el Product Backlog, va estableciendo cuándo necesita c/u de los ítems del Product Backlog.
+La pregunta que se debe realizar es:
+¿Cuántos rq’s se pueden desarrollar en esta iteración? , siendo ésta, la forma en que se arman los contratos.
+Como los frameworks ágiles apuntan a ciclos de vida iterativos, entonces el producto se entrega en porciones en las sucesivas versiones y luego se va incrementando la funcionalidad del producto. Entonces, en esta línea, es importante decidir con algún criterio, qué es lo que se entrega primero y qué es lo que se entrega después.
+  
+
+Es una pila de PBIs (Product Backlog Ítems) con sus correspondientes estimaciones de tamaño, en un formato
+determinado. En la parte más alta de la pila, se ubican las U.S. de mayor prioridad (que son aquellas U.S. con
+granularidad fina), y las de menor prioridad (normalmente aquellas User de granularidad gruesa, sobre las cuales no se tiene mucho detalle ya que no se consideran indispensables) al fondo. En cualquier momento se puede cambiar esa priorización, según cómo lo indique el Product Owner, quien es el encargado de realizar el proceso de priorización.
+En cualquier momento del proyecto se van agregando nuevas U.S. y actividades a realizar, según se vayan detectando nuevos requerimientos.
+Para quitar una U.S. del Product Backlog, se planifica una iteración y se decide, según la velocidad de trabajo
+del equipo [Story Points / iteración], cuántas U.S. de la pila (las de mayor prioridad que están arriba) se
+quitarán para implementarlas en la próxima iteración.
+Debido a estas dos situaciones (agregar y quitar ítems), nunca encontraremos el 100% de los requerimientos de usuario en el Product Backlog.
+Es recomendable tener una gran cantidad de historias con tamaños relativamente pequeños, que tener historias muy grandes.
+Porciones verticales.
+  
+
+Las US son porciones verticales, es decir, para poder agregar valor al cliente debemos tener un poco de interfaz, un poco de lógica de negocio y otro poco de base de datos.
+Debemos diseñar el pedacito de cada cosa que nos hace falta para que una determinada característica funcione.
+Que sea una porción vertical significa que debe ser independiente, pudiendo funcionar por sí sola.
+El PO escribe las US.
+Modelado de Roles.
+Se utilizan las tarjetas de rol de usuario, aquí se anotan las características en general que va a tener el usuario.
+El tema crítico de la funcionalidad está relacionado con quien va a utilizar dicha funcionalidad. Por esta razón existe
+una tendencia por ocuparse de quien va a usar el sistema, especificando los roles de usuario donde definimos las
+características del usuario respecto al producto y en relación con su perfil genérico.
+Se puede definir una persona ‘Juan’ y aclarar sus características, qué tan relacionado está con determinado software para poder hacer una interfaz ‘parecida’, por ejemplo.
+Técnicas adicionales
+1. Personas: esta técnica busca ser más específica acerca de la descripción de la persona concreta que va a utilizar el sistema. Este análisis es exhaustivo y por lo tanto complejo. Si los roles son clases, las personas serían los objetos.
+2. Personajes extremos: que personas en términos extremos podrían llegar a utilizar el software.
+3. Proxies (Usuarios Representantes): es un representante de todos los usuarios. Debe tener capacidad de tomar decisiones desde el negocio.
+Tarjeta de Rol de Usuario.
+  Personas.
+  
+
+Personajes Extremos.
+  
+
+Usuarios Representantes (Proxies).
+* Tipos de usuarios representantes:
+* Gerentes de Usuarios
+* Gerentes de Desarrollo
+* Alguien del grupo de marketing
+* Vendedores
+* Expertos del Dominio
+* Clientes
+* Capacitadores y personal de soporte.
+(ESTOS USUARIOS REPRESENTANTES HAY QUE INTENTAR EVITARLOS, YA QUE NO TIENE UNA DEFINICIÓN EN PROFUNDIDAD DE QUE SON, NO QUIERE DECIR QUE ESTÉN MAL PERO HAY QUE REPLANTEARSE SI REALMENTE ESE ES EL ROL).
+NO PONER A LOS USUARIOS DE LAS US “USUARIOS”.
+Criterios de aceptación.
+Es una nota no obligatoria que define un acuerdo respecto a cómo se debe comportar el software para que el PO
+acepte la implementación, es recomendable que este debido a que sino los desarrolladores no tendrían un parámetro para definir si la misma fue cumplimentada o no. Lo fundamental es que esté escrito en términos objetivos y concretos.
+El criterio de aceptación es información concreta que tiene que servirnos a nosotros para saber si lo que implementamos es correcto o no. Debemos saber si el PO nos va a aceptar esta característica implementada o no, porque la va a aceptar si respeta los criterios de aceptación.
+* Definen límites para una User Story (US)
+* Ayudan a que los PO respondan lo que necesitan para que la US provea valor (requerimientos funcionales mínimos).
+* Ayudan a que el equipo tenga una visión compartida de la US.
+* Ayudan a desarrolladores y testers a derivar las pruebas.
+* Ayudan a los desarrolladores a saber cuándo parar de agregar funcionalidad en una US.
+  
+
+¿Cuáles son los criterios de aceptación buenos?
+* Definen una intención, no una solución. Ejemplo: El usuario debe elegir al menos una cuenta para operar.
+* Son independientes de la implementación.
+* Relativamente de alto nivel, no es necesario que se escriba cada detalle.
+¿Y los detalles, a dónde van?
+Detalles como:
+* El encabezado de la columna se nombra “Saldo”
+* El formato del saldo es 999.999.999,99
+* Debería usarse una lista desplegable en lugar de un Checkbox.
+
+
+Estos detalles que son el resultado de las conversaciones con el PO y el equipo puede capturarlos en dos lugares:
+* Documentación interna de los equipos
+* Pruebas de aceptación automatizadas.
+Cada equipo decide dónde guardar el detalle y cómo lo va a mantener.
+Pruebas de Aceptación.
+  
+
+Son declaraciones de intención de que hay que probar. El conocimiento del negocio está inmerso en las pruebas de
+aceptación. Se prueban escenarios exitosos y escenarios que fallen. En las pruebas de aceptación se encuentran las más importantes, ya que no es posible escribir todas las posibles pruebas de aceptación.
+El Product Owner acepta la User como implementada si todas las pruebas de aceptación se cumplen.
+Expresan detalles resultantes de las conversaciones entre clientes y desarrolladores; suelen usarse para completar
+detalles de la US. Es importante mencionar que las mismas deben escribirse antes que la programación empiece, y
+que se recomienda que las escriba el cliente.
+Expresan detalles resultantes de la conversación.
+Complementan la User Story.
+Proceso de dos pasos:
+1.  Identificarlas al dorso de la US.
+2.  Diseñar las pruebas completas.
+Ejemplo.
+  
+
+DoR (Definition of Ready) – Definición de Listo.
+Es una medida de calidad que determina si la User Story está en condiciones de entrar a una iteración de desarrollo.
+Para que la US pueda ser implementada, mínimamente debe satisfacer el INVEST Model. Entre el equipo de
+desarrollo y el PO pueden definir características o condiciones extras al INVEST para que una US se considere lista
+para entrar a la iteración de desarrollo.
+INVEST Model.
+Es un modelo de calidad que nos ayuda a verificar si la User cuenta con las características de la calidad mínima para satisfacer la definición de Ready y poder ingresar en una iteración de desarrollo.
+  
+
+* Independiente: la User es calendarizable e implementable en cualquier orden. Esto implica que no existe una dependencia con otra User para desarrollarla o para mostrarla al Product Owner. El PO tiene la libertad de priorizarlas en el Product Backlog como él desee.
+* Negociable: Las US no son contratos estrictos, sino más bien pequeñas descripciones de funcionalidades donde se describen las necesidades de los usuarios, y los detalles se dejan para negociar en conversaciones futuras entre clientes y el equipo de desarrollo. Esto implica que no deben detallarse todos los aspectos de forma exhaustiva, sino más bien, servir a modo de recordatorio para negociar aquellos aspectos en un futuro cuando se deba implementar. El cliente debe expresar lo que necesita, es decir que está centrada en el “qué” no el “cómo”. El cómo es decisión del equipo y debe ser negociable con el Product Owner. La US debe estar escrita en términos de qué necesita el usuario y no de cómo lo vamos a implementar.
+* Valuable: Una US debe ser valorable para los clientes o usuarios (el para qué de la descripción). Es decir, las U.S. deben aportar valor de negocio a quiénes estará destinado el producto, no para el equipo de desarrollo. Esto implica dejar de lado en US, por ejemplo, las tecnologías utilizadas para el desarrollo del producto.
+* Estimable: la US debe contener la cantidad de información suficiente para estimar el tamaño, la complejidad y el esfuerzo necesario para realizarlo. Sin poder estimarla no es posible determinar si se puede finalizar en una iteración por lo tanto no puede ser construida (No puedo saber cuánto tardaría).
+Hay tres razones por las cuales una US puede no ser estimable:
+1. El equipo tiene incertidumbre acerca del dominio.
+   1. Deberán discutir con el Product Owner para esclarecer todas las dudas.
+2. El equipo tiene incertidumbre técnica, es decir, sobre el dominio de la solución.
+   1. Deberá destinarse uno o más miembros del equipo a uno o más Spikes.
+3. La US es demasiado grande.
+   1. En este caso, deberá dividirse en US más pequeñas.
+
+
+* Small (Pequeña): la US debe ser lo suficientemente pequeña como para ser finalizada en una iteración. Se debe comenzar y terminar una característica en una iteración, no debe haber trabajos a medias. El tamaño es relativo. ya que depende del equipo, de la experiencia que tiene, de su capacidad de trabajo y también depende de la duración de la iteración. Ágil aplica gestión binaria, es decir, si se puede completar la US en la iteración, es pequeña. No aplica porcentaje de avances.
+* Testeable: la US debe cumplir con las pruebas de aceptación para poder probar si la misma fue o no implementada (se muestra que está hecha y demostrable).
+DoD (Definition of Done) – Definición de Hecho
+Determina si la US está terminada. Son los criterios que establecen cuándo una User Story ha sido implementada de forma correcta y completa, de forma que puede ser mostrada al Product Owner, para que éste decida si se pasa a producción o no. En el momento que una U.S. cumple con todo lo pactado en esta Definición de Hecho, se considera que esa US está lista para ser desplegada y aportar valor al cliente.
+Esto permite crear transparencia, debido a que proporciona a todo el equipo una comprensión exhaustiva de qué
+trabajo se realizó, para lograr ese incremento.
+En la práctica consta de un Checklist de condiciones que deben cumplirse. Puede ocurrir que una organización tenga un estándar de DoD, entonces los miembros del equipo deberán adaptarse a ese estándar. O bien, que la organización no posea un estándar, con lo cual el equipo deberá confeccionar y crear una Definición de Hecho adecuada para el producto.
+Diferentes niveles de abstracción.
+El product backlog tiene características del producto que pueden estar en diferentes niveles de abstracción o granularidad. La US si cumple con el criterio de Definition of Ready ya puede ser tenida en cuenta para ser  construida.
+  
+
+Epic. 
+Es un agrupamiento de características de producto muy grandes y tiene un nivel de complejidad tal que hará que la característica sea subdividida en cosas más pequeñas. Es una user story muy grande. No entra en una iteración. Por lo general, se puede dividir y tiene la misma sintaxis que una user. Y son las épicas las que se colocan bien por debajo de la pirámide.
+Theme. 
+Agrupamiento de características de producto, que puede tener tanto US como Epics.
+Spikes (Investigación).
+Tipo especial de historia, utilizado para quitar riesgo e incertidumbre de una User Story u otra faceta del proyecto.
+Se clasifican en: técnicas y funcionales.
+Pueden utilizarse para:
+* Inversión básica para familiarizar al equipo con una nueva tecnología o dominio.
+* Analizar un comportamiento de una historia compleja y poder así dividirla en piezas manejables.
+* Ganar confianza frente a riesgos tecnológicos, investigando o prototipando para ganar confianza.
+* Frente a riesgos funcionales, donde no está claro como el sistema debe resolverla interacción con el usuario para alcanzar el beneficio esperado.
+Técnicas.
+* Utilizadas para investigar enfoques técnicos en el dominio de la solución.
+* Evaluar performance potencial
+* Decisión hacer o comprar
+* Evaluar la implementación de cierta tecnología.
+* Cualquier situación en la que el equipo necesite una comprensión más fiable antes de comprometerse a una nueva funcionalidad en un tiempo fijo.
+Funcionales.
+* Utilizadas cuando hay cierta incertidumbre respecto de cómo el usuario interactuará con el sistema.
+* Usualmente son mejor evaluadas con prototipos para obtener realimentación de los usuarios o involucrados.
+
+
+Algunas User Stories requieren de ambos tipos de spikes. Por ejemplo:
+* Como un cliente, quiero ver mi uso diario de energía en un histograma, para poder comprender rápidamente mi consumo de energía pasado, presente y proyectado.
+En este caso un equipo puede crear dos spikes:
+* Spike Técnico:
+* Investigar cuánto tiempo requiere actualizar un display de un cliente al uso actual, determinando requerimientos de comunicación, ancho de banda y si los datos se actualizan en formato push o pull.
+* Spike Funcional:
+* Crear un prototipo de histograma en el portal web y obtener la retroalimentación de algunos usuarios respecto del tamaño, el estilo de la presentación y los atributos gráficos.
+Lineamientos para Spikes.
+  
+
+Las user stories no son requerimientos, no necesitan ser descripciones exhaustivas de la funcionalidad del sistema.
+  
+
+Tips para que las user stories sean útiles para el equipo.

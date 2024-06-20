@@ -1,0 +1,204 @@
+Clase 22/03/2024: SCM: Gestión de configuración de software.
+Software en contexto.
+  
+
+El proceso es una plantilla y es una definición abstracta, existe y se materializa a través de los proyectos.
+El Proceso unificado de desarrollo (PUD) es un proceso definido, donde teníamos definido algunas herramientas,  diagramas, workflows, etc, que dependen de cada organización, a veces el análisis y el diseño se veían como una sola cosa.
+Cuando vaya a ejecutar un proyecto, voy a definir o adaptar ese proceso que tengo definido a nivel teórico, a lo que necesita mi proyecto. Teniendo en cuenta que como resultado de mi proyecto, va ser un producto de software.
+Hay muchas características propias de un proyecto y muchas que son propias del producto de software, que lo voy a obtener como resultado del proyecto.
+El proyecto empieza y termina (tiene una fecha de inicio y una fecha de fin).
+El producto sobrevive a la vida del proyecto, Cuando realice un proyecto, obtengo como resultado un producto de software pero luego podemos tener más proyectos sobre ese producto de software.
+Las personas son clave para llevar a cabo todo esto.
+Las herramientas se necesitan para poder automatizar estos proyectos. por ejemplo herramientas de gestión de configuración.
+Software.
+Es la información estructurada que finalmente puede ser representada en el ordenador, son requerimientos.
+Cambios en el Software.
+(Evolución del software)Tienen su origen en: 
+* Cambios del negocio y nuevos requerimientos
+* Soporte de cambios de productos asociados
+* Reorganización de las prioridades de la empresa por crecimiento
+* Cambios en el presupuesto
+* Defectos encontrados a corregir
+* Oportunidades de mejora
+En lo que va cambiando el software, corremos el riesgo de perder la trazabilidad entre todo lo que nuestro software tiene como elemento que lo componen (lo que tengo definido en los requerimientos, lo que tengo modelado en el diseño, el código fuente y la última versión, etc.)
+SCM[a] como disciplina de soporte.
+Cuando hablamos de gestión de configuración, hablamos de encontrar una disciplina de gestión que sea transversal al proyecto (aunque trasciende al mismo) y nos permita controlar la integridad de nuestro producto de software. Es parte de las disciplinas de soporte del software. 
+Es una actividad “paraguas” que aplica dirección y monitoreo administrativo para identificar y documentar las características funcionales y técnicas, registrar y reportar cambios y su estado de implementación y verificar correspondencia con los requerimientos (4 actividades fundamentales: identificación, control de cambios, auditorias y reportes de control de estado).
+Disciplinas de soporte de software.
+El marco de trabajo para que otras disciplinas como el aseguramiento de calidad de software puedan existir, es donde surge la Administración de Configuración de Software.
+
+
+La Administración de Configuración de Software es la disciplina que ayuda a que el resto de las disciplinas puedan funcionar y hacer su trabajo.
+
+
+Esta disciplina contiene a:
+* Control de calidad de producto
+* Control de calidad de proceso
+* Prueba de software
+  
+
+Integridad del producto.
+¿Qué tiene que tener un producto para tener integridad?
+* Satisfacer las necesidades del usuario
+* Puede ser fácil y completamente rastreable durante su ciclo de vida
+* Satisfacer los criterios de performance
+* Cumplir con sus expectativa de costo
+
+
+Durante todo nuestro trabajo transversal se realiza una gestión de la configuración.
+La SCM es responsabilidad de todos. Todos son responsables por el producto que se está construyendo entre todos.
+Existe el rol del SCM que se llama Gestor de Configuración.
+¿Por qué deberíamos gestionar la configuración del software? El propósito de la disciplina SCM es obtener un producto con integridad. Es decir, es establecer y mantener la integridad de los productos de software a lo largo de su ciclo de vida.
+Involucra para la configuración:
+* Identificarla en un momento.
+* Controlar sistemáticamente sus cambios.
+* Mantener su integridad y origen.
+
+
+El problema que tiene el software es que cambia y es muy fácil cambiarlo y hacer que cambie, tiene maleabilidad para ser destruído. SCM trata de que eso no pase y si ocurre un cambio, que se tenga un control de esos cambios.
+Conceptos claves para la gestión de configuración de software.
+* Ítem de configuración.
+* Repositorio: Es el contenedor de ítems de configuración. Es el lugar donde se guardan los ítems de configuración. Tiene una estructura que permite definir qué ítem de configuración se va a poner en cada lugar, y esto se realiza para saber en dónde impactan los cambios, es decir realizar una evaluación de impactos por los cambios que se produzcan. Además se requiere de una estructura para mantener un orden.
+* Línea Base.
+* Ramas.
+* Configuración del software.
+Ítem de configuración.
+Se llama ítem de configuración a todos y cada uno de los artefactos que forman parte del producto o proyecto. Estos artefactos necesitan ser sometidos a la gestión de configuración porque pueden sufrir cambios o necesitan ser compartidos entre los miembros del equipo y sobre los cuales es necesario conocer su estado y evolución.
+Hay ítems de configuración en términos de producto y en términos de proyecto. Un ítem de configuración puede ser código, foto, word, prototipo, plan de proyecto, presupuesto, etc. Por lo general, se gestan en el contexto de un proyecto, van conformando el producto.
+Si sufre cambios → tiene que estar en la gestión de la configuración.
+Cada ítem de configuración tiene su versión.
+Versión.
+Una versión se define, desde el punto de vista de la evolución, como la forma particular de un artefacto en un instante o contexto dado.
+El control de versiones se refiere a la evolución de un único ítem de configuración (IC), o de cada IC por separado.
+La evolución puede representarse gráficamente en forma de grafo.
+  
+
+La versión es un estado que tiene que ver con el tiempo de cada ítem de configuración.
+Como es tan fácil de modificar el software, se asocia siempre a un ítem de configuración una versión. Y a una versión se le pone un número.
+
+
+Variante.
+Una variante es una versión de un ítem de configuración (o de la configuración) que evoluciona por separado.
+Las variantes representan configuraciones alternativas.
+Un producto de software puede adoptar distintas formas (configuraciones) dependiendo del lugar donde se instale.
+Por ejemplo, dependiendo de la plataforma (máquina + SO., si se instala en IOS o Android) que la soporta, o de las funciones opcionales que haya de realizar o no.
+  
+
+Configuración del software.[b]
+Es un conjunto de ítems de configuración con su correspondiente versión en un momento dado. Es una foto del producto de software en un momento determinado.
+¿Qué es un Repositorio?
+Un repositorio de información es el lugar donde se almacenan los ítems de configuración (ICs) y en donde se guarda la configuración de software. Mantiene el historial de las versiones, la historia de cada IC con sus atributos y relaciones.
+Usado para hacer evaluaciones de impacto de los cambios propuestos.
+Pueden ser una o varias bases de datos.
+Ejemplo:
+  
+
+Funcionamiento del Repositorio.
+  Repositorios Centralizados.
+Un servidor contiene todos los archivos con sus versiones. Los administradores tienen mayor control sobre el repositorio. Falla el servidor y "estamos al horno“.
+  
+
+Repositorios Descentralizados.
+Cada cliente tiene una copia exactamente igual del repositorio completo. Si un servidor falla sólo es cuestión de “copiar y pegar”. Posibilita otros workflows no disponibles en el modelo centralizado.  
+
+
+________________
+Línea base.
+Es una etiqueta que se le coloca a cada uno de los ítems de configuración (de una versión) que permite identificar que esa es una versión del producto de software que ha sido revisada, sobre la cual se ha llegado a un acuerdo y es estable.
+Sirve como base para desarrollos posteriores y puede cambiarse sólo a través de un procedimiento formal de control de cambios. Permiten ir atrás en el tiempo y reproducir el entorno de desarrollo en un momento dado del proyecto, dando siempre la seguridad en que (en ese punto anterior) el producto tiene la integridad necesaria.
+Tipo de Línea Base:  
+* De especificación (Requerimientos, Diseño).
+* De productos u operacionales que han pasado por un control de calidad definido previamente.
+  
+
+Los que forman parte de un comité de control de cambios actúan solamente para controlar la calidad y la integridad de la línea base.
+Entonces si los ítems de configuración no forman parte de ninguna línea base, estos se pueden cambiar con la libertad que se desee, sino el comité de control de cambios interviene. El cliente se puede ver involucrado ante un cambio de un ítem de configuración que forma parte de una línea base.
+El comité de control de cambio interviene siempre sobre una línea base, autoriza el cambio y luego, vuelve intervenir para controlar que lo que se cambió fue lo que él autorizó.
+  
+
+Se debe notificar a las partes como testers, analistas, etc.
+Ramas.
+Una rama se usa para bifurcar el desarrollo, es decir, teniendo una rama principal donde se tiene el producto estable que se está construyendo, se empiezan a tener bifurcaciones en el desarrollo porque se quiere probar diferentes funcionalidades. La línea base se encuentra dentro de la rama Master. 
+
+
+Las ramas permiten la experimentación y deben ser descartadas o integradas a la principal.
+Para la integración de ramas se realiza una operación denominada merge. Entonces, todos los cambios que se realicen se llevan a la rama principal.
+Pueden surgir conflictos al mergear una rama con otra (y creeme que pasa muy a menudo) con lo cual se puede resolver con una operación diff.
+Definición de Gestión de Configuración de Software.
+Una disciplina de gestión que aplica dirección y monitoreo administrativo y técnico a: identificar y documentar las características funcionales y técnicas de los ítems de configuración, controlar los cambios de esas características, registrar y reportar los cambios y su estado de implementación y verificar correspondencia con los requerimientos
+(ANSI/IEEE 828, 1990)
+Actividades Fundamentales de la Gestión de Configuración de Software.
+  
+
+Existen 4 actividades fundamentales que definen la gestión de configuración del software:
+* Identificación de Ítems de Configuración: deben identificarse unívocamente los ítems. El primer aspecto es la regla de nombrado: definir el nombre que se le va a asignar al IC para garantizar que no se repita y poder identificarlo de manera única. Segundo aspecto: definir la estructura del repositorio; es decir como se va a armar el repositorio en base a lo que le sea más práctico/cómodo al equipo. Tercer aspecto: definir la ubicación de la estructura del repositorio, es decir a qué lugar del repositorio va a ir cada IC. También se debe ver en qué momento trazar las líneas base.
+Para un proyecto de desarrollo de software se pueden identificar 3 tipos de ítems de configuración distintos:
+* Producto: Sobrevive a la vida del proyecto mientras el producto de software esté vivo. Mientras el producto exista y esté funcionando, todos los ítems de configuración tienen que ser mantenidos, como las ERS, la arquitectura, el código, el manual de usuario, etc.
+* Proyecto: Se tiene un plan de proyecto y ‘n’ planes de iteración. El ciclo de vida de interés de un plan de proyecto es lo que dura el proyecto (tienen sentido mientras el proyecto esté en curso).
+* Iteración: Si a un proyecto se lo divide en interacciones, van a existir ítems que van a tener sentido mientras la iteración dure. Debe tener como mínimo 2 iteraciones. El ciclo de vida de interés de un plan de iteración es lo que dura una iteración.
+  
+
+
+
+* Control de Cambios: (ver la explicación que se dio en Línea Base con el comité de control de cambios)
+Los procesos de control de cambios los debe definir cada equipo y empresa como más les guste. Tiene que haber evidencia de que el cambio se analizó, de qué se hizo un análisis de impacto, de que se tomó una decisión y que después se hizo un seguimiento de que esa decisión se haya implementado.
+El control de cambios aplica cuando querés hacer un cambio sobre un ítem sobre la línea base. Cualquier IC que se encuentre en una línea base, para poder ser modificado tiene que ser sometido al comité de control de cambios para hacer esa modificación. ¿Por qué? La línea base contiene IC cuyo estado ha sido aprobado por el equipo, por lo que es necesario revisarlo con todo el equipo por la misma definición de línea base (se entiende que es el punto de retorno en caso de que algo salga mal, y este punto de retorno es el que me garantiza la integridad del producto). 
+
+
+¡Recordar!
+Comité de Control de Cambios → está formado por representantes de todas las áreas involucradas en el desarrollo: Análisis, Diseño, Implementación, Testing, etc.
+
+
+* Auditorías de Configuración: es un proceso de verificación y validación de cómo está funcionando la configuración de un producto determinado y si realmente se está manteniendo la integridad del producto o no.
+Existen 2 auditorías:
+* Física: apunta a las verificaciones (lo que define la gestión de configuración físicamente- definir si estoy construyendo el producto correctamente)
+* Funcional: apunta a las validaciones (valida los requerimientos y el producto de software- definir si estoy construyendo el producto correcto).
+Se debería hacer primero la auditoría física y es allí donde se mira la integridad del repositorio, si está ordenado, si los ítems de configuración están puestos donde tienen que estar. Verifica que se esté cumpliendo con lo que se definió en el plan.
+Si lo anterior está bien, se hace la auditoría funcional, que apunta al producto correcto, es decir que el producto que estamos construyendo es el que el cliente quería. Valida la correspondencia entre los requerimientos y el producto de software que se está construyendo.
+En ambos casos, se trabaja con una matriz de rastreabilidad de los requerimientos que nos permite ir trazando la correspondencia entre un requerimiento y todos los IC, hasta que se llegue a los IC que tiene que ver con la parte final del producto.
+Ambas auditorías se hacen contra una línea base. La línea base contiene todos los ítems de configuración que van a ser auditados.
+Si no pasa las auditorías de configuración, no se debería pasar a producción.
+  
+
+* Informes de Estado: permite dar visibilidad. Permiten hacer reportes y registros sobre los cambios efectuados, sobre la evolución del sistema, lo aprobado, las líneas bases, los IC, etc. Maneja mucha información y salidas por lo que se suele implementar dentro de procesos automáticos. Incluye reportes de rastreabilidad de todos los cambios realizados a las líneas base durante el ciclo de vida.
+        Algunas preguntas que debe poder responder los informes de estado:
+* ¿Cuál es el estado del ítem?
+* ¿Un requerimiento de cambio ha sido aprobado o rechazado por el CCB?
+* ¿Qué versión de ítem implementa un requerimiento de cambio aprobado (saber cuál es el componente que contiene la mejora)?
+* ¿Cuál es la diferencia entre una versión y otra dada?
+Plan de Gestión de Configuración.
+Es donde se guarda todo lo que se vió hasta acá.
+¿Qué tiene que tener?
+Tiene que contestar sobre las 4 actividades fundamentales de la gestión de configuración.
+Se tiene una sección para cada una de estas 4 actividades.
+* Reglas de nombrado de los ítems de configuración
+* Herramientas a utilizar para SCM
+* Roles e integrantes del Comité
+* Procedimiento formal de cambios
+* Plantilla de formularios
+* Procesos de Auditorías
+Evolución de la Gestión de Configuración de Software.[c]
+Gestión de Configuración de Software en ambientes Ágiles.
+Esta disciplina SI es aplicable a los ambientes ágiles.
+SCM en Agile
+* Sirve a los practicantes (equipo de desarrollo) y no viceversa.
+* Hace seguimiento y coordina el desarrollo en lugar de controlar a los desarrolladores.
+* Responde a los cambios en lugar de tratar de evitarlos.
+* Esforzarse por ser transparente y "sin fricción", automatizando tanto como sea posible.
+* Coordinación y automatización frecuente y rápida.
+* Eliminar el desperdicio - no agregar nada más que valor.
+* Documentación Lean y Trazabilidad.
+* Feedback continuo y visible sobre calidad, estabilidad e integridad.
+
+
+La actividad fundamental de las auditorías de configuración puede ser descartada por el equipo ágil.
+SCM en Agile, algunos tips….
+* Es responsabilidad de todo el equipo.
+* Automatizar lo más posible.
+* Educar al equipo.
+* Tareas de SCM embebidas en las demás tareas requeridas para alcanzar el objetivo del Sprint.
+SCM en Agile, para debatir….
+* ¿Qué pasa con el Comité de Control de Cambios?
+* ¿Qué ítems de configuración podemos tener?
+* ¿Qué pasa con las auditorías?
+* ¿Qué pasa con los reportes de estado?

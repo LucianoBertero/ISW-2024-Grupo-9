@@ -1,0 +1,257 @@
+Clase 26/04/2024: Componentes de un proyecto de desarrollo de Software.
+Proyecto.
+Un proyecto de software es un esfuerzo temporal que requiere del acuerdo de un conjunto de especialidades y
+recursos para la creación de un producto, servicio o resultado único. Es una unidad organizativa para adaptar el marco teórico del proceso, dependiendo de las personas y recursos con los que se cuente.
+Define el proceso y tareas que se van a realizar, el personal que se encargará de las actividades y los mecanismos que se implementarán para valorar riesgos, controlar el cambio y evaluar la calidad.
+Características.
+* Únicos: El resultado de un proyecto será único e irrepetible para cualquier otro proyecto, por más parecido o igual sean sus elementos componentes.
+Todos los proyectos por más similares que sean tienen características propias que los hacen únicos, como por ejemplo el calendario (es decir, cronogramas diferentes), o presupuestos.
+
+
+* Orientado a objetivos:
+1. No ambiguos: deben ser lo suficientemente claros para guiar el desarrollo del proyecto.
+2. Medibles: es necesario medir el objetivo para determinar el avance sobre el proyecto.
+3. Alcanzable: deben ser factibles de realizarse por el equipo (que el equipo pueda hacerlos).
+
+
+* Duración limitada de tiempo: Esto implica que un proyecto tiene un principio y un fin, liberando los recursos y personas. Cuando se alcanzan los objetivos del proyecto, este llega a su fin. Un ejemplo claro de lo que no es un proyecto es una línea de producción, ya que esta se ejecuta indefinidamente en el tiempo.
+
+
+* Conjunto de tareas interrelacionadas basadas en esfuerzo y recursos: Se definen las tareas, sus dependencias, los recursos y personas asignadas, permitiendo manejar la complejidad inherente de los sistemas.
+Administración de proyecto de software.
+La administración de proyectos es la organización y coordinación de personas y recursos que permiten desarrollar un producto o servicio de acuerdo con el presupuesto, tiempo y funcionalidades acordadas con el cliente, asegurando que se entregue un producto o servicio de alta calidad. La administración de proyectos es una parte fundamental para que el proyecto sea exitoso. 
+Esta disciplina tiene dos grandes actividades:
+* Planificación.
+* Monitoreo y control.
+
+
+La administración incluye:
+1. Identificar los requerimientos.
+2. Establecer objetivos claros y alcanzables.
+3. Adaptar las especificaciones, planes y el enfoque a los diferentes intereses de los involucrados (stakeholders).
+
+
+Una buena gestión no puede garantizar el éxito del proyecto. Sin embargo, una mala gestión usualmente implica una falla en el proyecto: el software puede entregarse tarde, costar más de lo estimado originalmente o no cumplir las expectativas de los clientes. (esto se verá mejor explicado en la triple restricción).
+Un proyecto planificado puede fracasar también, lo importante de la planificación es el acto de planificar, no el
+resultado. El acto de ponerse en el ejercicio de pensar tanto: riesgos, objetivos, alcances, estimaciones, etc.
+
+
+Metas más importantes de la administración de proyectos:
+1. Entregar software al cliente en el tiempo acordado.
+2. Mantener los costos dentro del presupuesto general.
+3. Entregar software que cumpla con las expectativas del cliente.
+4. Mantener un equipo de desarrollo óptimo y con buen funcionamiento.
+
+
+Atributos particulares o complejidades en la administración de proyectos de software:
+1. El producto es intangible: No poder ver ni tocar el producto que se obtiene al ejecutar el proyecto dificulta la medición del progreso del proyecto. Una construcción civil es visible y se puede evidenciar el progreso en función de las partes construidas.
+2. Los proyectos de software suelen ser excepcionales: Los conocimientos aprendidos en un proyecto de software son difícilmente extrapolables a otro proyecto, como validación de riesgos, aplicación de nuevas tecnologías, etc. El factor tecnológico es una de las causas.
+3. Los procesos de desarrollo son variables y específicos de la organización: A pesar del intento de estandarizar los procesos de desarrollo, la realidad es que no es posible predecir de manera confiable qué proceso es el adecuado para adoptar en el proyecto.
+La triple restricción – enfoque tradicional.
+  
+
+Las variables de restricción de un proyecto son 3: tiempo, costo y alcance. El balance de estos tres factores afecta directamente la calidad del proyecto, ya que un proyecto de alta calidad es aquel que entrega el producto, servicio o resultado requerido, satisfaciendo los objetivos en el tiempo estipulado y con el presupuesto planificado. Es responsabilidad del Líder de proyecto balancear estas variables.
+El concepto de la triple restricción hace referencia a que no es posible fijar de forma arbitraria a las 3 variables, sino
+que será posible fijar 2 y la tercera se ajustará a lo definido.
+No se negocia la calidad, si no puedo modificar tiempo y/o costo, debido a que es como entregar un software sin probarlo. La calidad del producto que le entrego al cliente se ve afectada cuando no puedo equilibrar estos 3 factores.
+Alcance – ¿Qué trata de alcanzar?
+Son los requerimientos que se incluyen en el proyecto y definen la funcionalidad que tendrá el producto a entregar al cliente. En las metodologías tradicionales el alcance es lo primero que se determina y se deja fijo en función de las necesidades del cliente, mientras que en ágil se va definiendo, refinando y adaptando en base a las retroalimentaciones del cliente. Esta variable es la que primero se negocia con el cliente.
+Tiempo - ¿Cuánto tiempo me llevaría?
+Define la fecha de calendario en la cual se compromete a finalizar el proyecto y entregarle el producto resultante al cliente. En las metodologías ágiles, el tiempo es fijo.
+Costo - ¿Cuánto debería costar?
+Define el costo de todos los recursos implicados en el desarrollo del proyecto. Esto incluye equipamiento, infraestructura, equipos, salarios, entre otros.
+
+
+En la realidad, el costo y el tiempo del proyecto varían de forma directa con la definición del alcance del producto, es decir, el alcance es directamente proporcional al tiempo y al costo. Cuando el alcance aumenta (mayor cantidad de funcionalidades), el tiempo y dinero (costos) necesarios también deben aumentar, para lograr abordar un proyecto más grande. El problema en la aplicación de esta visión en enfoques tradicionales es que, al utilizar procesos definidos con ciclos de vida en cascada, los requerimientos se definen al comienzo del proyecto, por lo que cualquier modificación o cambio en el alcance del producto final, modifica el tiempo y presupuesto de este. Estos cambios, generan una baja en la calidad del producto final ya que, que se sacrifican funcionalidades o bien, se saltean etapas de testing, etc. debido a que el cliente siempre espera que se entregue lo pactado, respetando el presupuesto y tiempo de entrega.
+Líder de Proyecto.
+En un enfoque tradicional, el líder de proyecto realiza la toma de decisiones en su totalidad sin la inclusión de la opinión del equipo. El líder asigna las tareas que deben realizar los integrantes del equipo, y además, maneja todas las relaciones con todos los stakeholders del proyecto (clientes, gerencias, contratistas, stakeholders en general).
+
+
+Usualmente los profesionales técnicos no disponen de habilidades necesarias para tratar con la gente, por lo que es necesario una figura de líder de proyecto con las siguientes aptitudes:
+1. Motivación: habilidad para alentar al personal técnico a producir a su máxima capacidad.
+2. Organización: habilidad para adaptar el proceso existente (o inventar nuevos), para lograr que el concepto inicial se transforme en el producto final.
+3. Innovación: habilidad para alentar a las personas a crear y sentirse creativas.
+4. Empatía.
+5. Comunicación.
+6. Liderazgo.
+
+
+También cuenta con habilidades duras, relacionadas a los conocimientos del producto, técnicas y herramientas. Dado que el líder de proyecto tiene un enfoque basado en la resolución de problemas, también son características propias las siguientes:
+
+
+1. Resolución de problemas: identifica conflictos técnicos y organizativos, estructura la solución o motiva a otros profesionales para que la desarrollen, aplica lecciones aprendidas en otros proyectos y adapta el proceso de resolución ante inconvenientes.
+2. Identidad administrativa: tiene la confianza de asumir el control cuando es necesario.
+3. Logro: recompensa las iniciativas y los logros, incentivando al equipo a correr los riesgos de manera controlada.
+4. Influencia: define la estructura del equipo en función de la retroalimentación que él mismo suministra mediante palabras y gestos.
+
+
+Entre las responsabilidades del líder de proyecto se encuentran, en las nuevas metodologías:
+1. Definir el alcance del proyecto.
+2. Identificar a los involucrados, recursos y presupuesto.
+3. Detallar las tareas, estimar los tiempos y requerimientos.
+4. Identificar y evaluar riesgos.
+5. Preparar planes de contingencia.
+6. Controlar hitos y participar en las revisiones de las fases del proyecto.
+7. Administrar el proceso de control de cambios.
+8. Producir reportes de estado.
+  
+
+Equipo de proyecto.
+Es un grupo de personas comprometidas con alcanzar un conjunto de objetivos de los cuales se sienten mutuamente responsables.
+Entre sus características se encuentran:
+1. Cuentan con conocimientos, habilidades técnicas, motivación, experiencias y diversas personalidades. Además, deben tener un sentimiento de mejora continua y aprendizaje mutuo.
+2. Usualmente son un grupo pequeño, esto permite lograr una comunicación efectiva entre los miembros del equipo.
+3. Trabajan en forma conjunto con espíritu de grupo, convirtiéndose en un equipo cohesivo donde prima la sinergia de este. Para eso, se debe lograr un equipo maduro y estable, es decir, que no se agrega o cambia un integrante constantemente.
+4. Sentido de responsabilidad como una unidad y se focalizan en el cumplimiento de las metas grupales.
+
+
+En equipos cohesivos:
+1. El grupo establece sus propios estándares de calidad.
+2. Los individuos aprenden de los demás y se apoyan mutuamente.
+3. El conocimiento se comparte.
+4. Prevalece la mejora continua.
+Stakeholders.
+Son los interesados del proyecto, incluye el equipo de proyecto, el equipo de dirección, el líder de proyecto y el patrocinador.
+Plan de proyecto.
+El plan de proyecto, (o también llamado plan de desarrollo de software en el ámbito del software), es un artefacto de gestión que cumple la función de “hoja de ruta” de un proyecto, en la cual se documentan todas las decisiones que se toman a lo largo del desarrollo; en términos de: el proceso, la división de tareas a realizar, asignación de
+responsabilidades, equipos de trabajo, calendario de desarrollo, actividades de soporte (planes de contingencia,
+mecanismos para control de cambios, evaluar calidad y valorar riesgos).
+
+
+En un plan de proyecto se establece qué se va a hacer (alcance del proyecto), cuándo se va a hacer (calendario), cómo se va a hacer (actividades o tareas para cubrir el alcance) y quién lo va a hacer (responsables de cubrir las actividades).
+Responder a estas preguntas, implica las siguientes actividades:
+1. Definición del alcance del proyecto.
+2. Definición de proceso y ciclo de vida.
+3. Estimación.
+4. Gestión de riesgos.
+5. Asignación de recursos.
+6. Programación de proyectos.
+7. Definición de métricas.
+8. Definición de controles.
+
+
+1. Definición del alcance del proyecto.
+El alcance de un proyecto, junto a su objetivo, responden al qué se está desarrollando. Es importante diferenciar el
+alcance de un producto y el del proyecto en sí. El alcance de un producto define qué funcionalidades debe realizar el software para satisfacer los requerimientos del cliente y se mide contra la Especificación de Requerimientos (ERS) (objetivos del producto), en cambio, el alcance del proyecto define todo el trabajo y solo el trabajo necesario que se debe realizar para cumplir con el desarrollo de este y poder entregar el producto o servicio con todas las características y funciones especificadas. El alcance del proyecto se mide contra el Plan de Proyecto (objetivos del proyecto).
+Tanto el alcance como el objetivo de un proyecto puede ser modificado a lo largo del proyecto, pero esto no
+necesariamente tiene que cambiar el alcance del producto. Por otra parte, el alcance de un producto sí condiciona los alcances de un proyecto. (Puede ocurrir que no siempre sea así).
+Es importante aclarar que el alcance del proyecto es menor que el alcance del producto. Ejemplos de alcances de un proyecto, pueden ser el realizar la toma de requerimientos, realizar Testing de determinados componentes, hacer el desarrollo del código de un componente, etc.
+2. Definición del proceso y ciclo de vida.
+Al definir el proceso que se va a utilizar, se responde al cómo se va a desarrollar el proyecto. Es importante tener en
+cuenta la información del contexto del desarrollo: objetivos, alcances, personas y recursos disponibles, clientes, forma de trabajo de personas, etc. Por ejemplo, no es lo mismo utilizar un proceso y ciclos de vida para trabajos presenciales que remotos.
+También se debe tener en cuenta la complejidad del software a desarrollar (alcances y objetivos) para así poder
+adaptar el proceso definido que se elija al proyecto en el cual se está trabajando.
+El ciclo de vida del proyecto es lo que define cuánto de cada tarea se debe hacer y en qué momento del desarrollo del proyecto hacerlo.
+  
+
+El ciclo de vida de un proyecto define lo siguiente:
+1. Qué trabajo técnico debería realizarse en cada fase.
+2. Quién debería estar involucrado en cada fase.
+3. Cómo controlar y aprobar cada fase.
+4. Cómo deben generarse los entregables.
+5. Cómo revisar, verificar y validar el producto.
+
+
+En metodologías tradicionales, se permite elegir cualquier tipo de ciclo de vida (cascada, iterativo e incremental, espiral, etc.), en cambio en metodologías ágiles esto no es posible (si o si tiene que ser iterativo e incremental).
+3. Estimación.
+En un proyecto de desarrollo de software, se trata de estimar para predecir el valor de un elemento relacionado con
+el proyecto o con el producto, por ejemplo, el tiempo que va a llevar, qué costo va a tener el sistema, cuántas personas necesito para realizar el desarrollo, etc. En un enfoque tradicional, esta estimación de valores es realizada únicamente por el líder de proyecto. En la metodología tradicional, existe un orden definido y recomendado para realizar las estimaciones:
+
+
+1. Tamaño del producto: para estimar el tamaño de un proyecto se utilizan los requerimientos tomados en la etapa de requisitos. Esta estimación es una de las más importantes a realizar, ya que el aumento o disminución del tamaño del producto, afecta de gran manera a otros aspectos, por ejemplo, el esfuerzo aumenta drásticamente a medida que las líneas de código de un proyecto crecen, lo mismo sucede con la estimación de costos y de tiempos (calendarización). Esto es debido a que un aumento del tamaño trae consigo un aumento de complejidad del software, que puede repercutir de muchas maneras en el desarrollo. La mayoría de las veces, el error de las estimaciones recae en estimar costos, tiempos y esfuerzo sin tener una estimación del tamaño, y luego en el transcurso del desarrollo, no variar este costo, tiempo y esfuerzo si varía el tamaño del producto (gran desventaja de la metodología tradicional → no responder a cambios de forma flexible). El tamaño de un producto se puede estimar en muchas escalas, por ejemplo: líneas de código, cantidad de requerimientos, puntos de función ajustados, etc.
+
+
+2. Esfuerzo: refiere a la cantidad de horas persona lineales haciendo una actividad por vez, dentro del desarrollo del producto. Esta estimación intenta responder cuántas horas personas lineales serán necesarias para construir el producto, previamente estimado su tamaño. Como dijimos anteriormente, el esfuerzo varía directamente con el tamaño de un proyecto, ya que, para un proyecto grande, es necesario tener más de una persona cumpliendo el mismo rol, o agregar roles diferentes. Cada rol, puede tener un valor de hora distinto o bien, se puede realizar una estimación en horas planas, en donde no se hace distinción de valor por rol. El esfuerzo es el tópico que más repercute en el costo del proyecto, abarcando casi el 80% de estos. Además, el efecto de las habilidades personales de los integrantes del grupo define el esfuerzo final del proyecto, es decir dependiendo de la fuerza o debilidad en las habilidades de las personas, los resultados del esfuerzo proyecto pueden variar en una cantidad indicada (gráfico). Por ejemplo, un proyecto con los peores analistas de requisitos requeriría un 42% más de esfuerzo que el nominal, mientras que un proyecto con los mejores analistas requeriría un 29% menos de esfuerzo que el nominal.
+  
+
+3. Calendario: la estimación del calendario del proyecto permite responder al cuándo se van a realizar las tareas definidas. En el momento de la estimación, no es necesario realizar una calendarización muy específica a nivel de día, sino que se escala a tareas a realizar en, por ejemplo, un mes del año o incluso un trimestre. Es necesario realizar esta estimación para poder darle una idea al cliente de cuánto tiempo se va a demorar la finalización del proyecto, y como en los demás aspectos, es necesario ya tener una buena estimación del tamaño y del esfuerzo que se requiere, ya que el tiempo de duración del proyecto es proporcional a su crecimiento.
+
+
+4. Costos: de forma similar a la estimación de la duración del proyecto, la estimación de costos depende
+directamente del tamaño y del esfuerzo que se necesite para el desarrollo del software, por eso es lo último
+que se estima. De la misma manera, la estimación de costos es muy útil para darle una idea al cliente de cuál es el costo aproximado del proyecto.
+4. Gestión de riesgos.
+Un riesgo es la probabilidad de ocurrencia de una pérdida o daño que afecte de forma directa al proyecto y pueda
+comprometer el incumplimiento de su objetivo.
+Es de suma importancia identificar y definir los riesgos a los que está atado un proyecto, para así poder analizarlos, y realizar una cuantificación de estos, teniendo en cuenta la exposición del proyecto ante los mismos, para así definir a cuáles se debe atender y sobre cuáles se debe hacer un seguimiento.
+
+
+Los podemos clasificar en:
+1. Riesgos del proyecto: aquellos que alteran el calendario o los recursos del proyecto. Un ejemplo de riesgo de proyecto es la renuncia de un diseñador experimentado.
+2. Riesgos del producto: aquellos que afectan la calidad o el rendimiento del software a desarrollar. Un ejemplo de riesgo de producto es la falla que presenta un componente que se adquirió al no desempeñarse como se esperaba.
+3. Riesgos organizacionales o de negocio: aquellos que afectan la calidad o el rendimiento del software a desarrollar. Un ejemplo de riesgo de producto es la falla que presenta un componente que se adquirió al no desempeñarse como se esperaba.
+4. Riesgos organizacionales o de negocio: aquellos que afectan a la organización que desarrolla o que adquiere el software. Por ejemplo, un competidor que introduce un nuevo producto.
+
+
+Para medir los riesgos se utiliza lo que se conoce como exposición al riesgo (probabilidad x impacto), la cual se obtiene como el producto entre la probabilidad de ocurrencia de la amenaza por el impacto que generaría si realmente ocurriera. Este valor permite organizar y gestionar los riesgos, y se debe hacer foco en reducir la exposición del riesgo.
+  
+
+Antes los riesgos identificados, es posible tomar 3 actitudes:
+* Negación: hacer de cuenta que los riesgos no existen.
+* Gestión Reactiva: esperar a que el riesgo ocurra y recién ahí ver que hacer.
+* Gestión Proactiva: ir trabajando sobre el riesgo generado planes de mitigación y de contingencia.
+Al tomar una actitud proactiva, la identificación y análisis de estos riesgos, permite definir para cuáles de esos riesgos identificados es importante definir planes de mitigación y contingencia. La Identificación y análisis permite reconocer los riesgos y analizar su importancia, luego los planes de mitigación permiten bajar la exposición del proyecto ante ese riesgo identificado y analizado. Por último, los planes de contingencia permiten actuar en caso de que un riesgo suceda, y poder volver a la normalidad lo antes posible.
+
+
+Entre los mayores riesgos en el entorno de desarrollo de software se encuentran:
+* Cambio de requerimientos en el medio de un desarrollo (volatilidad de requerimientos).
+* Abandono de integrantes del equipo de desarrollo (alta demanda en mercado laboral).
+* Falta de capacidad del equipo.
+* El gran avance tecnológico, es decir, no tener en claro el funcionamiento de las últimas tecnologías.
+
+
+Gestión del riesgo
+1. Identificación de riesgos: se identifican los riesgos que suponen una mayor amenaza al proceso de ingeniería de software, al software a desarrollar o a la organización que lo desarrolla (al recibir los requerimientos).
+2. Análisis de riesgos: para cada riesgo identificado se realiza un juicio acerca de la probabilidad y del impacto. No existe una forma certera de realizar esto. Se utilizan intervalos de probabilidad y clasificaciones de gravedad. El criterio dependerá de la experiencia de quien realice el análisis de riesgos.
+3. Planeación del riesgo: para cada riesgo analizado, se definen estrategias para manejarlos. Estas estrategias consisten en considerar acciones a tomar para minimizar o evitar el impacto sobre el proyecto como consecuencia de la ocurrencia de la amenaza que representa el riesgo. Otras estrategias consisten en desarrollar planes de contingencia, el cual define un plan para enfrentar una situación controversial.
+4. Monitorización del riesgo y control: proceso que permite determinar que las suposiciones acerca de los riesgos de producto, proceso y organización no han cambiado. Esto permite revalorar al riesgo en términos de posibles variaciones de su probabilidad e impacto. Este proceso se aplica en todas las etapas del proyecto.
+  
+
+5. Asignación de responsabilidades (o recursos).
+La asignación de responsabilidades a personas (no le agrada el concepto de recurso humano), permite asignar roles a los integrantes del equipo de trabajo. En el entorno de procesos definidos (PUD, por ejemplo), estos roles se ven definidos en el concepto de trabajadores.
+Dentro de un mismo proyecto, una persona puede desenvolverse en más de un rol, ya que puede que el presupuesto del desarrollo de software no sea lo suficientemente grande para permitirse tener una persona distinta por rol, o bien, el proyecto no sea lo suficientemente grande o complejo para justificar dicha adición.
+Para dejar explícitos los roles y quienes son las personas que los cumplen, generalmente se construye una tabla, la
+cual contiene la información de la persona, el rol y responsabilidades de esta en el contexto del proyecto.
+Se debe hacer mucho foco en la selección del personal de un proyecto, ya que las capacidades de los integrantes del equipo afectan a la calidad del software y al correcto desarrollo del proyecto en términos de tiempo, por ejemplo,
+ya que el desarrollo de software es una actividad HUMANO-INTENSIVA.
+6. Programación de proyectos (calendarización).
+En esta etapa se trata de definir en detalle, cada tarea que debe ser cumplida en el desarrollo. Se toma como base lo definido en la estimación del calendario realizada previamente, pero se refina al máximo detalle posible cada
+actividad.
+Cuando se habla de detallar las tareas, se hace referencia a descomponer el proceso de desarrollo en actividades
+refinadas a nivel de días, identificando quien la realiza, cuando debe realizarse y cuánto esfuerzo debe llevar en forma teórica.
+Generalmente la calendarización se realiza a través de un Diagrama de Gantt, realizado a través de alguna herramienta, como Microsoft Project.
+7. Definición de métricas.
+Las métricas se definen como una medida numérica que aporta visibilidad sobre el avance o estado del proyecto,
+proceso o producto en un momento determinado del desarrollo. Al realizar la planificación del proyecto, es necesario definir de forma clara y no ambigua, cada una de las métricas asociadas a cada dominio (producto, proyecto o proceso) en conjunto con la forma de calcularlas. Además, es imprescindible que las métricas sean representativas para el entorno, es decir, que representen un aumento en la información y beneficien la practicidad del desarrollo y seguimiento.
+Las métricas del proyecto se consolidan para crear métricas de proceso que sean públicas para toda la organización del software.
+A diferencia de las metodologías ágiles, acá se definen métricas que miden y exponen los avances. En cambio en ágil, el mayor indicador de avance de un producto, son los incrementos que se entregan en cada iteración.
+
+
+Las métricas básicas para un proyecto de software se clasifican en:
+* Tamaño del producto
+* Esfuerzo
+* Calendario (tiempo)
+* Defectos
+* Costos
+8. Definición de controles.
+En la planificación de los controles del desarrollo, se toma como base las métricas ya definidas, y verifica que todo se está haciendo en concordancia con lo establecido. En esta planificación se definen reuniones periódicas, reportes o informes necesarios, etc.
+Monitoreo y control.
+¿Cómo se atrasa un proyecto? de a un día por vez, no pasan 3 meses y te das cuenta que estás atrasado.
+Comparar lo planificado y lo real.
+  
+
+Perfecto no existe y el extraordinario pasa cuando el equipo sobrestima los requerimientos.
+Tres factores top para el éxito de un proyecto.
+* Monitoreo & Feedback
+* Tener una misión/objetivo claro
+* Comunicación
+Causas de fracasos de proyectos.
+* Fallas de toma de REQUERIMIENTOS (el 80%).
+* Fallas al definir el problema.
+* Planificar basado en datos insuficientes.
+* La planificación la hizo el grupo de planificaciones.
+* No hay seguimiento del plan de proyecto.
+* Plan de proyecto pobre en detalles.
+* Planificación de recursos inadecuada.
+* Las estimaciones se basaron en “supuestos” sin consultar datos históricos.
+* Nadie estaba a cargo.

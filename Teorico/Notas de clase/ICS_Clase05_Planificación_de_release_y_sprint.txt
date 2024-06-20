@@ -1,0 +1,328 @@
+Clase 03/05/2024: Planificación de release y sprint.
+Frameworks de SCRUM a nivel de equipo y escala.
+SCRUM
+Scrum es un marco ligero que ayuda a las personas, equipos y organizaciones a generar valor a través de soluciones adaptables para problemas complejos.
+En pocas palabras, Scrum requiere un Scrum Master para fomentar un entorno donde:
+
+
+1.  Un propietario del producto (Product Owner) ordena el trabajo de un problema complejo en un Product Backlog.
+2. El equipo de Scrum convierte una selección del trabajo en un incremento de valor durante un Sprint.
+3. El equipo de Scrum y sus partes interesadas (stakeholders) inspeccionan los resultados y realizan los ajustes necesarios para el próximo Sprint.
+4. Repetir
+
+
+Scrum es simple. Pruébalo tal cual y determine si su filosofía, teoría y estructura ayudan a alcanzar metas y crear valor. El marco de Scrum es deliberadamente incompleto, solo define las partes necesarias para implementar la teoría de Scrum. Scrum se basa en la inteligencia colectiva de las personas que lo utilizan. En lugar de proporcionar a las personas instrucciones detalladas, las reglas de Scrum guían sus relaciones e interacciones.
+En el marco se pueden emplear diversos procesos, técnicas y métodos. Scrum envuelve las prácticas existentes o las hace innecesarias. Scrum hace visible la eficacia relativa de la gestión actual, el entorno y las técnicas de trabajo, de modo que se pueden realizar mejoras.
+Scrum se basa en el empirismo y el pensamiento Lean. El empirismo afirma que el conocimiento proviene de la experiencia y la toma de decisiones basadas en lo que se observa. El pensamiento Lean reduce los desperdicios y se centra en lo esencial.
+Scrum emplea un enfoque iterativo e incremental para optimizar la previsibilidad y controlar el riesgo.
+Scrum involucra a grupos de personas que colectivamente tienen todas las habilidades y experiencia para hacer el trabajo y compartir o adquirir tales habilidades según sea necesario.
+Scrum combina cuatro eventos formales para la inspección y adaptación dentro de un evento contenedor, el Sprint.
+Estos eventos funcionan porque implementan los pilares empíricos de Scrum: 
+transparencia, inspección y adaptación.
+Pilares de Scrum.
+  
+
+Transparencia.
+El proceso y el trabajo emergentes deben ser visibles para aquellos que realizan el trabajo, así como para los que reciben el trabajo. Con Scrum, las decisiones importantes se basan en el estado percibido de sus tres artefactos formales. Los artefactos que tienen poca transparencia pueden conducir a decisiones que disminuyen el valor y aumentan el riesgo.
+La transparencia permite la inspección. La inspección sin transparencia genera engaños y desperdicios.
+Inspección.
+Los artefactos de Scrum y el progreso hacia objetivos acordados deben ser inspeccionados con frecuencia y diligentemente para detectar varianzas o problemas potencialmente indeseables. Para ayudar con la inspección, Scrum proporciona cadencia en forma de sus cinco eventos.
+La inspección permite la adaptación. La inspección sin adaptación se considera inútil. Los eventos de Scrum están diseñados para provocar cambios.
+Adaptación.
+Si algún aspecto de un proceso se desvía fuera de los límites aceptables o si el producto resultante es inaceptable, el proceso que se está aplicando o los materiales que se producen deben ajustarse. El ajuste debe realizarse lo antes posible para minimizar la desviación adicional.
+La adaptación se vuelve más difícil cuando las personas involucradas no están empoderadas o no poseen capacidad para autogestionarse. Se espera que un equipo de Scrum se adapte en el momento en que aprenda algo nuevo por medio de la inspección.
+Valores de Scrum.
+El uso exitoso de Scrum depende de que las personas sean más competentes en vivir cinco valores:
+Compromiso, Enfoque, Apertura, Respeto y Coraje
+El equipo de Scrum se compromete a lograr sus objetivos y apoyarse mutuamente. Su enfoque principal es el trabajo del Sprint para hacer el mejor progreso posible hacia estos objetivos. El equipo de Scrum y sus partes interesadas están abiertos sobre el trabajo y los desafíos. Los miembros del equipo de Scrum se respetan mutuamente para ser personas capaces e independientes, y son respetados como tales por las personas con las que trabajan. Los miembros del equipo de Scrum tienen el valor de hacer lo correcto y de trabajar en problemas complejos.
+Estos valores dan dirección al equipo de Scrum con respecto a su trabajo, acciones y comportamiento.
+Las decisiones que se toman, las medidas tomadas y la forma en que se utiliza Scrum deben reforzar estos valores, no disminuirlos o socavarlos. Los miembros del equipo de Scrum aprenden y exploran los valores mientras trabajan con los eventos y artefactos de Scrum. Cuando estos valores son asimilados por el equipo de Scrum y las personas con las que trabajan, los pilares empíricos de Scrum de transparencia, inspección y adaptación cobran vida construyendo confianza.
+El equipo Scrum (Scrum Team).
+La unidad fundamental de Scrum es un pequeño equipo de personas, un equipo Scrum. El equipo Scrum consta de un Scrum Master, un propietario de producto (Product Owner) y desarrolladores. Dentro de un equipo de Scrum, no hay subequipos ni jerarquías. Es una unidad cohesionada de profesionales enfocada en un objetivo a la vez, el objetivo del Producto.
+Los equipos de Scrum son multifuncionales, lo que significa que los miembros tienen todas las habilidades necesarias para crear valor en cada Sprint. También son autogestionados, lo que significa que internamente deciden quién hace qué, cuándo y cómo.
+El equipo de Scrum es lo suficientemente pequeño como para permanecer ágil y lo suficientemente grande como para completar un trabajo significativo dentro de un Sprint, por lo general 10 o menos personas. En general, hemos descubierto que los equipos más pequeños se comunican mejor y son más productivos. Si los equipos de Scrum se vuelven demasiado grandes, se debe considerar la posibilidad de reorganizarse en varios equipos Scrum cohesionados, cada uno centrado en el mismo producto. Por lo tanto, deben compartir el mismo objetivo de producto, trabajo pendiente del producto (Product Backlog) y propietario del producto (Product Owner).
+El equipo Scrum es responsable de todas las actividades relacionadas con los productos, desde la colaboración, verificación, mantenimiento, operación, experimentación, investigación y desarrollo, y cualquier otra cosa que pueda ser necesaria. Están estructurados y empoderados por la organización para gestionar su propio trabajo.
+Trabajar en Sprints a un ritmo sostenible mejora el enfoque y la consistencia del equipo de Scrum.
+Todo el equipo de Scrum es responsable de crear un incremento valioso y útil en cada Sprint. Scrum define tres responsabilidades específicas dentro del equipo de Scrum: los desarrolladores, el propietario del producto (Product Owner) y el Scrum Master.
+Desarrolladores.
+Los desarrolladores son las personas del equipo Scrum que se comprometen a crear cualquier aspecto de un incremento útil (funcional) en cada Sprint.
+Las habilidades específicas que necesitan los desarrolladores son a menudo amplias y variarán con el dominio del trabajo. Sin embargo, los desarrolladores siempre son responsables de:
+* Crear un plan para el Sprint, el Sprint Backlog;
+* Inculcar la calidad adhiriéndose a una definición de Hecho;
+* Adaptar su plan cada día hacia el Objetivo Sprint;
+* Responsabilizarse mutuamente como profesionales.
+Propietario del producto (Product Owner).
+El Propietario del Producto es responsable de maximizar el valor del producto resultante del trabajo del equipo de Scrum. La forma en que esto se hace esto puede variar ampliamente entre organizaciones, equipos Scrum e individuos.
+El Propietario del Producto también es responsable de la gestión eficaz de la pila del producto (Product Backlog), que incluye:
+* Desarrollar y comunicar explícitamente el Objetivo del Producto;
+* Creación y comunicación clara de elementos de trabajo pendiente del producto;
+* Pedido de artículos de trabajo pendiente del producto;
+* Asegurarse de que el trabajo pendiente del producto sea transparente, visible y comprendido.
+El Propietario del Producto puede hacer el trabajo anterior o puede delegar la responsabilidad a otros. En cualquier caso, el propietario del producto sigue siendo responsable.
+Para que los Propietarios de Productos tengan éxito, toda la organización debe respetar sus decisiones. Estas decisiones son visibles en el contenido y el orden del trabajo pendiente del producto, y a través del Incremento inspeccionable en la revisión de Sprint.
+El Propietario del Producto es una persona, no un comité. El Propietario del Producto puede representar las necesidades de muchas partes interesadas en el trabajo pendiente del producto. Aquellos que deseen cambiar el trabajo pendiente del producto pueden hacerlo tratando de negociar con criterio con el Product Owner.
+Scrum Master.
+El Scrum Master es responsable de establecer Scrum tal como se define en la Guía de Scrum. Lo consigue ayudando a todos a comprender la teoría y la práctica de Scrum, tanto dentro del Equipo como en toda la organización.
+El Scrum Master es responsable de la efectividad del Scrum Team. Lo logra al permitir que el equipo Scrum mejore
+sus prácticas, dentro del marco de Scrum.
+Los Scrum Masters son verdaderos líderes que sirven al equipo Scrum y a toda la organización.
+El Scrum Master sirve al equipo de Scrum de varias maneras, incluyendo:
+* Capacitar a los miembros del equipo en autogestión y multifuncionalidad;
+* Ayudar al equipo de Scrum a centrarse en la creación de incrementos de alto valor que cumplan con la definición de hecho;
+* Promover la eliminación de los impedimentos para el progreso del equipo Scrum;
+* Asegurar que todos los eventos de Scrum se lleven a cabo, sean positivos, productivos y que se respete el tiempo establecido (time-box) para cada uno de ellos.
+
+
+El Scrum Master sirve al Propietario del Producto (Product Owner) de varias maneras, incluyendo:
+* Ayudar a encontrar técnicas para una definición eficaz de los objetivos del producto y la gestión de los retrasos en el producto;
+* Ayudar al equipo de Scrum a comprender la necesidad de elementos de trabajo pendiente de productos claros y concisos;
+* Ayudar a establecer la planificación empírica de productos para un entorno complejo;
+* Facilitar la colaboración de las partes interesadas según sea solicitado o necesario.
+
+
+El Scrum Master sirve a la organización de varias maneras, incluyendo:
+* Liderar, capacitar y mentorizar a la organización en su adopción de Scrum;
+* Planificar y asesorar sobre la implementación de Scrum dentro de la organización;
+* Ayudar a las personas y a las partes interesadas a comprender y promulgar un enfoque empírico para el trabajo complejo;
+* Eliminar las barreras entre las partes interesadas y los equipos de Scrum.
+Eventos de Scrum.
+El Sprint es un contenedor para todos los eventos. Cada evento en Scrum es una oportunidad formal para inspeccionar y adaptar los artefactos de Scrum. Estos eventos están diseñados específicamente para permitir la transparencia necesaria. Si no se realizan los eventos según lo prescrito, se pierden oportunidades para inspeccionar y adaptarse.
+Los eventos se utilizan en Scrum para crear regularidad y minimizar la necesidad de reuniones no definidas en Scrum.
+De manera óptima, todos los eventos se llevan a cabo al mismo tiempo y lugar para reducir la complejidad.
+El Sprint.
+Los sprints son el latido del corazón de Scrum, donde las ideas se convierten en valor.
+Son eventos de longitud fija de un mes o menos para crear consistencia. Un nuevo Sprint comienza inmediatamente después de la conclusión del Sprint anterior.
+Todo el trabajo necesario para alcanzar el objetivo del producto, incluyendo la Planificación (Sprint Planning), Daily Scrums, Revisión del Sprint (Sprint Review ) y la Retrospectiva (Sprint Retrospective), ocurren dentro del Sprints.
+
+
+Durante el Sprint:
+* No se hacen cambios que pongan en peligro el Objetivo Sprint;
+* La calidad no disminuye;
+* El trabajo pendiente del producto se refina según sea necesario;
+* El alcance se puede clarificar y renegociar con el Propietario del Producto a medida que se aprende más.
+
+
+Los Sprints permiten la previsibilidad al garantizar la inspección y adaptación del progreso hacia un objetivo del Producto, como mínimo, una vez al mes en el calendario. Cuando el horizonte de un Sprint es demasiado largo, el Objetivo de Sprint puede volverse obsoleto, la complejidad puede aumentar y el riesgo puede aumentar. Los Sprints más cortos se pueden emplear para generar más ciclos de aprendizaje y limitar el riesgo de coste y esfuerzo a un período de tiempo más pequeño. Cada Sprint puede considerarse un proyecto corto.
+Existen varias prácticas para pronosticar el progreso, como gráficos de burn-downs, burn-ups, o flujos acumulativos.
+Si bien han demostrado ser útiles, estos no sustituyen la importancia del empirismo. En entornos complejos, se desconoce lo que sucederá. Solo lo que ya ha sucedido se puede utilizar para la toma de decisiones con vistas a futuro.
+Un Sprint podría ser cancelado si el Objetivo del Sprint se vuelve obsoleto. Solo el Propietario del Producto tiene la autoridad para cancelar el Sprint.
+1. Planificación de Sprint (Sprint Planning)
+El Sprint Planning inicia el Sprint estableciendo el trabajo que se realizará para el mismo. Este plan resultante es creado por el trabajo colaborativo de todo el equipo de Scrum.
+El propietario del producto (Product Owner) se asegura de que los asistentes estén preparados para discutir los elementos de trabajo pendiente de producto más importantes y cómo se asignan al objetivo del producto. El equipo de Scrum también puede invitar a otras personas a asistir a la planificación del Sprint para proporcionar asesoramiento.
+La planificación del Sprint aborda los siguientes temas:
+
+
+Tema Uno: ¿Por qué este Sprint es valioso?
+El Propietario del Producto (Product Owner) propone cómo el producto podría aumentar su valor y utilidad en el Sprint actual. A continuación, todo el equipo de Scrum colabora para definir un objetivo de Sprint que comunique por qué el Sprint es valioso para las partes interesadas. El Objetivo Sprint debe finalizarse antes del final de la Planificación de Sprint.
+Tema dos: ¿Qué se puede hacer este Sprint?
+A través del debate con el propietario del producto (Product Owner), los desarrolladores seleccionan los elementos del Product Backlog para incluir en el Sprint actual. El equipo de Scrum puede refinar estos elementos durante este proceso, lo que aumenta la comprensión y confianza.
+Seleccionar cuánto se puede completar dentro de un Sprint puede ser un desafío. Sin embargo, cuanto más sepan los desarrolladores sobre su rendimiento pasado, su capacidad futura y su definición de hecho, más seguro estarán en sus pronósticos de Sprint.
+Tema Tres: ¿Cómo se realizará el trabajo elegido?
+Para cada elemento de trabajo pendiente de producto (Product Backlog item) seleccionado, los desarrolladores planifican el trabajo necesario para crear un incremento que cumpla con la definición de hecho. Esto se hace normalmente mediante la descomposición de elementos de trabajo pendiente (Product Backlog item) del producto en elementos de trabajo más pequeños que se puedan realizar en un día o  menos. La forma de hacerlo es según la discreción de los propios desarrolladores. Nadie más les dice cómo convertir los elementos de trabajo pendiente del producto en incrementos de valor.
+El objetivo de Sprint (Sprint Goal), los elementos de trabajo pendiente de producto seleccionados para el Sprint, más el plan para entregarlos se conocen conjuntamente como el trabajo pendiente de Sprint (Sprint Backlog).
+El Sprint Planning tiene una duración máxima de ocho horas para un Sprint de un mes. Para sprints más cortos, el evento suele ser más corto.
+2.  Scrum Diario (Daily Scrum).
+El propósito del Daily Scrum es inspeccionar el progreso hacia el Objetivo Sprint y adaptar el Sprint Backlog según sea necesario, ajustando el próximo trabajo planeado.
+El Daily Scrum es un evento de 15 minutos (máximo) para los desarrolladores del equipo de Scrum. Para reducir la complejidad, se lleva a cabo al mismo tiempo y lugar todos los días laborables del Sprint. Si el propietario del producto o el Scrum Master están trabajando activamente en los elementos del Trabajo pendiente de Sprint, participan como desarrolladores.
+Los desarrolladores pueden seleccionar cualquier estructura y técnicas que deseen, siempre y cuando su Scrum diario se centre en el progreso hacia el objetivo de Sprint y produzca un plan accionable para el día siguiente de trabajo. Esto crea enfoque y mejora la autogestión.
+Los Scrums diarios (Daily Scrum) mejoran la comunicación, identifican impedimentos, promueven una rápida para la toma de decisiones, y en consecuencia, eliminan la necesidad de otras reuniones.
+El Daily Scrum no es la única vez que los desarrolladores pueden ajustar su plan. Frecuentemente se reúnen durante todo el día para debatir de forma más detalladas sobre la adaptación o replanificación del resto del trabajo del Sprint
+3. Revisión del Sprint (Sprint Review).
+El propósito de la revisión del Sprint es inspeccionar el resultado del Sprint y determinar futuras adaptaciones. El equipo de Scrum presenta los resultados de su trabajo a las partes interesadas clave y se discute el progreso hacia el Objetivo de Producto.
+Durante el evento, el equipo de Scrum y las partes interesadas revisan lo que se logró en el Sprint y lo que ha cambiado en su entorno. En base a esta información, los asistentes colaboran en qué hacer a continuación. El trabajo pendiente del producto también se puede ajustar para satisfacer nuevas oportunidades. Sprint Review es una sesión de trabajo y el equipo de Scrum debe evitar limitarla a que se convierta en una simple presentación.
+La revisión de Sprint es el penúltimo evento del Sprint y se utiliza en un plazo máximo de cuatro horas para un Sprint de un mes. Para sprints más cortos, el evento suele ser más corto.
+4. La retrospectiva del Sprint (Sprint Retrospective).
+El propósito de la retrospectiva Sprint es planificar formas de aumentar la calidad y la eficacia.
+El equipo de Scrum inspecciona cómo fue el último Sprint con respecto a individuos, interacciones, procesos, herramientas y su definición de Hecho. Los elementos inspeccionados a menudo varían según el dominio del trabajo. Las suposiciones que los desviaron se identifican y se exploran sus orígenes. El equipo de Scrum analiza qué fue bien durante el Sprint, qué problemas encontró y cómo esos problemas fueron (o no fueron) resueltos.
+El equipo de Scrum identifica los cambios más útiles para mejorar su eficacia. Las mejoras más impactantes se abordan lo antes posible. Incluso se pueden agregar al Sprint Backlog para el próximo Sprint.
+La retrospectiva Sprint concluye el Sprint. Se utiliza un intervalo de tiempo de hasta un máximo de tres horas para un Sprint de un mes. Para sprints más cortos, el evento suele ser más corto.
+5. Refinamiento del Product Backlog.
+Artefactos de Scrum.
+Los artefactos de Scrum representan trabajo o valor. Están diseñados para maximizar la transparencia de la información clave. Por lo tanto, cada uno de los que los inspecciona tienen la misma base para la adaptación.
+Cada artefacto contiene un compromiso para garantizar que proporciona información que mejora la transparencia y
+el enfoque con el que se puede medir el progreso:
+* Para el trabajo pendiente del producto es el objetivo del producto.
+* Para el Sprint Backlog es el Sprint Goal.
+* Para el Incremento es la Definición de Hecho.
+Estos compromisos existen para reforzar el empirismo y los valores de Scrum para el equipo de Scrum y sus partes
+interesadas.
+1. Pila del producto (Product Backlog).
+El trabajo pendiente del producto es una lista emergente y ordenada de lo que se necesita para mejorar el producto. Es la única fuente de trabajo emprendida por el equipo Scrum.
+Los elementos de trabajo pendiente de producto que puede ser hecho por el equipo de Scrum dentro de un Sprint se consideran listos para su selección en un evento de planificación de Sprint. Por lo general adquieren este grado de transparencia después de las actividades de refinación. El refinamiento de Backlog del producto es el acto de descomponer y definir aún más los elementos de trabajo pendiente del producto en artículos más pequeños y precisos. Esta es una actividad en curso para agregar detalles, como una descripción, un pedido y un tamaño. Los atributos a menudo varían con el dominio del trabajo.
+Los desarrolladores que realizarán el trabajo son responsables del tamaño. El Propietario del Producto (Product Owner) puede influir en los desarrolladores ayudándoles a entender y seleccionar mejores alternativas.
+
+
+Compromiso: Objetivo del producto (Product Goal).
+El objetivo del producto (Product Goal) describe un estado futuro del producto que puede servir como objetivo para el equipo Scrum contra el cual planificar. El objetivo del producto se encuentra en el trabajo pendiente del producto (Product Backlog). El resto del trabajo pendiente del producto surge para definir "qué" cumplirá el objetivo del producto.
+Un producto es un vehículo para entregar valor. Tiene un límite claro, partes interesadas conocidas, usuarios o clientes bien definidos. Un producto podría ser un servicio, un producto físico o algo más abstracto.
+El objetivo del producto es el objetivo a largo plazo para el equipo Scrum. Deben cumplir (o abandonar) un objetivo antes de asumir el siguiente.
+2. La pila del Sprint (Sprint Backlog).
+El Trabajo pendiente de Sprint se compone del objetivo sprint (por qué), el conjunto de elementos de trabajo pendiente de producto seleccionados para el Sprint (qué), así como un plan accionable para entregar el incremento (cómo).
+El Trabajo pendiente de Sprint es un plan por y para los desarrolladores. Es una imagen muy visible y en tiempo real del trabajo que los desarrolladores planean realizar durante el Sprint para lograr el Objetivo Sprint. Por lo tanto, el Sprint Backlog se actualiza a lo largo del Sprint a medida que se aprende más.
+Debe tener suficientes detalles para que puedan inspeccionar su progreso en el Scrum Diario.
+
+
+Compromiso: Sprint Goal.
+El Sprint Goal es el único objetivo para el Sprint. Aunque el objetivo de Sprint es un compromiso de los desarrolladores, proporciona flexibilidad en términos del trabajo exacto necesario para lograrlo. El Objetivo Sprint también crea coherencia y enfoque, animando al equipo de Scrum a trabajar juntos en lugar de en iniciativas separadas.
+El objetivo de Sprint se crea durante el evento Sprint Planning y, a continuación, se agrega al Trabajo pendiente de Sprint. A medida que los desarrolladores trabajan durante el Sprint, tienen en cuenta el objetivo de Sprint.
+Si el trabajo resulta ser diferente de lo que esperaban, colaboran con el propietario del producto para negociar el alcance del Trabajo pendiente de Sprint dentro del Sprint sin afectar al objetivo de Sprint.
+3. Incremento (Increment).
+Un Incremento es un paso de hormigón hacia el Objetivo del Producto. Cada Incremento es aditivo a todos los Incrementos anteriores y verificado a fondo, asegurando que todos los Incrementos funcionen juntos. Para proporcionar el valor, el incremento debe ser utilizable.
+Se pueden crear varios incrementos dentro de un Sprint. La suma de los Incrementos se presenta en la Revisión Sprint apoyando así el empirismo. Sin embargo, un Incremento puede ser entregado a las partes interesadas antes del final del Sprint. La revisión de Sprint nunca debe considerarse una puerta para liberar valor.
+El trabajo no se puede considerar parte de un Incremento a menos que cumpla con la Definición de Hecho.
+
+
+Compromiso: Definición de Hecho (Definition of Done).
+La Definición de Hecho es una descripción formal del estado del Incremento cuando cumple con las medidas de calidad requeridas para el producto.
+En el momento en que un elemento de trabajo pendiente de producto cumple con la definición de hecho, se crea un incremento.
+La definición de Hecho crea transparencia al proporcionar a todos una comprensión compartida de qué trabajo se completó como parte del Incremento. Si un elemento de trabajo pendiente de producto no cumple con la definición de hecho, no se puede liberar, ni siquiera presentar en la revisión de Sprint. En su lugar, vuelve al Trabajo pendiente del producto para su consideración futura.
+Si la definición de hecho para un incremento forma parte de los estándares de la organización, todos los equipos de Scrum deben seguirla como mínimo. Si no es un estándar organizativo, el equipo de Scrum debe crear una definición de hecho adecuada para el producto.
+Los desarrolladores deben ajustarse a la definición de Hecho. Si hay varios equipos de Scrum trabajando juntos en un producto, deben definir y cumplir mutuamente con la misma definición de hecho.
+Timebox.
+  
+
+Esto existe para que no se pierda más tiempo del necesario en las distintas tareas y para aprender a negociar en términos del alcance del producto y no del tiempo o los costos (relacionado con la triple restricción).
+Si no se llega al final de un sprint, en vez de extender el tiempo, se entrega menos.
+De esta manera, nos volvemos más confiables, con un ritmo de trabajo sostenible. Todas las ceremonias son Timebox. El refinamiento del Product Backlog al ser una actividad continua, no tiene definido un tiempo exacto, sino que el tiempo se expresa en términos porcentuales sobre la definición del Sprint.
+Definición de “Listo” (Ready).
+  
+
+El DoR es un criterio que define cuando una US está lo suficientemente bien formulada como para poderse incluir en un Sprint. Por ejemplo, que cierta US debe tener un prototipo, entonces cuando el prototipo esté realizado, el DoR dirá “se ha definido el prototipo para la US”.
+El DoD es un criterio que dice cuando una historia está lo suficientemente bien implementada como para entrar al Sprint Review y ser mostrada al PO, entonces él será el encargado de aprobar o no la US y en caso de que esté aprobada decidirá si desea ponerla en producción.
+En el DoD se arma un checklist con todo lo que debe cumplir una US para entrar en producción.
+  
+
+Capacidad del equipo en un Sprint.
+  
+
+La capacidad es una métrica que utiliza SCRUM para determinar cuánta cantidad de trabajo puede comprometer un equipo para un determinado Sprint.
+La capacidad se estima y se mide.
+Una de las cosas que se hace en el Sprint Planning es determinar la capacidad del equipo, y entonces, teniendo en cuenta la capacidad, se contrasta en cuántas US del Product Backlog se pueden incorporar en el Sprint Backlog.
+Para equipos más maduros, la capacidad puede ser estimada en Story Points y para equipos menos maduros se puede estimar en horas ideales.
+  
+
+Niveles de Planificación.
+  
+
+Ambiente de trabajo.
+* Abierto
+   * El silencio absoluto es un mal signo
+* Pizarrones
+* El equipo define sus horarios
+Herramientas de SCRUM.
+Tarjeta de tarea.
+  
+
+Es una tarjeta que cuenta con 5 partes:
+1. Código del Ítem Backlog: es un identificador del ítem en el Product Backlog.
+2. Nombre de la actividad: suele ser una frase verbal que define qué es lo que hay que hacer.
+3. Iniciales del responsable de realizar la tarea.
+4. Número de día del sprint.
+5. Estimación del tiempo para finalizar la tarea.
+Tablero.
+  
+
+Tablero utilizado por el Equipo de Desarrollo en el cual se colocan las tarjetas de tareas a realizar durante el sprint.
+Se encuentra dividido en 5 secciones:
+1. Story: el nombre de la historia.
+2. To Do: aquí se encuentran las tareas por hacer en el Sprint.
+3. Work In Process: aquí se encuentran las tareas que se están realizando.
+4. To Verify: aquí se encuentran las tareas finalizadas que deben verificarse.
+5. Done: aquí se encuentran las tareas terminadas: finalizadas y verificadas.
+Lo ideal es que el nivel de granularidad de las tareas sea lo más fino posible, de tal forma que se detalle profundamente el avance del sprint, teniendo varias tareas en cada sección del tablero.
+  
+
+Gráficos del Backlog.
+Gráficos que brindan información acerca del progreso de un Sprint, de una release o del producto. El backlog de trabajo es la cantidad de trabajo que queda por ser realizado (en horas), mientras que la tendencia del backlog compara esta cantidad con el tiempo (medido en días).
+
+
+Sprint Burn-Down Chart.
+Visualiza con una curva descendente cuánto trabajo queda para terminar. En el eje de las abscisas se coloca el tiempo que va desde el inicio del sprint. En el eje de las ordenadas se coloca los puntos de historia a realizar en el sprint.
+  
+
+
+
+Sprint Burn-Up Chart.
+Visualiza con una curva ascendente cuánto trabajo se ha completado a lo largo de la release, es decir que visualiza los puntos de historia terminados en cada sprint.
+  
+
+Combined Burn Chart
+Visualiza cuánto trabajo queda para terminar y cuánto trabajo se ha realizado.
+
+
+Gráficos de seguimiento de producto.
+  
+
+Guía de scrum en una página.
+  
+
+Planificación.
+  
+
+En ambientes ágiles, es necesario que quien planifica el proyecto de desarrollo de software, sea capaz de analizar el contexto del proyecto cada cierto período y hacer aquellos ajustes que sean necesarios, para encauzar los esfuerzos de manera correcta, y poder lograr los objetivos planteados.
+“Planning is everything. Plans are nothing” → esto apunta a que lo importante de planificar, es el proceso en sí. No el hecho de realizar una documentación exhaustiva que respete determinados templates. Sí debe quedar registrado de alguna manera, idealmente bajo templates, pero sólo para servir de ayuda de memoria. Lo importante es el proceso.
+¿Qué y Cuándo estimar?.
+  
+
+Planificación de Portfolio.
+  
+
+Planificación de Producto.
+  
+
+Se parte de un product Backlog con themes, spikes, epics y US, y las que están más arriba en la pila serán las que formen parte del Release porque cumplieron el criterio de Listo.
+Entonces, para construir el Release del producto, se necesita de un conjunto de iteraciones llamadas en Scrum  como “Sprints”. Se planifican cuántos Sprints se necesitarán para entregar una porción de producto que se quiere que conforme la iteración.
+Los cubitos verdes son tareas y van en el Sprint Backlog.
+  
+
+El concepto de MVP se aloja en el primer Release y es el que decido sacar como MVP.
+El PO hace una priorización y se ayuda con el Product roadmap que es una hoja de ruta y define para cuándo quiero cuáles características del producto y se define a un alto nivel.
+  
+
+Planificación de Release.
+  
+
+Tiene la política de liberación de software de cada empresa.
+Existe según Continuous Deployment:
+* Release por cada característica.
+* Release por cada Sprint.
+* Release luego de múltiples Sprints.
+Se acumulan todas las características de producto que se desea y se genera una versión de producto que se fue obteniendo por n Sprints, se genera un Release y dicho Release se pone en producción.
+
+
+Niveles de granularidad distinta:
+  
+
+  
+
+Releases y sprints.
+  
+
+Cadencia de los sprints.
+  
+
+Planificación de Iteración: Sprint Planning.
+  
+
+Planificación Diaria: Daily Scrum.
+  
+
+Métricas Ágiles.
+La métrica por excelencia es la velocidad y mide cuánto trabajo se terminó, cumplió con el Definition of Done y el P.O aceptó (se suman la cantidad de puntos de US aprobadas). No se estima la velocidad, se calcula al final de la iteración y se espera que se mida en puntos de historia, obtenida en la Review. Es una observación empírica.
+La capacidad se estima al principio en horas ideales o story point, y determina para un determinado Sprint, cuánto trabajo se puede comprometer hacer el equipo. Esto sirve para saber cuántas historias se van a pasar del Product Backlog al Sprint Backlog.
+Métrica de velocidad.
+Es la métrica más importante del enfoque (métrica de producto), y mide la cantidad de puntos de historia que se realizaron en un Sprint y fueron aceptados por el Product Owner. Hay que recordar que no se cuentan las historias parcialmente terminadas, sólo las que están completadas y aceptadas por el PO.
+Esta métrica se calcula (no se estima) luego de que el PO. acepte la implementación de una US.
+Esta métrica suele representarse con un gráfico de barras para medir la estabilidad del equipo. Estos gráficos son permanentes durante todo el proyecto y son visibles para todo el mundo.
+Esta métrica, y sus valores a lo largo de un proyecto ágil, permiten analizar si el equipo posee una estabilidad a lo largo del mismo, lo cual también se relaciona con un principio del manifiesto ágil (desarrollo sostenible).
+Métrica de capacidad.
+Es una métrica de proyecto que mide el compromiso de un equipo para un determinado sprint, en horas de trabajo
+ideales. Es por esto que, se utiliza para planificar, ya que permite definir cuántas historias de usuario se van a tomar
+del Product Backlog para implementar en el próximo sprint.
+Se estima al principio de un sprint, por lo que también se la llama velocidad estimada. Se puede estimar en horas
+ideales o en Story Points.
+Running Tested Features (RTF).
+Mide la cantidad de features testeadas que están funcionando, es decir, cuantas piezas de producto (historias de
+usuarios, casos de usos, requerimientos) se terminaron y están en ejecución.
+El problema de esta métrica es que no tiene en cuenta la complejidad de las piezas de producto que se implementan.
+Por ejemplo, si se toma como piezas de producto a historias de usuario, se mide cuántas historias de usuarios están funcionando, pero no se sabe de cuantos puntos de historias tiene cada una de ellas. Es una medición absoluta.
